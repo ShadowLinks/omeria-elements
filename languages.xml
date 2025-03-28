@@ -1,0 +1,20 @@
+<elements>
+    <info>
+        <name>Languages</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="langauges.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/languages.xml"/>
+        </update>
+    </info>
+     <element name="Beste" type="Language" source="Omeria" id="ID_LANGUAGE_BESTE">
+        <supports>Standard</supports>
+        <description>
+            <p>Native Tongue of the Other</p>
+        </description>
+        <setters>
+            <set name="exotic">false</set>
+            <set name="speakers">Arnitkos</set>
+            <set name="script">—</set>
+        </setters>
+    </element>
+</elements>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Arnitikos</name>
+		<description></description>
+		<update version="0.0.2">
+			<file name="race-arnitikos.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-arnitikos.xml" />
+		</update>
+	</info>
+    <element name="Arnitikos" type="Race" source="Omeria" id="ID_DMDAVE_OMERIA_RACE_ARNITIKOS">
+        <description>
+            <p>Also known as “the Elves of The Other,” the arnitikos are a rare humanoid species that lives in Omeria. Typically, arnitikos are outsiders and wanderers who have no community to call their own. However, they are highly sought out for their martial skills as well as their ability to go unnoticed by undead creatures.</p>
+            <p class="indent">Arnitikos were brought into existence during the Hand of the Four when a door to the Other opened in Ayas Olyothyr and consumed the elven city of Ise Serin. Most of Serin’s populace was killed during the event, but a small portion—known as the Pale Few—survived. These were the first arnitikos. The Pale Few resembled their former selves, except they lacked color in their skin and clothing, and their features were reversed, like a mirror image.</p>
+            <p class="indent">In addition to their undead invisibility and color-draining features, arnitikos do not require food or water to survive. Unlike elves, however, they do need to sleep and must do so in darkness. While in light, they cannot gain the full benefits of a long rest.</p>
+            <h4>Arnitikos Names</h4>
+            <p>Arnitiko names are similar to those given to elves, except their surnames usually refer to whatever refuge city their parents lived in upon arrival to The Other such as Eqqaro, Uneserin, and Munnolao.</p>
+            <h4>Arnitikos Traits</h4>
+            <p>As an arnitiko, you have the following traits in common with others of your race:</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2 and your Charisma score increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Thanks to their elven ancestry, arnitikos are longer-lived than most other humanoid races. Arnitkos typically claim adulthood around the age of 100 and can live to be 500 years old.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> Much like their elven relatives, arnitikos crave freedom. However, their time in The Other has led them to abandon morality. Arnitikos tend towards chaos and neutrality.</p>
+            <p class="indent"><strong><em>Size.</em></strong> Arnitikos range from under 5 to over 6 feet tall. They are usually even more slender than their elven ancestors, which sometimes gives them a gaunt appearance. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> The arnitikos are accustomed to living in The Other, a plane filled with darkness and shadow. As such, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. All arnitikos can only discern shades of gray, no matter the lighting conditions. You can’t perceive any other colors.</p>
+            <p class="indent"><strong><em>Arnitiko Nature.</em></strong> You have advantage on saving throws against necromancy spells, but disadvantage on spells that produce color or prismatic effects such as color spray and prismatic wall. Additionally, you do not require food and water to survive.</p>
+            <p class="indent"><strong><em>Color Drain.</em></strong> Whenever you touch a creature or object with exposed skin, the color momentarily drains from the target, leaving only blacks, whites, and shades of gray until you cease touching the target. This effect is harmless.</p>
+            <p class="indent"><strong><em>Fey Ancestry.</em></strong> You have advantage on saving throws against being charmed, and magic can’t put you to sleep.</p>
+            <p class="indent"><strong><em>Keen Senses.</em></strong> You have proficiency in the Perception skill.</p>
+            <p class="indent"><strong><em>Undead Invisibility.</em></strong> As an action, you can become invisible to undead creatures for 1 hour. You are not invisible to undead that have special types of vision that allow them to see or detect invisible creatures, such as blindsight or truesight. Additionally, an undead creature can use its action to attempt to perceive you, doing so with a successful Wisdom check. The DC for the check is 8 + your proficiency bonus + your Charisma modifier. The undead creature can see through your invisibility as long as it concentrates (as if concentrating on a spell). Once you use this feature, you can’t use it again until you complete a long rest.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common, Elvish, and Beste, the native tongue of The Other.
+</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_LANGUAGE_ELVISH" />
+            <grant type="Language" id="ID_LANGUAGE_BESTE" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_ARNITIKOS_ARNITIKO_NATURE" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_ARNITIKOS_COLOR_DRAIN" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_ARNITIKOS_FEY_ANCESTRY" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_ARNITIKOS_UNDEAD_INVISIBILITY" />
+        </rules>
+    </element>
+    <element name="Arnitiko Nature" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_ARNITIKOS_ARNITIKO_NATURE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against necromancy spells, but disadvantage on spells that produce color or prismatic effects such as color spray and prismatic wall. Additionally, you do not require food and water to survive.</description>
+        </sheet>
+    </element>
+    <element name="Color Drain" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_ARNITIKOS_COLOR_DRAIN">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>Whenever you touch a creature or object with exposed skin, the color momentarily drains from the target, leaving only blacks, whites, and shades of gray until you cease touching the target. This effect is harmless.</description>
+        </sheet>
+    </element>
+    <element name="Fey Ancestry" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_ARNITIKOS_FEY_ANCESTRY">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against being charmed, and magic can’t put you to sleep.</description>
+        </sheet>
+    </element>
+    <element name="Undead Invisibility" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_ARNITIKOS_UNDEAD_INVISIBILITY">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>As an action, you can become invisible to undead creatures for 1 hour. You are not invisible to undead that have special types of vision that allow them to see or detect invisible creatures, such as blindsight or truesight. Additionally, an undead creature can use its action to attempt to perceive you, doing so with a successful Wisdom check. The DC for the check is {{undeadinvis:dc}}. The undead creature can see through your invisibility as long as it concentrates (as if concentrating on a spell).</description>
+        </sheet>
+        <rules>
+            <stat name="undeadinvis:dc" value="8" bonus="base"/>
+            <stat name="undeadinvis:dc" value="proficiency" />
+            <stat name="undeadinvis:dc" value="charisma:modifier" />
+        </rules>
+    </element>
+</elements>

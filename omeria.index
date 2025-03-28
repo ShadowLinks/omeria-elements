@@ -9,5 +9,9 @@
 	</info>
     <files>
         <file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/source.xml" />
+
+        <!-- Races-->
+		<file name="race-arnitikos.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-arnitikos.xml" />
+        
     </files>
 </index>
