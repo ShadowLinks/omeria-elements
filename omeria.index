@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Omeria</name>
+		<description>Omeria setting and character options for D&amp;D 5e</description>
+		<update version="0.0.1">
+			<file name="omeria.index" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/omeria.index"/>
+		</update>
+	</info>
+    <files>
+        <file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/source.xml" />
+    </files>
+</index>
