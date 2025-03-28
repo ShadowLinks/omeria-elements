@@ -76,3 +76,9 @@ Warlock
 Wizard
 - Esoteric Delver
 - Remote Traveler
+
+### Feats
+
+### Spells
+
+### Magic Items
