@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/source.xml" />
+		</update>
+	</info>
+	<element name="Omeria" type="Source" source="Core" id="ID_OMERIA">
+		<description>
+			<p><strong>Unlock the mystical world of Omeria, a land on the brink of annihilation! The Omeria campaign setting has been developed over the last 3 years through DMDave’s wildly successful Patreon, and now the lore and mechanics of one of the most popular custom campaign settings can be yours to play at home!</strong></p>
+            <ul>
+                <li>Includes 1 new player class</li>
+                <li>24 new player subclasses</li>
+                <li>6 new races</li>
+                <li>5 new vehicles</li>
+                <li>20 new spells</li>
+                <li>18 new magic items</li>
+                <li>…and more!</li>
+            </ul>
+		</description>
+		<setters>
+			<set name="abbreviation">OMERIA</set>
+			<set name="url">https://dmdave.com/product/pexias-guide-to-omeria-pdf-pre-order/</set>
+			<set name="image">https://m.media-amazon.com/images/I/41wL2FyCMHL._SX342_SY445_.jpg</set>
+			<set name="author" abbreviation="DMDAVE" url="https://dmdave.com/">DM Dave</set>
+			<set name="third-party">true</set>
+			<set name="release">2022</set>
+		</setters>
+	</element>
+</elements>
