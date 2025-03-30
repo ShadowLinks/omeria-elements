@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dwarf Subraces</name>
+		<description></description>
+		<update version="0.0.1">
+			<file name="race-dwarf.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-dwarf.xml" />
+		</update>
+	</info>
+    <element name="Ong-Ong" type="Sub Race" source="Omeria" id="ID_DMDAVE_SUBRACE_DWARF_ONG_ONG">
+        <supports>Dwarf</supports>
+        <description>
+            <p>The ong-ong are a curious race of dwarves who primarily live in the forests of the Wallingmiotta. Long, thick hair covers most of their bodies, revealing little more than their large, warty noses and shrunken eyes. These dwarves possess close ties to nature, and rarely leave their forests.</p>
+            
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 1.</p>
+
+            <p class="indent"><strong><em>Ong-ong Proficiencies.</em></strong> You have proficiency in the Survival skill.</p>
+            <p class="indent"><strong><em>Ong-ong Magic.</em></strong> You know the druidcraft cantrip. You also know the spell speak with animals, which you can cast once with this trait and regain the ability to do so when you finish a short or long rest. When you reach 3rd level, you can cast the entangle spell once with this trait and regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for these spells.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_ONG_ONG_MAGIC" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+        </rules>
+    </element>    
+    <element name="Ong-ong Magic" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_ONG_ONG_MAGIC">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>You know the druidcraft cantrip. You also know the spell speak with animals, which you can cast once with this trait and regain the ability to do so when you finish a short or long rest. Wisdom is your spellcasting ability for these spells.</description>
+            <description level="3">You know the druidcraft cantrip. You also know the spell speak with animals, which you can cast once with this trait and regain the ability to do so when you finish a short or long rest. You can cast the entangle spell once with this trait and regain the ability to do so when you finish a long rest. Wisdom is your spellcasting ability for these spells.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
+            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" />
+            <grant type="Spell" level="3" id="ID_PHB_SPELL_ENTANGLE" />
+        </rules>
+    </element>
+    <element name="Roe'dgopé" type="Sub Race" source="Omeria" id="ID_DMDAVE_SUBRACE_DWARF_ROE_DGOPE">
+        <supports>Dwarf</supports>
+        <description>
+            <p>The roe’dgopé (row-DA-go-PAY) live in the foothills of the Basilisk’s Spine Mountains in Vaskil Valley. They are best known for their ability to shift into lynx-humanoid hybrids, thus earning them the moniker “werelynxes.” The roe’dgopé loathe their neighbors, the Anorian elves.</p>
+            
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 1.</p>
+
+            <p class="indent"><strong><em>Lynx Form.</em></strong> You can use your action to shift into a lynx-humanoid hybrid form. This form lasts for 1 hour or until you become incapacitated. After you use your lynx form, you can’t do so again until you finish a long rest. While in this form, you gain the following benefits:</p>
+            <ul>
+                <li><i>Temporary hit points.</i> You gain a number of temporary hit points equal to 2 times your level.</li>
+                <li><i>Movement.</i> Your speed increases by 10 feet.</li>
+                <li><i>Natural weapons.</i> You grow claws, which are natural weapons that you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength or Dexterity modifier (your choice), instead of the bludgeoning damage normal for an unarmed strike.</li>
+                <li><i>Bonus attack.</i> When you use the Attack action with your claws, you can make another attack with your claws as a bonus action.</li>
+            </ul>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_ROE_DGOPE_LYNX_FORM" />
+            <stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+        </rules>
+    </element>
+    <element name="Lynx Form" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_ROE_DGOPE_LYNX_FORM">
+        <description>
+            <p></p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can use your action to shift into a lynx-humanoid hybrid form. This form lasts for 1 hour or until you become incapacitated. While in this form, you gain the following benefits:
+            Temporary hit points. You gain {{lynxform:tmphp}} temporary hit points.
+            Movement. Your speed increases by 10 feet.
+            Natural weapons. You grow claws, which are natural weapons that you can use to make unarmed strikes. If you hit with them, you deal piercing damage equal to 1d6 + your Strength or Dexterity modifier (your choice), instead of the bludgeoning damage normal for an unarmed strike.
+            Bonus attack. When you use the Attack action with your claws, you can make another attack with your claws as a bonus action.</description>
+        </sheet>
+        <rules>
+            <stat name="lynxform:tmphp" value="level" />
+            <stat name="lynxform:tmphp" value="level" />
+        </rules>
+    </element>
+    <element name="Von Doral" type="Sub Race" source="Omeria" id="ID_DMDAVE_SUBRACE_DWARF_VON_DORAL">
+        <supports>Dwarf</supports>
+        <description>
+            <p>Once another proud dwarven clan of the Low, the Von Dorals were forced from their homes by horrific aberrations summoned by the goblins of Gar Wabrizz. Now, the Von Dorals live among the humans of Central Omeria. Surprisingly, they’ve adapted well to the “above ground” conditions forced upon them by their exodus. Many Von Dorals now enjoy lives as sailors and farmers.</p>
+            
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2.</p>
+
+            <p class="indent"><strong><em>Responsive.</em></strong> When you make initiative checks, you can add your proficiency bonus to the d20 roll instead of your Dexterity modifier.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_RESPONSIVE" />
+            <stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+        </rules>
+    </element> 
+    <element name="Responsive" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_RESPONSIVE">>
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>When you make initiative checks, you can add your proficiency bonus to the d20 roll instead of your Dexterity modifier.</description>
+        </sheet>
+    </element>
+</elements>
