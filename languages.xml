@@ -39,4 +39,15 @@
             <set name="script">-</set>
         </setters>
     </element>
+     <element name="Kuyjini" type="Language" source="Omeria" id="ID_LANGUAGE_KUYJINI">
+        <supports>Standard</supports>
+        <description>
+            <p>Typically spoken by the Kuyjini.</p>
+        </description>
+        <setters>
+            <set name="exotic">false</set>
+            <set name="speakers">Kuyjini</set>
+            <set name="script">-</set>
+        </setters>
+    </element>
 </elements>

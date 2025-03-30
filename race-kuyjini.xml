@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Kuyjini Race</name>
+		<description></description>
+		<update version="0.0.1">
+			<file name="race-kuyjini.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-kuyjini.xml" />
+		</update>
+	</info>
+	<element name="Kuyjini" type="Race" source="Omeria" id="ID_DMDAVE_OMERIA_RACE_KUYJINI">
+		<description>
+			<p>Kuyjini (coy-JEE-nee), colloquially known as rabbitfolk, live in Tall Kuyji, a 500-foot-tall karst on the border of The Tribal Confederacy of Mighty Tadju and Steel Church. Kuyjini resemble halflings except they have the heads of rabbits. Self-proclaimed children of air elementals, the kuyjini are just as comfortable gliding through the skies over Central Omeria as they are traveling on foot through the forests that surround their home.</p>
+			<p class="indent">Although they claim otherwise, most Omerians view kuyjini as xenophobic and isolationists. They rarely involve themselves in the politics of greater Omeria. Still, they participate in open trade with their neighbors. Consummate tinkerers, the kuyjini lent their expertise to many early true-elemental-based technology and designs.</p>
+			<h4>Kyujini Names</h4>
+			<p>Kuyjini prefer short names composed of one syllable. Kuyjini rarely take surnames, but when they need to clarify their lineage, they append first their mother’s name then their father’s to their own name. For example, Aaf, son of Ev and Fur, would give Aafevfur as their full name.</p>
+			<p class="indent">They make no distinction between male or female names.</p>
+			<p class="indent"><strong><em>Kuyjini Names.</em></strong> Aaf, Bael, Ben, Chat, Daak, Dech, Emm, Ev, Fur, Gab, Ip, Jip, Keel, Murp, Non, Oct, Prim, Rap, Sam, Sept, Thim, Utt, Van, Zit.</p>
+			<h4>Kuyjini Traits</h4>
+			<p>Your kuyjini character has the following traits in common with other kuyjini.</p>
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 2 and your Dexterity score increases by 1.</p>
+			<p class="indent"><strong><em>Age.</em></strong> Kuyjini mature at the same rate as humans do, and most are considered adults in their mid to late teenage years. Kuyjini can live to be 80 years old.</p>
+			<p class="indent"><strong><em>Alignment.</em></strong> Despite their isolationism, most kuyjini of Tall Kuyji live orderly lives dedicated to the elements and treasure cats. They tend towards lawfulness.</p>
+			<p class="indent"><strong><em>Size.</em></strong> Kuyji stand between 3 and 4 feet tall (not counting their ears which adds another 6 to 12 inches) and average about 40 pounds. Your size is Small.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Arcane Crafter.</em></strong> Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply.</p>
+			<p class="indent"><strong><em>Improvements.</em></strong> You have proficiency with tinker’s tools. Using those tools, you can spend 1 hour and 10 gp worth of materials (in addition to the object being improved) to improve one item from the Fifth Edition SRD. These improvements last for 24 hours unless you spend 1 hour repairing it to keep the improvement functioning, or when you use your action to dismantle it. At that time, you can reclaim the materials used to create it. You can have only one such improvement active at a time.</p>
+			<p class="indent">Choose one of the following options:</p>
+			<ul>
+                <li>Improved Weapon. You improve a weapon of your choice. A creature that uses the weapon gains a +1 bonus to attack rolls made with the weapon.</li>
+                <li>Improved Armor. You improve a nonmagical suit of armor or shield of your choice. While wearing the improved armor, bludgeoning, piercing, and slashing damage you take from nonmagical weapons is reduced by 3.</li>
+                <li>Extra Charges. You improve one magical item of your choice that uses charges. The magic item gains 2 charges and the maximum number of charges the item can hold increases by 2 for the duration.</li>
+            </ul>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Kuyjini.</p>
+		</description>
+		<sheet display="false" />
+		<setters>
+			<set name="names" type="male">Aaf, Bael, Ben, Chat, Daak, Dech, Emm, Ev, Fur, Gab, Ip, Jip, Keel, Murp, Non, Oct, Prim, Rap, Sam, Sept, Thim, Utt, Van, Zit.</set>
+			<set name="names-format">{{name}}</set>
+		</setters>
+		<rules>
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_KUYJINI" />
+			<stat name="intelligence" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed" value="30" bonus="base" />
+			<grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_KUYJINI_ARCANE_CRAFTER" />
+			<grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_KUYJINI_IMPROVEMENTS" />
+		</rules>
+	</element>
+	<element name="Arcane Crafter" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_KUYJINI_ARCANE_CRAFTER">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description>Whenever you make an Intelligence (History) check related to magic items, alchemical objects, or technological devices, you can add twice your proficiency bonus, instead of any proficiency bonus you normally apply.</description>
+		</sheet>
+	</element>
+	<element name="Improvements" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_KUYJINI_IMPROVEMENTS">
+		<description>
+			<p></p>
+		</description>
+		<sheet>
+			<description>You have proficiency with tinker’s tools. Using those tools, you can spend 1 hour and 10 gp worth of materials (in addition to the object being improved) to improve one item from the Fifth Edition SRD. These improvements last for 24 hours unless you spend 1 hour repairing it to keep the improvement functioning, or when you use your action to dismantle it. At that time, you can reclaim the materials used to create it. You can have only one such improvement active at a time.
+			Improved Weapon. You improve a weapon of your choice. A creature that uses the weapon gains a +1 bonus to attack rolls made with the weapon.
+			Improved Armor. You improve a nonmagical suit of armor or shield of your choice. While wearing the improved armor, bludgeoning, piercing, and slashing damage you take from nonmagical weapons is reduced by 3.
+			Extra Charges. You improve one magical item of your choice that uses charges. The magic item gains 2 charges and the maximum number of charges the item can hold increases by 2 for the duration.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_TINKERS_TOOLS" />
+		</rules>
+	</element>
+</elements>
