@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Krig</name>
+		<description></description>
+		<update version="0.0.1">
+			<file name="race-krig.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-krig.xml" />
+		</update>
+	</info>
+    <element name="Krig" type="Race" source="Omeria" id="ID_DMDAVE_RACE_KRIG">
+        <description>
+            <p>Krigs are spider-humanoids that originate from the Weysevain Maze and, by extension, the town of Orbea in Central Omeria. Intelligent and clever, thanks mostly to their connection to their deity-progenitor, the Matriarch, and all other krigs, the krigs quickly positioned themselves as assets throughout most of the continent. Their overall numbers are much lower than the other major humanoid races of Omeria, and it’s rare to find one more than 1,000 miles away from the Maze at Orbea. While the exact number of living krigs isn’t known, their population is estimated to be between seven and ten thousand.</p>
+            <p class="indent">All krigs share the same parent, the enigmatic Matriarch, who remains hidden in the unfathomable depth of the Weysevain Maze. As such, krigs are asexual, and are neither male nor female, although many, for simplicity’s sake—and to avoid the stigma of being referred to as an “it”—will choose one or the other as their identifier. All krigs are connected to the Matriarch and loyal to her above all else.</p>
+            <h4>Krig Names</h4>
+            <p>Krigs have no identity of their own, only their position. As such, they are given no names by the Matriarch, nor do they give names to themselves. Instead, close allies and friends give them names, typically to reflect their role or status, or just to help them identify the krig among its siblings.</p>
+            <p class="indent"></p>
+            <h4>Krig Traits</h4>
+            <p>Your krig character has a number of traits in common with all other krigs.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 2, and your Intelligence score increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong>  Krigs reach maturity quickly, typically within one or two years of hatching. Those who survive the initial culling of the krig Matriarch can live long lives, typically to 150 years or longer. Some krigs have been known to live even longer.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> Krigs favor neutrality above all else, but tend to follow the laws of humanoid civilizations of which they become a part.</p>
+            <p class="indent"><strong><em>Size.</em></strong> Krigs stand just a little over 7 feet in height and weigh nearly 300 pounds. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Hivemind.</em></strong> As a member of the krig hive mind, you have the same bond that all krigs do: “My loyalty is always to the matriarch and the hive.” As long as you are on the same plane of existence as the krig Matriarch, you can seek her advice. You can cast the spell augury without expending a spell slot. Once you use this feature to cast this spell, you can’t do so again for 30 days. Intelligence is your spellcasting ability for this spell.</p>
+            <p class="indent"><strong><em>Experienced Climber.</em></strong> You have a climbing speed of 30 feet and you have advantage on ability checks made to climb or jump.</p>
+            <p class="indent"><strong><em>Eight Eyes.</em></strong> You have advantage on saving throws against being blinded, and you have advantage on Wisdom (Perception) checks that rely on sight.</p>
+            <p class="indent"><strong><em>Standing Leap.</em></strong> You can jump twice the normal distance, though you can’t jump further than your remaining movement would allow.</p>
+            <p class="indent"><strong><em>Extra Arms.</em></strong> You have a pair of small arms at the center of your chest. You can grasp things with these arms which have a reach of 5 feet, and you can use them to lift a number of pounds equal to three times your Strength score. You can use the arms to do the following simple tasks: lift, drop,  hold, push, or pull an object or a creature, or open nd close a door or a container. Your extra arms provide a +2 bonus to all checks you use to grapple another creature but not to escape a grapple. Your GM might allow other simple tasks to be added to that list of options.</p>
+            <p class="indent">Your extra arms can’t wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and you can speak Orb, the language of the krigs.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_KRIG_HIVEMIND" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_KRIG_EXPERIENCED_CLIMBER" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_KRIG_EIGHT_EYES" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_KRIG_STANDING_LEAP" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_KRIG_EXTRA_ARMS" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_LANGUAGE_ORB" />
+        </rules>
+    </element>
+    <element name="Hivemind" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_KRIG_HIVEMIND">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>As long as you are on the same plane of existence as the krig Matriarch, you can seek her advice. You can cast the spell augury without expending a spell slot. Once you use this feature to cast this spell, you can’t do so again for 30 days. Intelligence is your spellcasting ability for this spell.</description>
+        </sheet>
+        <rules usage="1/30 days">
+            <grant type="Spell" id="ID_PHB_SPELL_AUGURY" />
+        </rules>
+    </element>
+    <element name="Experienced Climber" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_KRIG_EXPERIENCED_CLIMBER">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>You have advantage on ability checks made to climb or jump.</description>
+        </sheet>
+        <rules>
+            <stat name="innate speed:climb" value="30" bonus="base" />
+        </rules>
+    </element>
+    <element name="Eight Eyes" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_KRIG_EIGHT_EYES">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against being blinded, and you have advantage on Wisdom (Perception) checks that rely on sight.</description>
+        </sheet>
+    </element>
+    <element name="Standing Leap" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_KRIG_STANDING_LEAP">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>You can jump twice the normal distance, though you can’t jump further than your remaining movement would allow.</description>
+        </sheet>
+    </element>
+    <element name="Extra Arms" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_KRIG_EXTRA_ARMS">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>You have a pair of small arms at the center of your chest. You can grasp things with these arms which have a reach of 5 feet, and you can use them to lift a number of pounds equal to three times your Strength score. You can use the arms to do the following simple tasks: lift, drop,  hold, push, or pull an object or a creature, or open nd close a door or a container. Your extra arms provide a +2 bonus to all checks you use to grapple another creature but not to escape a grapple.
+            Your extra arms can’t wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing the somatic components of a spell.</description>
+        </sheet>
+    </element>
+</elements>

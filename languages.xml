@@ -28,4 +28,15 @@
             <set name="script">-</set>
         </setters>
     </element>
+    <element name="Orb" type="Language" source="Omeria" id="ID_LANGUAGE_ORB">
+        <supports>Standard</supports>
+        <description>
+            <p>Typically spoken by the Krig.</p>
+        </description>
+        <setters>
+            <set name="exotic">false</set>
+            <set name="speakers">Krig</set>
+            <set name="script">-</set>
+        </setters>
+    </element>
 </elements>
