@@ -10,7 +10,9 @@
     <files>
         <file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/source.xml" />
 
-        <!-- Races-->
+		<file name="langauges.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/languages.xml"/>
+		
+        <!-- Races -->
 		<file name="race-arnitikos.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-arnitikos.xml" />
 		<file name="race-canid.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-canid.xml" />
 		<file name="race-dwarf.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-dwarf.xml" />
@@ -20,6 +22,13 @@
 		<file name="race-krig.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-krig.xml" />
 		<file name="race-kuyjini.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-kuyjini.xml" />
 		<file name="race-orc.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-orc.xml" />
+
+		<!-- Spells -->
+		<file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/spells.xml" />
+
+		<!-- Class -->
+
+		<!-- Archetypes -->
         
     </files>
 </index>
