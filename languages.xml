@@ -17,4 +17,15 @@
             <set name="script">—</set>
         </setters>
     </element>
+    <element name="Canid" type="Language" source="Omeria" id="ID_LANGUAGE_CANID">
+        <supports>Standard</supports>
+        <description>
+            <p>Typically spoken by Canids. Canid is a guttural language punctuated by low growls, yelps, and barks.</p>
+        </description>
+        <setters>
+            <set name="exotic">false</set>
+            <set name="speakers">Canids</set>
+            <set name="script">-</set>
+        </setters>
+    </element>
 </elements>

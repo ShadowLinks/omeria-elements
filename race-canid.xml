@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Canid</name>
+		<description></description>
+		<update version="0.0.1">
+			<file name="race-canid.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-canid.xml" />
+		</update>
+	</info>
+    <element name="Canid" type="Race" source="Omeria" id="ID_DMDAVE_OMERIA_RACE_CANIDS">
+        <description>
+            <p>Canids are dog-human hybrids that live throughout much of Omeria. Created by magical means two centuries past, the original canids were developed to guard temples, keeps, and other places of import in eastern Central Omeria. However, the canids were smarter and wiser than their creators expected and declared that there was more to their indentured existence. Eventually, they claimed the island of Smoen Brana as their sanctuary.</p>
+            <p class="indent">Because of their friendly attitude and ability to survive in most conditions, canids love to wander the continent of Omeria and beyond. Many canids lend their services to other groups of adventurers, instantly creating families to which they are fiercely loyal. Once a canid has bonded with a group, there is very little that will separate it from its newfound pack.</p>
+            <p class="indent">In central and southern Omeria, many canids train as trackers and bounty hunters. Not only do their innate senses aid in their hunts, but their unflappable patience and determination make them terrifying foes for their targets as well. Canid hunters can track their quarry for many thousands of miles.</p>
+            <h4>Canid Names</h4>
+            <p>A younger race, canid parents take their names from popular naming conventions in areas that they live, more so words than names. Most canids do not know their father. Thus, Canids incorporate the names of their mothers as “son of” or “daughter of” as their surnames</p>
+            <p class="indent"><strong>Male Names.</strong> Apple Apple, Bee Mouth, Big Boy, Cold Paws, Dirt Head, Eagle Chaser, Funny Face, Ghost, Horse Foe, Invisible Bark, Jumpy Frog, Laugh and Laugh, Loud One, Maroon, Shepherd, Triumph, Wonder, White Flower</p>
+            <p class="indent"><strong>Female Names.</strong> All Fangs, Afternoon Baby, Bunny, Grins, Goldie, Grass Belly, Finger Eater, Late Pup, Lucky Girl, Mud Puddle, Protector, Run Far, Runt, Skinny Thing, Smith’s Friend, Sunny Day</p>
+            <h4>Canid Traits</h4>
+            <p>You share the following traits with other members of the canid race.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Wisdom score increases by 2, and your Charisma score increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> As dog-human hybrids, canids’ lifespans are longer than dogs’ but shorter than humans’. A canid reaches adulthood at the age of 5 and generally lives to be 40 years of age.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> Canids have no preference toward law or chaos. However, canids do lean strongly towards good over evil.</p>
+            <p class="indent"><strong><em>Size.</em></strong> Canids average about 3 and a half feet tall and weigh around 50 pounds. Your size is Small.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 35 feet.</p>
+            <p class="indent"><strong><em>Keen Senses.</em></strong> You have proficiency in the Perception skill.</p>
+            <p class="indent"><strong><em>Loyal.</em></strong> As an action, you can protect a creature that you can see within 5 feet of you. As long as the creature remains within 5 feet of you and you aren’t incapacitated, any attacks made against that creature are made with disadvantage until the start of your next turn.</p>
+            <p class="indent"><strong><em>Tracker.</em></strong> Whenever you make a Wisdom (Survival) check related to tracking a creature, you are considered proficient in the Survival skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> ou can speak, read, and write Common and Canid. Canid is a guttural language punctuated by low growls, yelps, and barks.</p>
+        </description>
+        <setters>
+            <set name="names" type="male">Apple Apple, Bee Mouth, Big Boy, Cold Paws, Dirt Head, Eagle Chaser, Funny Face, Ghost, Horse Foe, Invisible Bark, Jumpy Frog, Laugh and Laugh, Loud One, Maroon, Shepherd, Triumph, Wonder, White Flower</set>
+            <set name="names" type="female">All Fangs, Afternoon Baby, Bunny, Grins, Goldie, Grass Belly, Finger Eater, Late Pup, Lucky Girl, Mud Puddle, Protector, Run Far, Runt, Skinny Thing, Smith’s Friend, Sunny Day</set>
+            <set name="names-format">{{name}}</set>
+        </setters>
+        <sheet display="false" />
+        <rules>
+            <grant type="Size" id="ID_SIZE_SMALL" />
+            <stat name="wisdom" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="charisma" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed" value="35" bonus="base" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_LANGUAGE_CANID" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_CANID_LOYAL" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_CANID_TRACKER" />
+        </rules>
+    </element>
+    <element name="Loyal" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_CANID_LOYAL">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>As an action, you can protect a creature that you can see within 5 feet of you. As long as the creature remains within 5 feet of you and you aren’t incapacitated, any attacks made against that creature are made with disadvantage until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Tracker" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_CANID_TRACKER">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>Whenever you make a Wisdom (Survival) check related to tracking a creature, you are considered proficient in the Survival skill and add double your proficiency bonus to the check, instead of your normal proficiency bonus.</description>
+        </sheet>
+    </element>
+</elements>
