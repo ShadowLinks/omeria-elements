@@ -19,6 +19,7 @@
 		<file name="race-human.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-human.xml" />
 		<file name="race-krig.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-krig.xml" />
 		<file name="race-kuyjini.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-kuyjini.xml" />
+		<file name="race-orc.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-orc.xml" />
         
     </files>
 </index>

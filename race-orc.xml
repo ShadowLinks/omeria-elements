@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Orc Subraces</name>
+		<description></description>
+		<update version="0.0.1">
+			<file name="race-orc.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-orc.xml" />
+		</update>
+	</info>
+    <element name="Titanic Orc" type="Race" source="Omeria" id="ID_DMDAVE_OMERIA_RACE_TITANIC_ORC">
+        <description>
+            <p class="flavor">There are two primary races of orcs that populate Omeria. While orcs can be encountered in nearly every corner of the continent, most orcs live in Central Omeria and Odonburg.</p>
+            <p>The titanic orcs of Omeria are descendants of the original Titanic giants of Ditimaya. Despite being much less aggressive than their ancestors, the stereotype of the “mindless, savage orc” persists, even in 1044 AT. In reality, orcs, especially those native to southern Omeria, are a peaceful people with close ties to the land.</p>
+            <p class="indent">The titanic orcs possess skin hues of pale gray to dark slate, have red, black, or blue hair, and larger brows than their nomad cousins (half-orcs).</p>
+            <h4>Titanic Orc Traits</h4>
+            <p>Titanic orcs have the following racial traits:</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2 and your Constitution score increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Orcs reach adulthood at age 16 and live up to 70 years.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> Omerian orcs are peaceful and thoughtful. Elder orcs focus on the land, giving praise to the spirits and elementals, while younger orcs are a little wilder and eager to prove their combat prowess. Orcs are usually chaotic good, neutral, or chaotic neutral.</p>
+            <p class="indent"><strong><em>Size.</em></strong> Orcs usually stand over 7 feet tall and weigh between 280 and 330 pounds. Your size is Medium.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+            <p class="indent"><strong><em>Giant Descendant.</em></strong> You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift. Additionally, choose one of the following types of giants: cloud, fire, frost, hill, stone, or storm. Based on your choice, you gain a benefit.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and Orc.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<grant type="Language" id="ID_LANGUAGE_ORC" />
+			<stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Racial Trait" id="ID_DMDAVE_RACIAL_TRAIT_ORC_GIANT_DESCENDANT" />
+        </rules>
+    </element>
+    <element name="Giant Descendant" type="Racial Trait" source="Omeria" id="ID_DMDAVE_RACIAL_TRAIT_ORC_GIANT_DESCENDANT">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>You count as one size larger when determining your carrying capacity and the weight you can push, drag, or lift.</description>
+        </sheet>
+        <rules>
+            <select type="Racial Trait" name="Giant Descendant" supports="titanic-orc" />
+        </rules>
+    </element>
+    <element name="Cloud Giant Descendant" type="Racial Trait" source="Omeria" id="ID_DMDAVE_RACIAL_TRAIT_ORC_GIANT_DESCENDANT_CLOUD">
+        <supports>titanic-orc</supports>
+        <description>
+            <p>You know the fog cloud spell. You can cast it once per day using this feature, but can’t cast it again until you finish a long rest. Wisdom is your spellcasting ability for this spell.</p>
+        </description>
+        <sheet>
+            <description>You know the fog cloud spell. You can cast it once per day using this feature, but can’t cast it again until you finish a long rest. Wisdom is your spellcasting ability for this spell.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" />
+        </rules>
+        </element>
+    <element name="Fire Giant Descendant" type="Racial Trait" source="Omeria" id="ID_DMDAVE_RACIAL_TRAIT_ORC_GIANT_DESCENDANT_FIRE">
+        <supports>titanic-orc</supports>
+        <description>
+            <p>You have resistance to fire damage.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+        </rules>
+        </element>
+    <element name="Frost Giant Descendant" type="Racial Trait" source="Omeria" id="ID_DMDAVE_RACIAL_TRAIT_ORC_GIANT_DESCENDANT_FROST">
+        <supports>titanic-orc</supports>
+        <description>
+            <p>You have resistance to cold damage.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+        </element>
+    <element name="Hill Giant Descendant" type="Racial Trait" source="Omeria" id="ID_DMDAVE_RACIAL_TRAIT_ORC_GIANT_DESCENDANT_HILL">
+        <supports>titanic-orc</supports>
+        <description>
+            <p>Your Constitution score increases by 1.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="constitution" value="1" />
+        </rules>
+        </element>
+    <element name="Stone Giant Descendant" type="Racial Trait" source="Omeria" id="ID_DMDAVE_RACIAL_TRAIT_ORC_GIANT_DESCENDANT_STONE">
+        <supports>titanic-orc</supports>
+        <description>
+            <p>Your skin is coarse like rocks, granting you natural armor. When you aren’t wearing armor, your AC is 13 plus your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor.</p>
+        </description>
+        <sheet>
+            <description>When you aren’t wearing armor, your AC is 13 plus your Dexterity modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:unarmored defense:base" value="13"/>
+            <stat name="ac:unarmored defense:dexterity" value="dexterity:modifier"/>
+            <stat name="ac:unarmored defense" value="ac:unarmored defense:base"/>
+            <stat name="ac:unarmored defense" value="ac:unarmored defense:dexterity"/>
+            <stat name="ac:calculation" value="ac:unarmored defense" bonus="calculation" equipped="[armor:none]" alt="Unarmored Defense (Stone Giant Descendant)"/>
+        </rules>
+    </element>
+    <element name="Storm Giant Descendant" type="Racial Trait" source="Omeria" id="ID_DMDAVE_RACIAL_TRAIT_ORC_GIANT_DESCENDANT_STORM">
+        <supports>titanic-orc</supports>
+        <description>
+            <p>You have resistance to lightning damage.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+        </rules>
+    </element>
+</elements>
