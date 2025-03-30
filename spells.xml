@@ -7,7 +7,7 @@
 			<file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/spells.xml" />
 		</update>
 	</info>
-    <element name="Airstrike" type="Spell" source="source" id="ID_DMDAVE_OMERIA_SPELL_AIRSTRIKE">
+    <element name="Airstrike" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_AIRSTRIKE">
         <supports>Cleric, Druid, Elementalist, Spell Saving Throw</supports>
         <description>
             <p>You conjure a dramatic burst of air that appears as a 60-foot-high cylinder that’s 15 feet in diameter centered on the point you choose. Each creature in the area must make a Strength saving throw. On a failed saving throw, the target is slammed into the ground; it takes 5d6 bludgeoning damage plus an additional 1d6 damage for every 10 feet it fell and it is prone. On a successful saving throw, the target takes half as much damage and isn’t knocked prone.</p>
@@ -27,7 +27,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Amraam's Explosive Decompression" type="Spell" source="source" id="ID_DMDAVE_OMERIA_SPELL_AMRAAMS_EXPLOSIVE_DECOMPRESSION">
+    <element name="Amraam's Explosive Decompression" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_AMRAAMS_EXPLOSIVE_DECOMPRESSION">
         <supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
         <description>
             <p>You create a severe imbalance of positive and negative energy which then suddenly inverts. Choose a creature within range. The target must make a Dexterity saving throw. A target takes 6d12 force damage on a failed saving throw, or half as much damage on a successful one. If the spell reduces the target to 0 hit points, the target explosively decompresses and dies. Additionally, each target within 10 feet of the exploding target must make a Dexterity saving throw or take 3d12 force damage.</p>
@@ -48,7 +48,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Blade" type="Spell" source="source" id="ID_DMDAVE_OMERIA_SPELL_BLADE">
+    <element name="Blade" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_BLADE">
         <supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
         <description>
             <p>You target one creature that you can see within range. The target must succeed on a Constitution saving throw or take 2d10 fire damage and the target catches fire. Until a creature, including the target, uses its action to douse the flames, the target automatically takes 1d10 fire damage at the start of each of its turns.</p>
@@ -69,7 +69,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Crush" type="Spell" source="source" id="ID_DMDAVE_OMERIA_SPELL_CRUSH">
+    <element name="Crush" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_CRUSH">
         <supports>Druid, Elementalist, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
         <description>
             <p>You conjure a boulder before you which you then launch in a line that’s 30 feet long and 5 feet wide. The creature closest to you in that line must make a Dexterity saving throw. On a failed saving throw, the target takes 2d10 bludgeoning damage and the spell ends. On a successful saving throw, the creature takes no damage and the boulder continues on to the next creature in the line. The second creature must make a similar saving throw as the first creature with similar consequences. This continues until the boulder moves the full 30 feet or a target fails its saving throw, whichever happens first. You can use your action on subsequent turns to conjure a new boulder and launch it.</p>
@@ -90,7 +90,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Drown" type="Spell" source="source" id="ID_DMDAVE_OMERIA_SPELL_DROWN">
+    <element name="Drown" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_DROWN">
         <supports>Druid, Elementalist, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
         <description>
             <p>You target one creature of your choice that you can see within range. The target must succeed on a Constitution saving throw or it begins to drown. While drowning, the target takes 4d8 necrotic damage at the start of each of its turns. The target can repeat its saving throw at the end of each of its turns, ending the effect on itself with a success.</p>
@@ -110,7 +110,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Earth Fist" type="Spell" source="source" id="ID_DMDAVE_OMERIA_SPELL_EARTH_FIST">
+    <element name="Earth Fist" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_EARTH_FIST">
         <supports>Druid, Elementalist, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
         <description>
             <p>The ground at a point within range sprouts an earthen arm which remains for the duration.</p>
@@ -136,11 +136,62 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
+    <element name="Earth Shield" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_EARTH_SHIELD">
+        <supports>Druid, Ranger</supports>
+        <description>
+            <p>You conjure an earthen shield which forms around your arm. For the duration, you gain 15 temporary hit points, including against the triggering attack.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, you gain an additional 10 temporary hit points for each slot level above 1st. </p>
+        </description>
+        <setters>
+            <set name="keywords">Temporary Hit Points</set>
+            <set name="level">1</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 reaction, which you take when you are hit by an attack or targeted by the magic missile spell</set>
+            <set name="range">Self</set>
+            <set name="duration">1 round</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Environmental Preservation" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_ENVIRONMENTAL_PRESERVATION">
+        <supports>Druid, Ranger, Spell Saving Throw</supports>
+        <description>
+            <p>You make an area within range magically secure from harmful weather, destructive forces, and other effects. The area is a cube that can be 100 feet on each side. The spell lasts for the duration or until you use an action to dismiss it.</p>
+            <p class="indent">When you cast the spell, you decide what sort of security the spell provides, choosing any or all of the following properties.</p>
+            <ul>
+                <li> The creatures and plants within the area are protected against extreme unnatural shifts in weather or climate. For example, an arctic environment would become immune to the effects of extreme heat, or a tropical forest would become immune to the effects of extreme cold.</li>
+                <li>The barrier of the warded area appears blurry or foggy, preventing vision (including darkvision) through it.</li>
+                <li>Until the spell ends, any creature inside the warded area that tries to damage or harm the nonmagical plants or beasts inside the warded area must first make a Wisdom saving throw. On a failed saving throw, the creature cannot harm the area for 24 hours.</li>
+                <li> Plant creatures and beasts inside the warded area have advantage on saving throws.</li>
+                <li>The area comes under the protection of a fey creature called nature’s defender. It manifests within the warded area in an unoccupied space that you can see. The creature remains until it drops to 0 hit points or when the spell ends. The creature is friendly toward you and your companions, but it is not controlled by you. Its only purpose is to protect the warded area.</li>
+            </ul>
+            <p class="indent">Casting this spell on the same spot every day for 1 year makes this effect permanent.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 6th level or higher, you can increase the size of the cube by 100 feet for each slot level beyond 5th. Thus you could protect a cube that can be up to 200 feet on one side by using a spell slot of 6th level. </p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Abjuration</set>
+            <set name="time">10 minutes</set>
+            <set name="range">range mile</set>
+            <set name="duration">24 hours</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">soil from the target location, a feather, a candle, and a vial containing water from a nearby source</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">true</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
 
-    <element name="Spellname" type="Spell" source="source" id="ID_DMDAVE_OMERIA_SPELL_SPELLNAME">
+    <element name="Spellname" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_SPELLNAME">
         <supports>supports</supports>
         <description>
             <p></p>
