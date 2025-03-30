@@ -7,7 +7,7 @@
 			<file name="race-human.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-human.xml" />
 		</update>
 	</info>
-    <element name="Human, Rasgax" type="Race" source="OMERIA" id="ID_DMDAVE_OMERIA_RACE_HUMAN_RASGAX">
+    <element name="Human, Rasgax" type="Race" source="Omeria" id="ID_DMDAVE_OMERIA_RACE_HUMAN_RASGAX">
         <description>
             <p>From the highlands of Northern Omeria come the Rasgax tribes. A nomadic people, the Rasgax focus their efforts on combating the belligerent races of the north, including orcs, frost giants, and c’nuim iteah (a strange race of six-armed drakeblooded creatures). Rasgax have fair to reddish skin and blonde or red hair. Their eyes are often deep scarlet or sometimes even bright red. Rare among humans, they have the ability to see in the dark.</p>
             <p class="indent">Most Rasgax cover their bodies and faces in ritualistic tattoos. They often wear animal hides with cloth kilts or flowing capes. Some fight nude and smear their body in mud and animal offal as a deterrent, lending further credence to the legend that they are part animal.</p>
