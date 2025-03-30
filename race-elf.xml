@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Elf Subraces</name>
+		<description></description>
+		<update version="0.0.1">
+			<file name="race-elf.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-elf.xml" />
+		</update>
+	</info>
+    <element name="Anorian" type="Sub Race" source="Omeria" id="ID_DMDAVE_OMERIA_SUBRACE_ELF_ANORIAN">
+        <supports>Elf</supports>
+        <description>
+            <p>Once a proud race of warriors who worshiped the demonic god of death and winter, Vapul, the Anorians now rely on their natural affinity to the forest and the land to survive under the rule of Presson’s Enclave and its Mydon Princes.</p>
+            <p class="indent">Anorians are best known for their use of archaic weaponry called firearms, which they rely on as a substitute for magic from which they are banned.</p>
+            <p class="indent"></p>
+            <h4>Anorian Traits</h4>
+            <p></p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.</p>
+            <p class="indent"><strong><em>Anorian Training.</em></strong> You are proficient in firearms.</p>
+            <p class="indent"><strong><em>Cold Resistance.</em></strong> You have resistance to cold damage.</p>
+            <p class="indent"><strong><em>Dead Tongue.</em></strong> Using gestures and sounds, you can communicate with any undead even if it doesn’t speak, such as a skeleton or zombie. Although you may communicate with an undead creature, you do not control it.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_ANORIAN_DEAD_TONGUE" />
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+            <grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS" />
+            <stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+        </rules>
+    </element>
+    <element name="Dead Tongue" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_ANORIAN_DEAD_TONGUE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>Using gestures and sounds, you can communicate with any undead even if it doesn’t speak, such as a skeleton or zombie. Although you may communicate with an undead creature, you do not control it.</description>
+        </sheet>
+    </element>
+    <element name="Olyothyrian" type="Sub Race" source="Omeria" id="ID_DMDAVE_OMERIA_SUBRACE_ELF_OLYOTHYRIAN">
+        <supports>Elf</supports>
+        <description>
+            <p>Olyothyrians are sometimes referred to as “high elves” in Omeria. They hide within the forests of Omeria’s northwestern coast. Two factors force them to remain hidden in their glades. First, their mortal enemies, the goblins of Gar Wabrizz and their magic sensing pets, the dokh nuzegh, keep them from expanding east. Second, if the elves travel too far from their home, they become sick and eventually die. The distance this mysterious curse allows them to travel continues to shrink each year.</p>
+            <p class="indent"></p>
+            <p class="indent"></p>
+            <h4>Olyothyrian Traits</h4>
+            <p></p>
+            <p class="indent">
+                <strong>
+                    <em>Elf Weapon Training.</em>
+                </strong>
+                You have proficiency with the longsword, shortsword, shortbow, and longbow.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Cantrip.</em>
+                </strong>
+                You know one cantrip of your choice from the wizard spell list. Intelligence is your spellcasting ability for it.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>Extra Language.</em>
+                </strong>
+                You can speak, read, and write one extra language of your choice.
+            </p>
+            <p class="indent">
+                <strong>
+                    <em>The Traveler's Curse.</em>
+                </strong>
+                Whenever you complete a long rest more than 500 miles from the city of Olyothyr (specifically, the Burning Rose at Sanev Plaza), you must make a Constitution saving throw. The DC for the saving throw equals 5 plus the number of days you’ve been away. On a failed saving throw, your hit point maximum is reduced by 1d4. If your hit point maximum is reduced to 0, you die, and your body discorporates into nothingness. Otherwise, this reduction lasts until you finish a long rest within 500 miles of Olyothyr.
+            </p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_OLYYOTHYRIAN_THE_TRAVELERS_CURSE" />
+            <stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (High Elf)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_ELF_WEAPON_TRAINING"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_CANTRIP"/>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_EXTRA_LANGUAGE"/>
+        </rules>
+    </element>
+    <element name="The Traveler's Curse" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_OLYYOTHYRIAN_THE_TRAVELERS_CURSE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>Whenever you complete a long rest more than 500 miles from the city of Olyothyr (specifically, the Burning Rose at Sanev Plaza), you must make a Constitution saving throw. The DC for the saving throw equals 5 plus the number of days you’ve been away. On a failed saving throw, your hit point maximum is reduced by 1d4. If your hit point maximum is reduced to 0, you die, and your body discorporates into nothingness. Otherwise, this reduction lasts until you finish a long rest within 500 miles of Olyothyr.</description>
+        </sheet>
+    </element>
+    <element name="Obi" type="Sub Race" source="Omeria" id="ID_DMDAVE_OMERIA_SUBRACE_ELF_OBI">
+        <supports>Elf</supports>
+        <description>
+            <p>Although the Obi civilization was largely eradicated from Omeria, there are still a few elves in the world who can claim the Obi as their ancestors. And these ancestors, having lived around ruby blutvekzelnite for so long, possess an affinity for transmutation and change.</p>
+            <p class="indent">Obi have a natural green tint to their skin which provides camouflage in forests and jungles. They also have dark eyes, sometimes pitch black, with yellow irises, that give them a fiendish quality</p>
+            <p class="indent"></p>
+            <h4>name Traits</h4>
+            <p></p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Intelligence score increases by 1.</p>
+            <p class="indent"><strong><em>Obi Training.</em></strong> You have proficiency with the spear, handaxe, and shortbow.</p>
+            <p class="indent"><strong><em>Wilderness Camouflage.</em></strong> Your green skin grants you advantage on Dexterity (Stealth) checks made to hide in forests and jungles.</p>
+            <p class="indent"><strong><em>Transmutation Resilience.</em></strong> You have advantage on saving throws against any spell or effect that would alter your form.</p>
+            <p class="indent"><strong><em>Obi Magic.</em></strong> You know the prestidigitation cantrip. Intelligence is your spellcasting ability for this spell.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> In addition to Common and Elvish, you can speak, read, and write Deep Speech.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_OLYYOTHYRIAN_WILDERNESS_CAMOUFLAGE" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_OLYYOTHYRIAN_TRANSMUTATION_RESILIENCE" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_OLYYOTHYRIAN_OBI_MAGIC" />
+            <grant type="Language" id="ID_LANGUAGE_DEEP_SPEECH" />
+            <stat name="intelligence" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+        </rules>
+    </element>
+    <element name="Wilderness Camouflage" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_OLYYOTHYRIAN_WILDERNESS_CAMOUFLAGE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>Your green skin grants you advantage on Dexterity (Stealth) checks made to hide in forests and jungles.</description>
+        </sheet>
+    </element>
+    <element name="Transmutation Resilience" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_OLYYOTHYRIAN_TRANSMUTATION_RESILIENCE">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against any spell or effect that would alter your form.</description>
+        </sheet>
+    </element>
+    <element name="Obi Magic" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_OLYYOTHYRIAN_OBI_MAGIC">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>You know the prestidigitation cantrip. Intelligence is your spellcasting ability for this spell.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION" />
+        </rules>
+    </element>
+    <element name="Tathdarian" type="Sub Race" source="Omeria" id="ID_DMDAVE_OMERIA_SUBRACE_ELF_TATHDARIAN">
+        <supports>Elf</supports>
+        <description>
+            <p>Tathdarian elves are dark-skinned, white-haired elves native to the frosty regions of northern Omeria. They are sometimes confused for Anorians due to their affinity for cold weather. Ironically, the Tathdarians have long fought against the demonic god Vapul and his undead legions.</p>
+            <p class="indent">Less than one hundred Tathdarians are alive today. They mostly keep to themselves but are known to work alongside the humans that live on the Syhros Peninsula.</p>
+            <p class="indent"></p>
+            <h4>name Traits</h4>
+            <p></p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Constitution score increases by 1.</p>
+            <p class="indent"><strong><em>Sunlight Sensitivity.</em></strong> You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
+            <p class="indent"><strong><em>Winter Adapted.</em></strong> You have resistance to cold damage, and you can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost you extra movement.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_TATHDARIAN_SUNLIGHT_SENSITIVITY" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_TATHDARIAN_WINTER_ADAPTED" />
+            <stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI"/>
+        </rules>
+    </element>
+    <element name="Sunlight Sensitivity" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_TATHDARIAN_SUNLIGHT_SENSITIVITY">
+        <description>
+            <p>You have disadvantage on attack rolls and on Wisdom (Perception) checks that rely on sight when you, the target of your attack, or whatever you are trying to perceive is in direct sunlight.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Winter Adapted" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_TATHDARIAN_WINTER_ADAPTED">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>You can move across and climb icy surfaces without needing to make an ability check. Additionally, difficult terrain composed of ice or snow doesn’t cost you extra movement.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+</elements>
