@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Spells</name>
+		<description>Spells from Omeria</description>
+		<update version="0.0.1">
+			<file name="spells.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/spells.xml" />
+		</update>
+	</info>
+    <element name="Airstrike" type="Spell" source="source" id="ID_DMDAVE_OMERIA_SPELL_AIRSTRIKE">
+        <supports>Cleric, Druid, Elementalist, Spell Saving Throw</supports>
+        <description>
+            <p>You conjure a dramatic burst of air that appears as a 60-foot-high cylinder that’s 15 feet in diameter centered on the point you choose. Each creature in the area must make a Strength saving throw. On a failed saving throw, the target is slammed into the ground; it takes 5d6 bludgeoning damage plus an additional 1d6 damage for every 10 feet it fell and it is prone. On a successful saving throw, the target takes half as much damage and isn’t knocked prone.</p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning, prone</set>
+            <set name="level">4</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Amraam's Explosive Decompression" type="Spell" source="source" id="ID_DMDAVE_OMERIA_SPELL_AMRAAMS_EXPLOSIVE_DECOMPRESSION">
+        <supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You create a severe imbalance of positive and negative energy which then suddenly inverts. Choose a creature within range. The target must make a Dexterity saving throw. A target takes 6d12 force damage on a failed saving throw, or half as much damage on a successful one. If the spell reduces the target to 0 hit points, the target explosively decompresses and dies. Additionally, each target within 10 feet of the exploding target must make a Dexterity saving throw or take 3d12 force damage.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 5th level or higher, the damage increases by 1d12 for each slot above 4th level.</p>
+        </description>
+        <setters>
+            <set name="keywords">force</set>
+            <set name="level">4</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a gem worth at least 10 gp</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Blade" type="Spell" source="source" id="ID_DMDAVE_OMERIA_SPELL_BLADE">
+        <supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You target one creature that you can see within range. The target must succeed on a Constitution saving throw or take 2d10 fire damage and the target catches fire. Until a creature, including the target, uses its action to douse the flames, the target automatically takes 1d10 fire damage at the start of each of its turns.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the initial damage increases by 1d10 for each slot above 3rd level. </p>
+        </description>
+        <setters>
+            <set name="keywords">fire</set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">cloth dipped in lantern oil</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Crush" type="Spell" source="source" id="ID_DMDAVE_OMERIA_SPELL_CRUSH">
+        <supports>Druid, Elementalist, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You conjure a boulder before you which you then launch in a line that’s 30 feet long and 5 feet wide. The creature closest to you in that line must make a Dexterity saving throw. On a failed saving throw, the target takes 2d10 bludgeoning damage and the spell ends. On a successful saving throw, the creature takes no damage and the boulder continues on to the next creature in the line. The second creature must make a similar saving throw as the first creature with similar consequences. This continues until the boulder moves the full 30 feet or a target fails its saving throw, whichever happens first. You can use your action on subsequent turns to conjure a new boulder and launch it.</p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 2nd level or higher, the length of the line increases by 10 feet for each slot level above 1st. </p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning</set>
+            <set name="level">1</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">Self (30-foot line)</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">A small piece of crystal</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Drown" type="Spell" source="source" id="ID_DMDAVE_OMERIA_SPELL_DROWN">
+        <supports>Druid, Elementalist, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>You target one creature of your choice that you can see within range. The target must succeed on a Constitution saving throw or it begins to drown. While drowning, the target takes 4d8 necrotic damage at the start of each of its turns. The target can repeat its saving throw at the end of each of its turns, ending the effect on itself with a success.</p>
+        </description>
+        <setters>
+            <set name="keywords">necrotic</set>
+            <set name="level">5</set>
+            <set name="school">Necromancy</set>
+            <set name="time">1 action</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a drop of soiled water</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Earth Fist" type="Spell" source="source" id="ID_DMDAVE_OMERIA_SPELL_EARTH_FIST">
+        <supports>Druid, Elementalist, Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
+        <description>
+            <p>The ground at a point within range sprouts an earthen arm which remains for the duration.</p>
+            <p class="indent">The arm is an object that has AC 17 and hit points equal to 3 x your caster level. If it drops to 0 hit points, the spell ends. It has a Strength of 20 (+5) and a Dexterity of 9 (-1). The arm doesn’t fill its space.</p>
+            <p class="indent">When you cast the spell and as a bonus action on your subsequent turns, you can cause one of the following effects with it.</p>
+            <p class="indent"><strong><em>Move.</em></strong> The arm moves up to 20 feet to a space that you can see within 60 feet of you and sprouts out of the ground there. It does not provoke attacks of opportunity when it moves. </p>
+            <p class="indent"><strong><em>Slam.</em></strong> The arm makes a melee spell attack against a target within 5 feet of it. On a hit, the target takes 2d8 bludgeoning damage. </p>
+            <p class="indent"><strong><em>Grab.</em></strong> The arm attempts to grapple a Medium or smaller creature within 5 feet of it. You use the arm’s Strength score to resolve the grapple. While the hand is grappling the target, you can use a bonus action to have the hand crush it. When you do so, the target takes 2d6 bludgeoning damage. </p>
+            <p class="indent"><strong><em>At Higher Levels.</em></strong> When you cast this spell using a spell slot of 4th level or higher, the damage from the slam option increases by 1d6, and the damage from the grab option increases by 1d6 for each slot level above 3rd. </p>
+        </description>
+        <setters>
+            <set name="keywords">bludgeoning</set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">five small pieces of crystal</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+</elements>
+
+<!-- 
+
+    <element name="Spellname" type="Spell" source="source" id="ID_DMDAVE_OMERIA_SPELL_SPELLNAME">
+        <supports>supports</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    -->
