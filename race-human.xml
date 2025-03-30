@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Rasgax Human</name>
+		<description></description>
+		<update version="0.0.1">
+			<file name="race-human.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-human.xml" />
+		</update>
+	</info>
+    <element name="Human, Rasgax" type="Race" source="OMERIA" id="ID_DMDAVE_OMERIA_RACE_HUMAN_RASGAX">
+        <description>
+            <p>From the highlands of Northern Omeria come the Rasgax tribes. A nomadic people, the Rasgax focus their efforts on combating the belligerent races of the north, including orcs, frost giants, and c’nuim iteah (a strange race of six-armed drakeblooded creatures). Rasgax have fair to reddish skin and blonde or red hair. Their eyes are often deep scarlet or sometimes even bright red. Rare among humans, they have the ability to see in the dark.</p>
+            <p class="indent">Most Rasgax cover their bodies and faces in ritualistic tattoos. They often wear animal hides with cloth kilts or flowing capes. Some fight nude and smear their body in mud and animal offal as a deterrent, lending further credence to the legend that they are part animal.</p>
+            <h4>Rasgax Names</h4>
+            <p>Rasgax names consist of two parts: one’s tribe and one’s given name, in that order. If a Rasgax lacks a tribe, then they replace the tribal name with Rhon, which is a Rasgax word that means “without people.”</p>
+            <p class="indent"><strong><em>Tribe Names.</em></strong> Avalanche, Frost Run, Lone Tree, Man Hunter, Quiet Field, Red Eye, Roc Slayer, Storm O’er, Vapul’s Bane</p>
+            <p class="indent"><strong><em>Male Names.</em></strong> Arnol, Bjeorn, Dag, Einar, Ithan, Haphe, Harol, Lief, Magnos, Numgard, Tor, Vegard</p>
+            <p class="indent"><strong><em>Female Names.</em></strong> Ana, Bodil, Catrin, Cecla, Eln, Grunda, Lora, Lisa, Rebara, Trese, Valydia</p>
+            <h4>Rasgax Traits</h4>
+            <p>Your Rasgax character has a variety of natural abilities that all Rasgax share.</p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Strength score increases by 2, and your Constitution score increases by 2.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Rasgax have the same lifespans as other humans.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> As nomads, raiders, and outcasts, the Rasgax are typically chaotic. However, they all possess their own sense of morality, and usually put the needs of other humanoids—including non-Rasgax—before their own needs. They tend towards good.</p>
+            <p class="indent"><strong><em>Size.</em></strong> Rasgax are the same size as other humans, although they tend to be a little stockier on average.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> Rasgax have developed the ability to see in the dark. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray</p>
+            <p class="indent"><strong><em>Rasgax Vision.</em></strong> You have advantage on saving throws against being blinded.</p>
+            <p class="indent"><strong><em>Hunter's Lore.</em></strong> You gain proficiency in Perception. Additionally, you gain proficiency with one of the following skills of your choice: Animal Handling, Nature, Stealth, or Survival.</p>
+            <p class="indent"><strong><em>Rasgax Combat Training.</em></strong> You have proficiency with the battleaxe, maul, spear, and shortbow.</p>
+            <p class="indent"><strong><em>Long Range Runner.</em></strong> You have advantage on Constitution saving throws made to perform a forced march for each hour past 8 hours.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common plus one other language of your choice. The Rasgax are accustomed to working with other tribes of creatures, especially orcs, and often learn their languages in the process.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+            <select type="Proficiency" name="Hunter's Lore" supports="ID_PROFICIENCY_SKILL_ANIMALHANDLING|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_STEALTH|ID_PROFICIENCY_SKILL_SURVIVAL" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_BATTLEAXE" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <select type="Language" name="Language, Rasgax" supports="Standard" />
+            <stat name="strength" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed" value="30" bonus="base" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_RASGAX_VISION" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_RASGAX_LONG_RANGE_RUNNER" />
+        </rules>
+    </element>
+    <element name="Rasgax Vision" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_RASGAX_VISION">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against being blinded.</description>
+        </sheet>
+    </element>
+    <element name="Long Range Runner" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_RASGAX_LONG_RANGE_RUNNER">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>You have advantage on Constitution saving throws made to perform a forced march for each hour past 8 hours.</description>
+        </sheet>
+    </element>
+</elements>

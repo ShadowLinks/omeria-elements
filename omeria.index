@@ -16,6 +16,7 @@
 		<file name="race-dwarf.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-dwarf.xml" />
 		<file name="race-elf.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-elf.xml" />
 		<file name="race-foxhead.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-foxhead.xml" />
+		<file name="race-human.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-human.xml" />
 		
         
     </files>
