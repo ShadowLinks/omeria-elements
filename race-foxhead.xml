@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Foxhead Goblin</name>
+		<description></description>
+		<update version="0.0.1">
+			<file name="race-foxhead.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-foxhead.xml" />
+		</update>
+	</info>
+    <element name="Foxhead Goblin" type="Race" source="Omeria" id="ID_DMDAVE_OMERIA_RACE_FOXHEAD">
+        <description>
+            <p>Foxhead goblins, also called gexies (singular gexy), are an offshoot of goblins native to central Odonburg, particularly the lands surrounding the Zumaridi Mountains. These diminutive goblinoids stand in stark contrast to the Dinzers they share the land with. First, they are strong believers in the spirits of the land. Druids and rangers are common among their kind. Second, they dislike arcane magic and technology. Foxhead archdruids claim they can speak with the land and the land tells them that emerald odonburgite is the heart of the land. Prying it free only weakens the world. (Modern fringers believe this, too, pointing to Qola and the recent calamity at Mount Trenrock as evidence to back their claims.)</p>
+            <p class="indent"></p>
+            <p class="indent"></p>
+            <h4>Foxhead Goblin Traits</h4>
+            <p></p>
+            <p class="indent"><strong><em>Ability Score Increase.</em></strong> Your Dexterity score increases by 2, and your Wisdom score increases by 1.</p>
+            <p class="indent"><strong><em>Age.</em></strong> Foxhead goblins have lifespans comparable with humans. They enter adulthood in their mid-tolate teens and usually live eighty years.</p>
+            <p class="indent"><strong><em>Alignment.</em></strong> Accustomed to living in small tribes, foxheads have no use for the same laws and tenets shared by the other humanoid races. Instead, they say the “land governs them.” While fringe cases of good and evil foxheads exist, most foxheads tend toward true neutrality.</p>
+            <p class="indent"><strong><em>Size.</em></strong>  Foxheads stand between 2 and 3 feet tall, and weigh between 30 and 40 pounds. This makes them Small creatures even by traditional goblin standards.</p>
+            <p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+            <p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+            <p class="indent"><strong><em>Naturalist.</em></strong> You have proficiency in the Nature skill.</p>
+            <p class="indent"><strong><em>Keen Hearing.</em></strong> You have advantage on Wisdom (Perception) checks that rely on hearing.</p>
+            <p class="indent"><strong><em>Magic of the Land.</em></strong> You can communicate directly with the land and nature, which allows you to create small magical effects. You know the druidcraft cantrip. Wisdom is your spellcasting ability for this spell.</p>
+            <p class="indent"><strong><em>Clever Maneuver.</em></strong> When you are targeted by a melee weapon attack, you can use your reaction to take the Disengage action and move up to half your movement speed. The attacker can still take an action after your move if it is able.</p>
+            <p class="indent"><strong><em>Languages.</em></strong> The language commonly associated with druids—Druidic—is actually the tongue of foxhead goblins. Far removed from the goblins of Gar Wabrizz, foxheads rarely understand true Goblin. You can speak, read, and write Common and Druidic.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <grant type="Vision" id="ID_VISION_DARKVISION" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_FOXHEAD_KEEN_HEARING" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_FOXHEAD_MAGIC_OF_THE_LAND" />
+            <grant type="Racial Trait" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_FOXHEAD_CLEVER_MANEUVER" />
+            <grant type="Language" id="ID_LANGUAGE_COMMON" />
+            <grant type="Language" id="ID_LANGUAGE_DRUIDIC" />
+            <grant type="Size" id="ID_SIZE_SMALL" />
+            <stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="wisdom" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+            <stat name="innate speed" value="30" bonus="base" />
+        </rules>
+    </element>
+    <element name="Keen Hearing" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_FOXHEAD_KEEN_HEARING">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>You have advantage on Wisdom (Perception) checks that rely on hearing.</description>
+        </sheet>
+    </element>
+    <element name="Magic of the Land" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_FOXHEAD_MAGIC_OF_THE_LAND">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>You know the druidcraft cantrip. Wisdom is your spellcasting ability for this spell.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" />
+        </rules>
+    </element>
+    <element name="Clever Maneuver" type="Racial Trait" source="Omeria" id="ID_DMDAVE_OMERIA_RACIAL_TRAIT_FOXHEAD_CLEVER_MANEUVER">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description>When you are targeted by a melee weapon attack, you can use your reaction to take the Disengage action and move up to half your movement speed. The attacker can still take an action after your move if it is able.</description>
+        </sheet>
+    </element>
+</elements>
