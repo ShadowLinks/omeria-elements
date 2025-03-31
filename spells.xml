@@ -187,6 +187,279 @@
             <set name="isRitual">true</set>
         </setters>
     </element>
+    <element name="Fiendform" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_FIENDFORM">
+        <supports>Bard, Sorcerer, Warlock, Wizard</supports>
+        <description>
+            <p>This spell temporarily turns a willing creature into a fiend. Until the spell ends, the creature’s type becomes fiend. Until the spell ends, the target gains the following benefits:</p>
+            <ul>
+                <li>Resistance to cold, fire, and lightning damage.</li>
+                <li>Darkvision out to 120 feet.</li>
+                <li>Telepathy out to 60 feet.</li>
+                <li>Advantage on saving throws against spells and other magical effects.</li>
+            </ul>
+            <p class="indent">When the spell ends, the target’s mind is damaged by the spell’s effects. The target must succeed on a DC 10 Wisdom saving throw, or gain one form of long-term madness.</p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">5</set>
+            <set name="school">Transmutation</set>
+            <set name="time">1 action</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a charred piece of cloth</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Four Horsemen" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_FOUR_HORSEMEN">
+        <supports>Warlock, Wizard</supports>
+        <description>
+            <p>You call forth the spirits of four powerful warriors mounted on spectral horses. The horsemen manifest in unoccupied spaces that you can see within range. These incorporeal creatures each use the spectral horseman stat block. A horseman disappears when it drops to 0 hit points or when the spell ends.</p>
+            <p class="indent">Each horseman is an ally to you and your companions. In combat, the horsemen share your initiative count, but take their turn immediately after yours. They obey your verbal commands (no action required by you). If you don’t issue any, they take the Dodge action and use their move to avoid danger.</p>
+        </description>
+        <setters>
+            <set name="keywords">summon</set>
+            <set name="level">8</set>
+            <set name="school">Conjuration</set>
+            <set name="time">1 action</set>
+            <set name="range">90 feet</set>
+            <set name="duration">Concentration up to 1 hour</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">true</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Inferno" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_INFERNO">
+        <supports>supports</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Lights Out" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_LIGHTS_OUT">
+        <supports>supports</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Metal Militia" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_METAL_MILITIA">
+        <supports>supports</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Motorbreath" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_MOTORBREATH">
+        <supports>supports</supports>
+        <description>
+            <p></p>
+            <ul>
+                <li></li>
+            </ul>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Papa Het's Remorseless Touch" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_PAPA_HETS_REMORSELESS_TOUCH">
+        <supports>supports</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Phantom Lord" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_PHANTOM_LORD">
+        <supports>supports</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Riptide" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_RIPTIDE">
+        <supports>supports</supports>
+        <description>
+            <p></p>
+            <p class="indent"><strong><em></em></strong> </p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Seek and Destroy" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_SEEK_AND_DESTORY">
+        <supports>supports</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Tirden's Illusory Distraction" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_TIRDENS_ILLUSORY_DISTRACTION">
+        <supports>supports</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Tooth Decay" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_TOOTH_DECAY">
+        <supports>supports</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
+    <element name="Whiplash" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_WHIPLASH">
+        <supports>supports</supports>
+        <description>
+            <p></p>
+        </description>
+        <setters>
+            <set name="keywords"></set>
+            <set name="level">level</set>
+            <set name="school">Evocation</set>
+            <set name="time">1 action</set>
+            <set name="range">range</set>
+            <set name="duration">Instantaneous</set>
+            <set name="hasVerbalComponent">true</set>
+            <set name="hasSomaticComponent">true</set>
+            <set name="hasMaterialComponent">false</set>
+            <set name="materialComponent">component</set>
+            <set name="isConcentration">false</set>
+            <set name="isRitual">false</set>
+        </setters>
+    </element>
 </elements>
 
 <!-- 
