@@ -236,37 +236,37 @@
         </setters>
     </element>
     <element name="Inferno" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_INFERNO">
-        <supports>supports</supports>
+        <supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
+            <p>Columns of flame erupt in up to ten unoccupied spaces of your choice within range and last for the duration. The fire fills its space and rises 20 feet into the air. Any creature that ends its turn within 5 feet of the flames must make a Dexterity saving throw. A creature takes 6d10 fire damage on a failed saving throw, or half as much damage on a successful one.</p>
+            <p class="indent">As a bonus action on each of your turns for the duration, you can move one of the columns up to 10 feet to another unoccupied space that you can see within range.</p>
         </description>
         <setters>
-            <set name="keywords"></set>
-            <set name="level">level</set>
+            <set name="keywords">fire</set>
+            <set name="level">5</set>
             <set name="school">Evocation</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">Instantaneous</set>
+            <set name="range">120 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">false</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a small piece of phosphorus</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Lights Out" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_LIGHTS_OUT">
-        <supports>supports</supports>
+        <supports>Bard, Sorcerer, Warlock, Wizard</supports>
         <description>
-            <p></p>
+            <p>You target a point that you can see within range. All nonmagical light sources in a 30-foot-radius sphere centered on that spot, such as candles, lanterns, and torches, are immediately extinguished. Any magical light source created by a spell of 1st level or lower is also extinguished.</p>
         </description>
         <setters>
             <set name="keywords"></set>
-            <set name="level">level</set>
+            <set name="level">1</set>
             <set name="school">Evocation</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
+            <set name="range">60 feet</set>
             <set name="duration">Instantaneous</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
@@ -277,85 +277,87 @@
         </setters>
     </element>
     <element name="Metal Militia" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_METAL_MILITIA">
-        <supports>supports</supports>
+        <supports>Bard, Cleric</supports>
         <description>
-            <p></p>
+            <p>This spell allows you to protect up to six creatures that you can see within range. Until the spell ends, all of the targets’ skin hardens into steel. Each target’s armor class can’t be less than 19, regardless of the armor it is wearing.</p>
         </description>
         <setters>
             <set name="keywords"></set>
-            <set name="level">level</set>
-            <set name="school">Evocation</set>
-            <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">Instantaneous</set>
+            <set name="level">8</set>
+            <set name="school">Transmutation</set>
+            <set name="time">10 minutes</set>
+            <set name="range">30 feet</set>
+            <set name="duration">1 hour</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">false</set>
-            <set name="materialComponent">component</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a steel plate valued at 500 gp or more which is consumed by the spell</set>
             <set name="isConcentration">false</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Motorbreath" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_MOTORBREATH">
-        <supports>supports</supports>
+        <supports>Bard, Sorcerer, Warlock, Wizard</supports>
         <description>
-            <p></p>
+            <p>You gain incredible speed and reaction times for the duration of the spell, which grants you the following benefits:</p>
             <ul>
-                <li></li>
+                <li>When you cast this spell, and then as a bonus action on each of your turns until the spell ends, you can take the Dash action.</li>
+                <li>Moving out of a creature’s space does not provoke attacks of opportunity.</li>
+                <li>Your movement speed increases by 15 feet.</li>
             </ul>
         </description>
         <setters>
             <set name="keywords"></set>
-            <set name="level">level</set>
-            <set name="school">Evocation</set>
+            <set name="level">3</set>
+            <set name="school">Transmutation</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">Instantaneous</set>
+            <set name="range">Self</set>
+            <set name="duration">Concentration up to 10 minutes</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
             <set name="hasMaterialComponent">false</set>
             <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Papa Het's Remorseless Touch" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_PAPA_HETS_REMORSELESS_TOUCH">
-        <supports>supports</supports>
+        <supports>Bard, Cleric, Warlock, Wizard</supports>
         <description>
-            <p></p>
+            <p>You imbue one willing creature that you can see within range with the spirit of war. For the duration, once per turn, when the target deals damage to another creature with an attack, it regains hit points equal to half the damage dealt.</p>
         </description>
         <setters>
-            <set name="keywords"></set>
-            <set name="level">level</set>
-            <set name="school">Evocation</set>
+            <set name="keywords">heal</set>
+            <set name="level">3</set>
+            <set name="school">Necromancy</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">Instantaneous</set>
+            <set name="range">30 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">false</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">a drop of blood</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
     <element name="Phantom Lord" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_PHANTOM_LORD">
-        <supports>supports</supports>
+        <supports>Bard, Cleric, Warlock, Wizard, Spell Saving Throw</supports>
         <description>
-            <p></p>
+            <p>For the spell’s duration, you can use your bonus action to target one undead creature that you can see within range. If the target can see or hear you, it must succeed on a Wisdom saving throw or become frightened of you for the duration, until it takes damage from you, or until it is 60 feet or further from you. This spell counts as an effect that turns undead for the purposes of Turn Immunity and Resistance.</p>
         </description>
         <setters>
             <set name="keywords"></set>
-            <set name="level">level</set>
-            <set name="school">Evocation</set>
+            <set name="level">4</set>
+            <set name="school">Necromancy</set>
             <set name="time">1 action</set>
-            <set name="range">range</set>
-            <set name="duration">Instantaneous</set>
+            <set name="range">60 feet</set>
+            <set name="duration">Concentration up to 1 minute</set>
             <set name="hasVerbalComponent">true</set>
             <set name="hasSomaticComponent">true</set>
-            <set name="hasMaterialComponent">false</set>
-            <set name="materialComponent">component</set>
-            <set name="isConcentration">false</set>
+            <set name="hasMaterialComponent">true</set>
+            <set name="materialComponent">incense</set>
+            <set name="isConcentration">true</set>
             <set name="isRitual">false</set>
         </setters>
     </element>
