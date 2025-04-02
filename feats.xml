@@ -1,0 +1,30 @@
+<elements>
+    <info>
+        <name>Feats</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/feats.xml"/>
+        </update>
+    </info>
+    <element name="featname" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_FEATNAME">
+        <prerequisite>Charisma 13 or higher</prerequisite>
+        <requirements>[cha:13]</requirements>
+        <description>
+            <p>You can utter a blood-curdling cry that inspires your allies in combat. As an action, choose a number of creatures equal to your Charisma modifier (minimum of one) within 30 feet of you that can hear you. Each of these creatures gains a Battle Cry die, a d6. Once within the next minute, when a creature with a Battle Cry die makes an attack roll, it can choose to roll the d6 and add the result to the attack roll. The creature may choose to use its Battle Cry die before or after it makes the roll, but must do so before the outcome is determined. Once the Battle Cry die is rolled, it is lost. A creature can have only one Battle Cry die at a time.</p>
+            <p class="indent">Once you use this feat, you can’t use it again until you complete a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>As an action, choose a number of creatures equal to your Charisma modifier (minimum of one) within 30 feet of you that can hear you. Each of these creatures gains a Battle Cry die, a d6. Once within the next minute, when a creature with a Battle Cry die makes an attack roll, it can choose to roll the d6 and add the result to the attack roll. The creature may choose to use its Battle Cry die before or after it makes the roll, but must do so before the outcome is determined. Once the Battle Cry die is rolled, it is lost. A creature can have only one Battle Cry die at a time.</description>
+        </sheet>
+    </element>
+</elements>
+<!--
+    <element name="featname" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_FEATNAME">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    -->
