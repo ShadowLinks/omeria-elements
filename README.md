@@ -2,7 +2,7 @@
 Elements from Pexia's Guide to Omeria for Aurora Builder
 
 ## Features to be included
-### Races
+### Races COMPLETE
 - Arnitikos
 - Canids
 - Dwarves
@@ -77,8 +77,8 @@ Wizard
 - Esoteric Delver
 - Remote Traveler
 
-### Feats
+### Feats COMPLETE
 
-### Spells
+### Spells COMPLETE
 
 ### Magic Items
