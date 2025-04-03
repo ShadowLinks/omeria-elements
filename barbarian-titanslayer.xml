@@ -9,63 +9,58 @@
     <element name="Path of the Titan Slayer" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_BARBARIAN_TITANSLAYER">
         <supports>Primal Path</supports>
         <description>
-            <p></p>
+            <p>The titan-born creatures of eons past have once more risen from their slumber. You’ve been tasked to test your mettle against these powers lest the world succumb to their destructive natures. You have only your fury and your companions to support you.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARBARIAN_TITANSLAYER_MONSTER_WRANGLER" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARBARIAN_TITANSLAYER_LEGENDARY_RESISTANCE" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARBARIAN_TITANSLAYER_COLOSSUS_SLAYER" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARBARIAN_TITANSLAYER_FEARSOME_ALLIES" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="6" />
-            <grant type="Archetype Feature" id="ID_____" level="10" />
-            <grant type="Archetype Feature" id="ID______" level="14" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARBARIAN_TITANSLAYER_MONSTER_WRANGLER" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARBARIAN_TITANSLAYER_LEGENDARY_RESISTANCE" level="6" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARBARIAN_TITANSLAYER_COLOSSUS_SLAYER" level="10" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARBARIAN_TITANSLAYER_FEARSOME_ALLIES" level="14" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID__">
+    <element name="Monster Wrangler" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARBARIAN_TITANSLAYER_MONSTER_WRANGLER">
         <description>
-            <p></p>
+            <p>While raging, you can use your bonus action on each of your turns to grapple a creature. When you grapple a creature using this feature, you may grapple creatures that are two size categories larger than you or bigger. So long as a creature remains grappled by you, the creature takes bludgeoning damage equal to 1d6 + your Strength modifier + your rage damage bonus at the start of each of your turns.</p>
+        </description>
+        <sheet action="Bonus Action">
+            <description>While raging, you can use your bonus action on each of your turns to grapple a creature. When you grapple a creature using this feature, you may grapple creatures that are two size categories larger than you or bigger. So long as a creature remains grappled by you, the creature takes bludgeoning damage equal to 1d6 + {{monster-wrangler:bonus}} at the start of each of your turns.</description>
+        </sheet>
+        <rules>
+            <stat name="monster-wrangler:bonus" value="strength:modifier" />
+            <stat name="monster-wrangler:bonus" value="barbarian rage:damage" />
+        </rules>
+    </element>
+    <element name="Legendary Resistance" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARBARIAN_TITANSLAYER_LEGENDARY_RESISTANCE">
+        <description>
+            <p>Instead of dodging out of the way of certain area effects, such as a red dragon’s fiery breath or the effects of an ice storm spell, you may power your way through it. While raging, when you are subjected to a spell or effect that allows you to make a Dexterity saving throw to avoid taking damage, you may make a Constitution saving throw instead. When you do, if a successful saving throw would allow you to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>While raging, when you are subjected to a spell or effect that allows you to make a Dexterity saving throw to avoid taking damage, you may make a Constitution saving throw instead. When you do, if a successful saving throw would allow you to take only half damage, you instead take no damage if you succeed on the saving throw, and only half damage if you fail.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="Colossus Slayer" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARBARIAN_TITANSLAYER_COLOSSUS_SLAYER">
         <description>
-            <p></p>
+            <p>While raging, when you hit a creature that is one size category or more larger than you with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the damage dealt.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>While raging, when you hit a creature that is one size category or more larger than you with a melee weapon attack, you can roll one of the weapon’s damage dice one additional time and add it to the damage dealt.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Fearsome Allies" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARBARIAN_TITANSLAYER_FEARSOME_ALLIES">
         <description>
-            <p></p>
+            <p>When you enter a rage, you can choose a number of other willing creatures you can see within 15 feet of you equal to your Constitution modifier (minimum of one creature). Until the rage ends, you and each chosen creature gains a +3 bonus to all of their saving throws so long as the creatures remain within 15 feet of you. This bonus increases by +1 (+4) when you reach 16th level.</p>
         </description>
         <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+            <description>When you enter a rage, you can choose up to {{constitution:modifier}} other willing creatures you can see within 15 feet of you. Until the rage ends, you and each chosen creature gains a +3 bonus to all of their saving throws so long as the creatures remain within 15 feet of you.</description>
+            <description>When you enter a rage, you can choose up to {{constitution:modifier}} other willing creatures you can see within 15 feet of you. Until the rage ends, you and each chosen creature gains a +4 bonus to all of their saving throws so long as the creatures remain within 15 feet of you.</description>
         </sheet>
     </element>
 </elements>

@@ -30,6 +30,10 @@
 		<!-- Class -->
 
 		<!-- Archetypes -->
-        
+        <file name="barbarian-rasgaxhowler.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/barbarian-rasgaxhowler.xml"/>
+		<file name="barbarian-titanslayer.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/barbarian-titanslayer.xml"/>
+		<file name="bard-taznarchi.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/bard-taznarchi.xml"/>
+		<file name="bard-wanderer.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/bard-wanderer.xml"/>
+		
     </files>
 </index>

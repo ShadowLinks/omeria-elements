@@ -9,53 +9,73 @@
     <element name="College of the Taznarchi Performer" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_BARD_TAZNARCHI">
         <supports>Bard College</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
+            <p>Over a thousand years ago, when Imfe Mythse Anore fell and the surviving Anorians were expelled by the Pressonians, the city’s musicians—known as Taznarchi (TOZ-nar-key) in the Anorian dialect—led the Anorians across the mountains with their music. Vhonlanna, perhaps the greatest Taznarchi who ever lived, created a melody that helped lift up the spirits of the exiled elves. It also protected them from the dangers of the Basilisk’s Spine Mountains.</p>
+            <p class="indent">Tragically, beloved Vhonlanna would never witness the Anorian’s promised land, Vaskil, succumbing to exposure in the blizzard conditions consuming the northern Summer Land the first year of the Age of Triumphs. Her disciples, great Taznarchi in their own right, brought Vhonlanna’s Melody to Vaskil and taught it to the first natural-born Vaskilish Anorians. Now, her music is as much a part of Anorian culture as the firebolt wand or the Ritual of Winter.</p>
+            <p class="indent">Modern Taznarchi are often young, energetic, and chaotic Anorians. Their lyrics recall the time before Vaskil when the Anorians claimed the lands to the west of the Spine. Thus, it’s not uncommon for Taznarchi to lead revolts against Pressonians or Knotsiders. Although the Anorians prefer not to share their musical heritage with the ones who removed them from their homelands, there are some humans (and other races) who have been taught the melodies of Vhonlanna and her disciples.</p>
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_TAZNARCHI_MELODY" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_TAZNARCHI_BLESSING" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_TAZNARCHI_ACCOMPANIMENT" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_TAZNARCHI_DANCE" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="6" />
-            <grant type="Archetype Feature" id="ID_____" level="14" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_TAZNARCHI_MELODY" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_TAZNARCHI_BLESSING" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_TAZNARCHI_ACCOMPANIMENT" level="6" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_TAZNARCHI_DANCE" level="14" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID__">
+    <element name="Vhonlanna's Melody" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_TAZNARCHI_MELODY">
         <description>
-            <p></p>
+            <p>The first song all Taznarchi Performers learn is Vhonlanna’s Melody, a tune capable of stopping your foes in their tracks.</p>
+            <p class="indent">As a bonus action, you can expend one use of your Bardic Inspiration to affect a number of creatures of your choice equal to your Charisma modifier (minimum of one) within 30 feet of you that can hear you. Each creature must succeed on a Wisdom saving throw. On a failed saving throw, the creature is distracted by your performance for as long as you maintain your concentration (as if concentrating on a spell), for up to 1 minute. Creatures immune to charm automatically succeed on their saving throws.</p>
+            <p class="indent">When you first start Vhonlanna's Melody choose one of the following effects. The effect lasts for the duration or until you use your bonus action to switch to another effect.</p>
+            <ul>
+                <li>Whenever an affected creature makes an attack roll or a saving throw before the Melody ends, the affected creature must roll a d4 and subtract the number rolled from the attack roll or saving throw.</li>
+                <li>Each affected creature has disadvantage on Wisdom (Perception) checks made to perceive any creature other than you.</li>
+                <li>Each affected creature takes 1d4 psychic damage and has disadvantage on the next attack roll it makes before the end of its next turn.</li>
+            </ul>
+            <p class="indent">If the creature takes damage or it can no longer hear you, the creature is no longer distracted by you. A creature that succeeds on its initial saving throw or the distraction ends for it is immune to this feature for 24 hours.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet action="Bonus Action">
+            <description>As a bonus action, you can expend one use of your Bardic Inspiration to affect up to {{charisma:modifier}} creatures within 30 feet of you that can hear you. Each creature must succeed on a Wisdom saving throw. On a failed saving throw, the creature is distracted by your performance for as long as you maintain your concentration (as if concentrating on a spell), for up to 1 minute. Creatures immune to charm automatically succeed on their saving throws.
+            When you first start Vhonlanna's Melody choose one of the following effects. The effect lasts for the duration or until you use your bonus action to switch to another effect.
+            - Whenever an affected creature makes an attack roll or a saving throw before the Melody ends, the affected creature must roll a d4 and subtract the number rolled from the attack roll or saving throw.
+            - Each affected creature has disadvantage on Wisdom (Perception) checks made to perceive any creature other than you.
+            - Each affected creature takes 1d4 psychic damage and has disadvantage on the next attack roll it makes before the end of its next turn.
+            If the creature takes damage or it can no longer hear you, the creature is no longer distracted by you. A creature that succeeds on its initial saving throw or the distraction ends for it is immune to this feature for 24 hours.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="Blessing of Istodal Philiom" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_TAZNARCHI_BLESSING">
         <description>
-            <p></p>
+            <p>You learn a ritual that creates a magical bond between yourself and one instrument. You perform the ritual for 1 hour, which can be done during a short rest. The instrument must be within your reach throughout the ritual, after which you touch the instrument and forge the bond.</p>
+            <p class="indent">Once you have bonded an instrument to yourself, the instrument cannot be taken from your possession unless you are incapacitated. If it is on the same plane of existence, you can summon the instrument as a bonus action on your turn, causing it to teleport instantly into your hand (or wherever appropriate).</p>
+            <p class="indent">When you play music using your bonded instrument, the DC for saving throws made against your enchantment spells and Vhonlanna’s Melody increase by 1.</p>
+            <p class="indent">You can have up to two bonded instruments but can summon only one at a time with your bonus action. If you attempt to bond with a third instrument, you must break the bond with one of the other two.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You learn a ritual that creates a magical bond between yourself and one instrument. You perform the ritual for 1 hour, which can be done during a short rest. The instrument must be within your reach throughout the ritual, after which you touch the instrument and forge the bond.
+            Once you have bonded an instrument to yourself, the instrument cannot be taken from your possession unless you are incapacitated. If it is on the same plane of existence, you can summon the instrument as a bonus action on your turn, causing it to teleport instantly into your hand (or wherever appropriate).
+            When you play music using your bonded instrument, the DC for saving throws made against your enchantment spells and Vhonlanna’s Melody increase by 1.
+            You can have up to two bonded instruments but can summon only one at a time with your bonus action. If you attempt to bond with a third instrument, you must break the bond with one of the other two.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Szorrors Claaddsek's Outrageous Accompaniement" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_TAZNARCHI_ACCOMPANIMENT">
         <description>
-            <p></p>
+            <p>Whenever you or one of your allies makes an attack against a creature distracted by Vhonlanna’s Melody, the attack roll is made with advantage.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Whenever you or one of your allies makes an attack against a creature distracted by Vhonlanna’s Melody, the attack roll is made with advantage.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="The Dance of Seven Painted Skulls" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_TAZNARCHI_DANCE">
         <description>
-            <p></p>
+            <p>When you use Vhonlanna’s Melody, if an affected creature takes damage, it must repeat its Wisdom saving throw. If its saving throw fails, it remains distracted by the Melody.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you use Vhonlanna’s Melody, if an affected creature takes damage, it must repeat its Wisdom saving throw. If its saving throw fails, it remains distracted by the Melody.</description>
         </sheet>
     </element>
 </elements>

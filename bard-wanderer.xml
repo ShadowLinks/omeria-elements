@@ -9,53 +9,84 @@
     <element name="College of the Wanderer" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_BARD_WANDERER">
         <supports>Bard College</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
+            <p>When the Transmuter Wars destroyed the ancient human lands of Ditimaya and Karnione, it left millions of Central Omerians without homes. Those who didn’t die in the Transmuter Wars themselves later died when the Three Great Wastelands spontaneously emerged. Most died of thirst. Others were killed by the fearsome monsters that accompanied the wastelands. Twenty years after the close of the Wars, only one-fourth of Central Omeria’s population remained, mostly in the wastelands’ borders and coasts.</p>
+            <p class="indent">But there were those who chose to stay in their ancient homelands as nomads and wanderers. Humans, perhaps the dulons’ greatest creation, have always had a knack for evolving to fit their new environment, and these survivors were no different. And just as the Pressonians discovered summer diamonds to help in their fight against the Winds of Vapul, or the Dinzers of Odonburg used emerald odonburgite to conquer southern Omeria, the wanderers found their own form of magic. This time, the magic did not come from a power stone. The wanderer draws power from their own soul.</p>
+            <p class="indent">As a wanderer bard, you use your innate magic to bring hope to Central Omeria.</p>
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_WANDERER_WANDERER_MAGIC" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_WANDERER_REGENERATIVE_TOUCH" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_WANDERER_EXPERT_HEALER" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_WANDERER_SWIFT_HEALER" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_WANDERER_ICON_OF_HOPE" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="6" />
-            <grant type="Archetype Feature" id="ID_____" level="14" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_WANDERER_WANDERER_MAGIC" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_WANDERER_REGENERATIVE_TOUCH" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_WANDERER_EXPERT_HEALER" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_WANDERER_SWIFT_HEALER" level="6" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_WANDERER_ICON_OF_HOPE" level="14" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID__">
+    <element name="Wanderer Magic" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_WANDERER_WANDERER_MAGIC">
         <description>
-            <p></p>
+            <p>The power within you swells, granting you access to incredible magic. You learn additional spells when you reach certain levels in this class if you don’t already know them, as shown on the Wanderer Spells table. Each spell counts as a bard spell for you. These spells don’t count against the number of bard spells you know.</p>
+            <table>
+                <thead>
+                    <tr><td>Bard level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>cure wounds, prayer of healing</td></tr>
+                <tr><td>5th</td><td>beacon of hope</td></tr>
+                <tr><td>7th</td><td>death ward</td></tr>
+                <tr><td>9th</td><td>mass cure wounds</td></tr>
+            </table>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_CURE_WOUNDS" level="3" spellcasting="Bard"/>
+            <grant type="Spell" id="ID_PHB_SPELL_PRAYER_OF_HEALING" level="3" spellcasting="Bard"/>
+            <grant type="Spell" id="ID_PHB_SPELL_BEACON_OF_HOPE" level="5" spellcasting="Bard"/>
+            <grant type="Spell" id="ID_PHB_SPELL_DEATH_WARD" level="7" spellcasting="Bard"/>
+            <grant type="Spell" id="ID_PHB_SPELL_MASS_CURE_WOUNDS" level="9" spellcasting="Bard"/>
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="Regenerative Touch" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_WANDERER_REGENERATIVE_TOUCH">
         <description>
-            <p></p>
+            <p>Any creature that has one of your Bardic Inspiration dice can use its bonus action to roll the die and regain a number of hit points equal to the amount rolled. If the creature rolls a 1, 2, or 3 on the die roll, the die is not expended and the creature may continue to keep the Bardic Inspiration die until they roll a value higher than 4 or the duration ends.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Any creature that has one of your Bardic Inspiration dice can use its bonus action to roll the die and regain a number of hit points equal to the amount rolled. If the creature rolls a 1, 2, or 3 on the die roll, the die is not expended and the creature may continue to keep the Bardic Inspiration die until they roll a value higher than 4 or the duration ends.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Expert Healer" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_WANDERER_EXPERT_HEALER">
         <description>
-            <p></p>
+            <p>You gain proficiency in the Medicine skill. Additionally, whenever you make a Medicine check to heal a creature or stabilize an injury, your proficiency bonus is doubled. This feature does not stack with any other feature that doubles your proficiency bonus, such as Expertise.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Whenever you make a Medicine check to heal a creature or stabilize an injury, your proficiency bonus is doubled. This feature does not stack with any other feature that doubles your proficiency bonus, such as Expertise.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_MEDICINE" />
+        </rules>
+    </element>
+    <element name="Swift Healer" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_WANDERER_SWIFT_HEALER">
+        <description>
+            <p>The casting time for the spells gained through your Wanderer magic feature becomes a bonus action or an action (your choice when you cast the spell). You are still limited to the casting of only one spell per turn except for cantrips with a casting time of 1 action.</p>
+        </description>
+        <sheet>
+            <description>The casting time for the spells gained through your Wanderer magic feature becomes a bonus action or an action (your choice when you cast the spell). You are still limited to the casting of only one spell per turn except for cantrips with a casting time of 1 action.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="Icon of Hope" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_BARD_WANDERER_ICON_OF_HOPE">
         <description>
-            <p></p>
+            <p>As a bonus action, you can magically assume an inspiring presence for 1 minute or until you are incapacitated. For the duration, whenever a creature of your choice within 30 feet of you would drop to 0 hit points, the creature does not die but instead stabilizes. This also protects creatures from spells and effects that would cause the creature to automatically die such as the disintegrate and power word kill spells, or a banshee’s Wail.</p>
+            <p class="indent">Once you use this feature, you can’t do so again until you finish a short or long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet action="Bonus Action" usage="1/Short Rest">
+            <description>As a bonus action, you can magically assume an inspiring presence for 1 minute or until you are incapacitated. For the duration, whenever a creature of your choice within 30 feet of you would drop to 0 hit points, the creature does not die but instead stabilizes. This also protects creatures from spells and effects that would cause the creature to automatically die such as the disintegrate and power word kill spells, or a banshee’s Wail.</description>
         </sheet>
     </element>
 </elements>
