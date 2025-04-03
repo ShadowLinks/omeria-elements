@@ -11,7 +11,8 @@
         <file name="source.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/source.xml" />
 
 		<file name="langauges.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/languages.xml"/>
-		
+		<file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/feats.xml"/>
+
         <!-- Races -->
 		<file name="race-arnitikos.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-arnitikos.xml" />
 		<file name="race-canid.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/race-canid.xml" />

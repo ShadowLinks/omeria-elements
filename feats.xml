@@ -6,7 +6,7 @@
             <file name="feats.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/feats.xml"/>
         </update>
     </info>
-    <element name="featname" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_FEATNAME">
+    <element name="Battle Cry" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_BATTLE_CRY">
         <prerequisite>Charisma 13 or higher</prerequisite>
         <requirements>[cha:13]</requirements>
         <description>
@@ -17,9 +17,339 @@
             <description>As an action, choose a number of creatures equal to your Charisma modifier (minimum of one) within 30 feet of you that can hear you. Each of these creatures gains a Battle Cry die, a d6. Once within the next minute, when a creature with a Battle Cry die makes an attack roll, it can choose to roll the d6 and add the result to the attack roll. The creature may choose to use its Battle Cry die before or after it makes the roll, but must do so before the outcome is determined. Once the Battle Cry die is rolled, it is lost. A creature can have only one Battle Cry die at a time.</description>
         </sheet>
     </element>
+    <element name="Basher" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_BASHER">
+        <description>
+            <p>You are adept at using weapons that deal bludgeoning damage, granting you the following benefits:</p>
+            <ul>
+                <li>Increase your Strength or Constitution by 1, to a maximum of 20.</li>
+                <li>Once per turn, when you attack a creature wearing manufactured armor, you may roll a d4 and add the result to your attack roll.</li>
+                <li>When you score a critical hit that deals bludgeoning damage to a creature, the target has disadvantage on all Wisdom, Intelligence, and Charisma ability checks and saving throws until the start of your next turn.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Once per turn, when you attack a creature wearing manufactured armor, you may roll a d4 and add the result to your attack roll.
+            When you score a critical hit that deals bludgeoning damage to a creature, the target has disadvantage on all Wisdom, Intelligence, and Charisma ability checks and saving throws until the start of your next turn.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Increase, Basher" supports="ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_STRENGTH"/>
+        </rules>
+    </element>
+    <element name="Blender" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_BLENDER">
+        <prerequisite>Intelligence 13 or higher</prerequisite>
+        <requirements>[int:13]</requirements>
+        <description>
+            <p>You specialize in creating chemical compounds that serve as potent weapons. You gain the following benefits:</p>
+            <ul>
+                <li>Increase your Intelligence by 1, to a maximum of 20.</li>
+                <li>You gain proficiency in alchemist’s supplies.</li>
+                <li>You can use your action on your turn to create one of the alchemical concoctions listed on the Alchemical Concoction sidebar below. You must have alchemist’s supplies to create the concoction. A single set of alchemist’s supplies has enough materials to create ten concoctions. A concoction created in this way has a short shelf life, and if it is not used within 1 hour of creation, it becomes useless.</li>
+            </ul>
+            <p class="indent"><strong><em>Acid.</em></strong> You expend one use of your alchemist’s supplies to create a vial of acid.</p>
+            <p class="indent"><strong><em>Alchemist’s Fire.</em></strong> You expend two uses of your alchemist’s supplies to create a flask of alchemist’s fire.</p>
+            <p class="indent"><strong><em>Glue.</em></strong> You expend one use of your alchemist’s supplies to create one ounce of sticky glue. One ounce of the glue covers a 1-foot square surface, which you can use your action to apply. The glue takes 1 minute to set. Once it has done so, the bond it creates can only be broken with a successful DC 15 Strength check or the application of lantern oil.</p>
+            <p class="indent"><strong><em>Healing Potion.</em></strong> You expend two uses of your alchemist’s supplies to create a potion of healing.</p>
+            <p class="indent"><strong><em>Sneezing Powder.</em></strong> You expend one use of your alchemist’s supplies to create one use of sneezing powder. When you use an action to throw the powder into the air, you and each creature that needs to breathe within 5 feet of you must succeed on a DC 15 Constitution saving throw or sneeze uncontrollably until the end of its next turn. A sneezing creature is incapacitated.</p>
+        </description>
+        <sheet>
+            <description>You can use your action on your turn to create one of the alchemical concoctions listed on the Alchemical Concoction sidebar below. You must have alchemist’s supplies to create the concoction. A single set of alchemist’s supplies has enough materials to create ten concoctions. A concoction created in this way has a short shelf life, and if it is not used within 1 hour of creation, it becomes useless.
+            Acid. You expend one use of your alchemist’s supplies to create a vial of acid.
+            Alchemist’s Fire. You expend two uses of your alchemist’s supplies to create a flask of alchemist’s fire.
+            Glue. You expend one use of your alchemist’s supplies to create one ounce of sticky glue. One ounce of the glue covers a 1-foot square surface, which you can use your action to apply. The glue takes 1 minute to set. Once it has done so, the bond it creates can only be broken with a successful DC 15 Strength check or the application of lantern oil.
+            Healing Potion. You expend two uses of your alchemist’s supplies to create a potion of healing.
+            Sneezing Powder. You expend one use of your alchemist’s supplies to create one use of sneezing powder. When you use an action to throw the powder into the air, you and each creature that needs to breathe within 5 feet of you must succeed on a DC 15 Constitution saving throw or sneeze uncontrollably until the end of its next turn. A sneezing creature is incapacitated.
+            </description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_ALCHEMISTS_SUPPLIES" />
+            <stat name="intelligence" value="1" alt="Blender"/>
+        </rules>
+    </element>
+    <element name="Cutter" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_CUTTER">
+        <description>
+            <p>The attacks you make with slashing weapons produce great results, granting you the following benefits:</p>
+            <ul>
+                <li>Increase your Strength or Dexterity by 1, to a maximum of 20.</li>
+                <li>Once per turn, when you hit a creature with an attack that deals slashing damage, you can injure the creature. The creature can’t take reactions until the start of your next turn.</li>
+                <li>When you score a critical hit that deals slashing damage to a creature, you injure it. Until the start of your next turn, the target has disadvantage on all Strength and Dexterity ability checks and saving throws.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Once per turn, when you hit a creature with an attack that deals slashing damage, you can injure the creature. The creature can’t take reactions until the start of your next turn.
+            When you score a critical hit that deals slashing damage to a creature, you injure it. Until the start of your next turn, the target has disadvantage on all Strength and Dexterity ability checks and saving throws.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Increase, Cutter" supports="ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_STRENGTH"/>
+        </rules>
+    </element>
+    <element name="Devilkin Tail" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_DEVILKIN_TAIL">
+        <prerequisite>Tiefling</prerequisite>
+        <requirements>ID_RACE_TIEFLING</requirements>
+        <description>
+            <p>You possess a prehensile tail, which grants you the following benefits:</p>
+            <ul>
+                <li>Increase your Strength or Dexterity by 1, to a maximum of 20.</li>
+                <li>You can grasp things with your prehensile tail. It has a reach of 5 feet, and it can lift a number of pounds equal to five times your Strength score. You can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or creature, open or close a door or a container; grapple someone; or make an unarmed strike. Your GM might allow other simple tasks to be added to that list of options. Your tail can’t wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing somatic components of a spell.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You can grasp things with your prehensile tail. It has a reach of 5 feet, and it can lift a number of pounds equal to five times your Strength score. You can use it to do the following simple tasks: lift, drop, hold, push, or pull an object or creature, open or close a door or a container; grapple someone; or make an unarmed strike. Your GM might allow other simple tasks to be added to that list of options. Your tail can’t wield weapons or shields or do anything that requires manual precision, such as using tools or magic items or performing somatic components of a spell.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Increase, Devilkin Tail" supports="ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_STRENGTH"/>
+        </rules>
+    </element>
+    <element name="Dragon Bite" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_DRAGON_BITE">
+        <prerequisite>Dragonborn</prerequisite>
+        <requirements>ID_RACE_DRAGONBORN</requirements>
+        <description>
+            <p>Your fearsome jaws and teeth grant you the following benefits:</p>
+            <ul>
+                <li>Increase your Strength, Constitution, or Charisma score by 1, to a maximum of 20.</li>
+                <li>Your fanged maw is a natural weapon which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + your Strength modifier, instead of the bludgeoning damage normal for an unarmed strike.</li>
+                <li>As a bonus action, you can make a special attack with your bite. If the attack hits, it deals its normal damage, and you gain temporary hit points (minimum of 1) equal to your Constitution modifier, and you can’t use this benefit again until you finish a short or long rest.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Your fanged maw is a natural weapon which you can use to make unarmed strikes. If you hit with it, you deal piercing damage equal to 1d6 + {{strength:modifier}}, instead of the bludgeoning damage normal for an unarmed strike.
+            As a bonus action, you can make a special attack with your bite. If the attack hits, it deals its normal damage, and you gain {{constitution:modifier}} temporary hit points, and you can’t use this benefit again until you finish a short or long rest.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Increase, Dragon Bite" supports="ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CHARISMA"/>
+        </rules>
+    </element>
+    <element name="Shooter" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_SHOOTER">
+        <description>
+            <p>You are trained in the way of firearms. You gain the following benefits:</p>
+            <ul>
+                <li>Increase your Dexterity or Wisdom by 1, to a maximum of 20.</li>
+                <li>You gain proficiency in firearms.</li>
+                <li>As a bonus action, you can take careful aim. Double your proficiency bonus on the next ranged weapon attack you make using a firearm so long as you make the attack before the start of your next turn.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can take careful aim. Double your proficiency bonus on the next ranged weapon attack you make using a firearm so long as you make the attack before the start of your next turn.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Increase, Shooter" supports="ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_WISDOM"/>
+            <grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS" />
+        </rules>
+    </element>
+    <element name="Lightning Reflexes" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_LIGHTNING_REFLEXES">
+        <description>
+            <p>You possess the ability to make split-second decisions, which grants you the following benefits:</p>
+            <ul>
+                <li>Increase your Dexterity or Wisdom score by 1, to a maximum of 20.</li>
+                <li> You can take up to two reactions each round so long as you don’t take both reactions on the same turn.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description> You can take up to two reactions each round so long as you don’t take both reactions on the same turn.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Increase, Lightning Reflexes" supports="ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_WISDOM"/>
+        </rules>
+    </element>
+    <element name="Monstrous Shape" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_MONSTROUS_SHAPE">
+        <prerequisite>11th level, the Wild Shape feature</prerequisite>
+        <requirements>[level:11],ID_WOTC_PHB_CLASS_FEATURE_DRUID_WILDSHAPE</requirements>
+        <description>
+            <p>Your mastery of Wild Shape grants you a number of benefits:</p>
+            <ul>
+                <li>Increase your Constitution or Wisdom by 1, to a maximum of 20.</li>
+                <li>You can expend two uses of Wild Shape at the same time to transform into a monstrosity of your choice with a Challenge Rating of 3 or lower.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You can expend two uses of Wild Shape at the same time to transform into a monstrosity of your choice with a Challenge Rating of 3 or lower.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Increase, Monstrous Shape" supports="ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_WISDOM"/>
+        </rules>
+    </element>
+    <element name="Natural Explorer" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_NATURAL_EXPLORER">
+        <description>
+            <p>You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose two types of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or underground. When you make an Intelligence or Wisdom check related to either of your favored terrains, your proficiency bonus is doubled if you are using a skill in which you are proficient.</p>
+            <p class="indent">While traveling for an hour or more in one of your favored terrains, you gain the following benefits:</p>
+            <ul>
+                <li>Difficult terrain doesn’t slow your group’s travel.</li>
+                <li>Your group can’t become lost except by magical means.</li>
+                <li>Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.</li>
+                <li>If you are traveling alone, you can move stealthily at a normal pace.</li>
+                <li>When you forage, you find twice as much food as you normally would.</li>
+                <li>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</li>
+            </ul>
+            <p class="indent">You can choose this feat multiple times, choosing a new terrain each time.</p>
+        </description>
+        <sheet>
+            <description>Choose two types of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or underground. When you make an Intelligence or Wisdom check related to either of your favored terrains, your proficiency bonus is doubled if you are using a skill in which you are proficient.
+            When traveling for an hour or more in favored terrain: Difficult terrain does not slow your group's travel, your group can only become lost by magical means, even when engaged in another activity while traving you remain alert to danger, alone you can move stealthily at normal pace, foraging results in 2x food, and tracking creatures you can learn exact number, sizes, and when they passed.</description>
+        </sheet>
+    </element>
+    <element name="Preserver" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_PRESERVER">
+        <prerequisite>5th Level</prerequisite>
+        <requirements>[level:5]</requirements>
+        <description>
+            <p>You can protect your allies from the gruesome effects of death and rot. You gain the following benefits:</p>
+            <ul>
+                <li>Increase your Wisdom by 1, to a maximum of 20.</li>
+                <li>You can cast the gentle repose spell at will without expending a spell slot or using material components.</li>
+                <li>You do not require material components when you cast a spell of 5th level or lower that returns a creature from the dead, such as revivify, raise dead, or reincarnate.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>You can cast the gentle repose spell at will without expending a spell slot or using material components.
+            You do not require material components when you cast a spell of 5th level or lower that returns a creature from the dead, such as revivify, raise dead, or reincarnate</description>
+        </sheet>
+        <rules>
+            <stat name="wisdom" value="1" alt="Preserver"/>
+            <grant type="Spell" id="ID_PHB_SPELL_GENTLE_REPOSE" />
+        </rules>
+    </element>
+    <element name="Shifter" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_SHIFTER">
+        <prerequisite>3rd Level</prerequisite>
+        <requirements>[level:3]</requirements>
+        <description>
+            <p>You can use your action to magically assume the shape of a beast, choosing one of the beast types below: shifter land beast, shifter sea beast, or shifter sky beast. Once you use this feature, you can’t use it again until you complete a short or long rest.</p>
+            <p class="indent">You can remain in this shape for 1 hour. You then revert to your normal form. You can also revert to your normal form earlier by using your action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.</p>
+            <p class="indent">Other than the changes noted, this feat otherwise works the same way as a druid’s Wild Shape feature.</p>
+        </description>
+        <sheet>
+            <description>You can use your action to magically assume the shape of a beast, choosing one of the beast types below: shifter land beast, shifter sea beast, or shifter sky beast. Once you use this feature, you can’t use it again until you complete a short or long rest.
+            You can remain in this shape for 1 hour. You then revert to your normal form. You can also revert to your normal form earlier by using your action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.
+            Other than the changes noted, this feat otherwise works the same way as a druid’s Wild Shape feature.</description>
+        </sheet>
+    </element>
+    <element name="Showoff" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_SHOWOFF">
+        <prerequisite>Charisma 13 or higher</prerequisite>
+        <requirements>[cha:13]</requirements>
+        <description>
+            <p>Your flair gives you the following benefits:</p>
+            <ul>
+                <li>Increase your Charisma by 1, to a maximum of 20.</li>
+                <li>You gain proficiency in the Performance skill.</li>
+                <li>Once per turn when you hit a creature with an attack, you can use your bonus action to distract the creature with your panache and charm; the creature has disadvantage on the next attack it makes against you. The creature must be able to see and hear you and the two of you must share a language. Creatures immune to the charmed condition are unaffected by this benefit.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Once per turn when you hit a creature with an attack, you can use your bonus action to distract the creature with your panache and charm; the creature has disadvantage on the next attack it makes against you. The creature must be able to see and hear you and the two of you must share a language. Creatures immune to the charmed condition are unaffected by this benefit.</description>
+        </sheet>
+        <rules>
+            <stat name="charisma" value="1" alt="Showoff"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+        </rules>
+    </element>
+    <element name="Slow Casting" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_SLOW_CASTING">
+        <prerequisite>Ability to cast 2nd-level spells</prerequisite>
+        <requirements>[level:3]</requirements>
+        <description>
+            <p>Your keen understanding of magic allows you to edit spells on the fly. You gain the following benefits:</p>
+            <ul>
+                <li>Increase your Intelligence, Wisdom, or Charisma by 1, to a maximum of 20.</li>
+                <li>Your keen understanding of magic allows you to edit spells on the fly. When you cast a 2nd- to 5th-level spell that you know, and the spell does not have a casting time of 1 reaction, you may cast the spell with a spell slot that’s one level lower than the spell’s normal level. When you do, the casting time for the spell increases by one step.</li>
+            </ul>
+            <p class="indent"><strong><em>1 Bonus action - 1 Action - 1 Minute - 10 Minutes - 1 hour - 8 hours - 24 hours</em></strong> </p>
+        </description>
+        <sheet>
+            <description>Your keen understanding of magic allows you to edit spells on the fly. When you cast a 2nd- to 5th-level spell that you know, and the spell does not have a casting time of 1 reaction, you may cast the spell with a spell slot that’s one level lower than the spell’s normal level. When you do, the casting time for the spell increases by one step.
+            1 Bonus action - 1 Action - 1 Minute - 10 Minutes - 1 hour - 8 hours - 24 hours</description>
+        </sheet>
+        <rules>
+             <select type="Ability Score Improvement" name="Ability Score Increase, Slow Casting" supports="ID_PHB_FEAT_ASI_CHARISMA|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_INTELLIGENCE"/>
+        </rules>
+    </element>
+    <element name="Spear Mastery" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_SPEAR_MASTERY">
+        <prerequisite>proficiency with spears</prerequisite>
+        <requirements>ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR</requirements>
+        <description>
+            <p>Your skill with a spear gains you the following benefits:</p>
+            <ul>
+                <li>Increase your Strength or Constitution by 1, to a maximum of 20.</li>
+                <li>When you hit a creature with a melee weapon attack made with a spear, you may roll a d4 and add the result to the damage roll.</li>
+                <li>The range of ranged weapon attacks you make with a spear increases by 10 feet for short-range and 30 feet for long range.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When you hit a creature with a melee weapon attack made with a spear, you may roll a d4 and add the result to the damage roll.
+            The range of ranged weapon attacks you make with a spear increases by 10 feet for short-range and 30 feet for long range.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Increase, Spear Mastery" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+        </rules>
+    </element>
+    <element name="Stabber" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_STABBER">
+        <description>
+            <p>You are an expert at delivering devastating blows with a piercing weapon, which grants you the following benefits:</p>
+            <ul>
+                <li>Increase your Strength or Dexterity by 1, to a maximum of 20.</li>
+                <li>Once per turn, when you hit a creature with an attack that deals piercing damage, you can roll a d4 and add the result to the damage.</li>
+                <li>You score a critical hit on a roll of 19 or 20 when you make an attack that deals piercing damage. If you have an additional trait or feature that extends your critical hit range, such as the Fighter Champion’s Improved Critical feature, you choose whether to gain the benefits of this feat or the feature but not both.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Once per turn, when you hit a creature with an attack that deals piercing damage, you can roll a d4 and add the result to the damage.
+            You score a critical hit on a roll of 19 or 20 when you make an attack that deals piercing damage. If you have an additional trait or feature that extends your critical hit range, such as the Fighter Champion’s Improved Critical feature, you choose whether to gain the benefits of this feat or the feature but not both.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Increase, Stabber" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY"/>
+        </rules>
+    </element>
+    <element name="Storm Giant Blood" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_STORM_GIANT_BLOOD">
+        <prerequisite>5th level, Charisma 13 or higher, ability to speak Giant</prerequisite>
+        <requirements>ID_LANGUAGE_GIANT,[level:5],[cha:13]</requirements>
+        <description>
+            <p>The lucky and patient few who interact with storm giants are sometimes awarded spirit bonds. These bonds allow you to borrow some of their innate magic. You gain the following benefits:</p>
+            <ul>
+                <li>Choose one of the following spells: detect magic, feather fall, or levitate. You learn how to cast the spell at will, requiring no material components. Charisma is your spellcasting ability for this spell.</li>
+                <li>You gain a swim speed equal to your walking speed.</li>
+                <li>You can breathe air and water.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Choose one of the following spells: detect magic, feather fall, or levitate. You learn how to cast the spell at will, requiring no material components. Charisma is your spellcasting ability for this spell.
+            You can breathe air and water.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:swim" value="speed" alt="Storm Giant Blood"/>
+            <select type="Spell" supports="ID_PHB_SPELL_DETECT_MAGIC|ID_PHB_SPELL_FEATHER_FALL|ID_PHB_SPELL_LEVITATE" name="Storm Giant Blood Spell" />
+        </rules>
+    </element>
+    <element name="Thrower" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_THROWER">
+        <description>
+            <p>Any item in your hand becomes a deadly weapon. You gain the following benefits:</p>
+            <ul>
+                <li> Increase your Strength or Dexterity by 1, to a maximum of 20.</li>
+                <li>Attacking at long range doesn’t impose disadvantage on your ranged weapon attack rolls.</li>
+                <li>Immediately after you make an attack with a weapon that has the thrown and light properties while using the Attack action on your turn, you can use your bonus action to make another attack using a weapon with the thrown and light properties.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>Attacking at long range doesn’t impose disadvantage on your ranged weapon attack rolls.
+            Immediately after you make an attack with a weapon that has the thrown and light properties while using the Attack action on your turn, you can use your bonus action to make another attack using a weapon with the thrown and light properties.</description>
+        </sheet>
+        <rules>
+             <select type="Ability Score Improvement" name="Ability Score Increase, Thrower" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY"/>
+        </rules>
+    </element>
+    <element name="Versatile" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_VERSATILE">
+        <description>
+            <p>You gain the following benefits:</p>
+            <ul>
+                <li> Increase your Strength or Constitution by 1, to a maximum of 20.</li>
+                <li>When you make an attack using a weapon with the versatile feature, you can deal the two-handed damage value listed in parentheses even if you wield the weapon as a one-handed weapon.</li>
+                <li>When you wield a weapon with the versatile trait with two hands and hit a target, you may choose to use the weapon’s normal one-handed damage value instead of the damage value in the parentheses. When you do, you may use your bonus action to make another attack using the same weapon so long as you also use the weapon’s normal one-handed damage value for this attack’s damage roll.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>When you make an attack using a weapon with the versatile feature, you can deal the two-handed damage value listed in parentheses even if you wield the weapon as a one-handed weapon.
+            When you wield a weapon with the versatile trait with two hands and hit a target, you may choose to use the weapon’s normal one-handed damage value instead of the damage value in the parentheses. When you do, you may use your bonus action to make another attack using the same weapon so long as you also use the weapon’s normal one-handed damage value for this attack’s damage roll.</description>
+        </sheet>
+        <rules>
+            <select type="Ability Score Improvement" name="Ability Score Increase, Thrower" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION"/>
+        </rules>
+    </element>
 </elements>
 <!--
-    <element name="featname" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_FEATNAME">
+    <element name="Featname" type="Feat" source="Omeria" id="ID_DMDAVE_OMERIA_FEAT_FEATNAME">
         <description>
             <p></p>
         </description>
