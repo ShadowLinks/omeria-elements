@@ -1,0 +1,55 @@
+<elements>
+    <info>
+        <name>Magic Items</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="items-magic.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/items-magic.xml"/>
+        </update>
+    </info>
+    <element name="Chains of Sloth" type="Magic Item" source="Omeria" id="ID_DMDAVE_OMERIA_MAGIC_ITEM_CHAINS_OF_SLOTH">
+        <description>
+            <p><i>Thousands of tiny blades digging into flesh, each nick a gentle pain, Movement hopeless, stillness tranquility, power is mine. —The Chain’s Poem</i></p>
+            <p class="indent">What price would one pay for power? Some might surround themselves with the lustful bodies of their worshipers. Others may lend their higher faculties to unbridled wrath. While still there are few who might track down their betters only to destroy them</p>
+            <p class="indent">Those who have wielded the Chains of Sloth pay a steep price for its power. The chains themselves are worn as a form of armor, protecting its owner. They also provide powerful weapons in the form of blades. However, the chains are constrictive. They squeeze the user at every move, hampering them. Tiny barbs jab into the flesh, torturing them if they overexert themselves. In time, the owner stops moving altogether, finding solace in inactivity.</p>
+            <p class="indent">The chains’ origins are unknown. Naturally, there are those who believe the chain devils of the distant lower planes beyond The Narrow Path crafted this devilish artifact. Other scholars believe that it was the other way around; the source of the chains created the chain devils, too.</p>
+            <p class="indent"><strong><em>Random Properties. </em></strong>The Chains of Sloth have the following random properties:</p>
+            <ul>
+                <li> 2 major beneficial properties</li>
+                <li> 1 major detrimental property</li>
+                <li> 4 minor detrimental properties</li>
+            </ul>
+            <p class="indent"><strong><em>Chain Armor. </em></strong>When you wear the Chains of Sloth while attuned to them, they work as magical armor. Your AC equals 20, you gain resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks, and you are immune to being magically charmed. In addition, you are immovable. Whenever a creature attempts to move you or shove you, it must make a DC 25 Strength check in order to do so, only moving you up to 10 feet with a success.</p>
+            <p class="indent"><strong><em>However, there are drawbacks.</em></strong> Your Strength and Dexterity scores become 7 (unless already lower), and you have disadvantage on Stealth checks and Dexterity saving throws. If you move more than 10 feet on your turn, you take 1 piercing damage for every 10 feet you move beyond the first 10. In addition, if you take an action and a bonus action on your turn, you take 1d4 piercing damage for overexerting yourself. The damage that the chains cause to you are considered magical for the purposes of overcoming resistance and immunity, including the resistances they provide.</p>
+            <p class="indent"><strong><em>Weapon.</em></strong> While you are wearing the chains and attuned to them, you can use the chains to make a melee weapon attack with bladed chains. Each bladed chain has a reach of 15 feet and deals 1d6 + 3 slashing damage on a successful hit, ignoring penalties to Strength or Dexterity. You can dual-wield with the chains as if each one counted as a light weapon. The chains are considered magical for the purposes of overcoming resistances and immunities.</p>
+            <p class="indent"><strong><em>Aura of Lethargy.</em></strong> Each creature that starts its turn within 30 feet of you while you are attuned to the chains is magically slowed by the chains. An affected target’s speed is halved, it takes a -2 penalty to AC and Dexterity saving throws, and it can’t use reactions. On its turn, it can use either an action or a bonus action, not both. Regardless of the creature’s abilities or magic items, it can’t make more than one melee or ranged attack during its turn. </p>
+            <p class="indent">A creature affected by the aura can make a DC 18 Wisdom saving throw at the end of each of its turns. On a successful save, the effect ends for it. A creature that succeeds on its saving throw is immune to the chains’ aura for 24 hours.</p>
+            <p class="indent"><strong><em>Cursed.</em></strong> Once a wearer places the armor on, it cannot be removed except through a wish spell or similar magic. In addition, you must spend at least 2 hours to gain the benefits of a short rest and 12 hours to gain the benefits of a long rest.</p>
+            <p class="indent"><strong><em>Destroying the Chains.</em></strong> Some believe that as long as slothfulness exists in the multiverse, the Chains of Sloth cannot be destroyed. However, if a solar should sacrifice itself in the presence of the chains, it can use its dying wish to destroy the chains. Unfortunately, as long as slothfulness exists in the multiverse, the chains reform 1d10 x 10 years later. If all slothfulness in the multiverse is wiped out, the chains rust and crumble, groaning as they vanish.</p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Artifact</set>
+            <set name="attunement">true</set>
+            <set name="cursed">true</set>
+        </setters>
+    </element>
+</elements>
+
+<!-- 
+<element name="itemname" type="Magic Item" source="Omeria" id="ID_DMDAVE_OMERIA_MAGIC_ITEM_ITEMNAME">
+        <description>
+            <p></p>
+            <p class="indent"></p>
+        </description>
+        <setters>
+            <set name="category">Wondrous Items</set>
+            <set name="cost" currency="gp">0</set>
+            <set name="weight" lb="0">0 lb.</set>
+            <set name="type">Wondrous Item</set>
+            <set name="rarity">Artifact</set>
+        </setters>
+    </element>
+    -->

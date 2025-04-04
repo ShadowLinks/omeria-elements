@@ -9,63 +9,189 @@
     <element name="Circle of Wastelands" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_DRUID_WASTELANDS">
         <supports>Druid Circle</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
+            <p>Wasteland druids are cruel spellcasters devoted to the total destruction of life. Even plant life has no place in their world. In the mind of the wasteland druid, Omeria belongs only to the four basic elements.</p>
+            <p class="indent">Circle of Wastelands druids are rarely of good or lawful alignment. Neutral wasteland druids are common, as are chaotic evil ones. In the rare occasion where these druids work alongside other humanoids, they do so only as a means to an end. Whatever brief moments of humanity they exhibit quickly get buried under their unwavering dedication to the unblemished world of their fantasies.</p>
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_SPELLS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_DESPITE" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_CONTEMPT_FOR_LIFE" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_WAVE_OF_DISRUPTION" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_TOTAL_ANNIHILATION" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="2" />
-            <grant type="Archetype Feature" id="ID___" level="2" />
-            <grant type="Archetype Feature" id="ID____" level="6" />
-            <grant type="Archetype Feature" id="ID_____" level="10" />
-            <grant type="Archetype Feature" id="ID______" level="14" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_SPELLS" level="2" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_DESPITE" level="2" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_CONTEMPT_FOR_LIFE" level="6" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_WAVE_OF_DISRUPTION" level="10" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_TOTAL_ANNIHILATION" level="14" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID__">
+    <element name="Circle Spells" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_SPELLS">
+        <description>
+            <p>Your magic pulls heavily from the four basic elements. This connection provides you the tools necessary for the eradication of life in the form of spells. You gain these spells when you reach certain levels in this class, as shown on the Circle of Wastelands Spells table</p>
+            <p class="indent">Once you gain access to one of these spells, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>burning hands, create or destroy water</td></tr>
+                <tr><td>3rd</td><td>gust of wind, shatter</td></tr>
+                <tr><td>5th</td><td>lightning bolt, vampiric touch</td></tr>
+                <tr><td>7th</td><td>black tentacles, blight</td></tr>
+                <tr><td>9th</td><td>cloudkill, destructive wave</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" level="2" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_BURNING_HANDS" />
+            <grant type="Spell" level="2" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" />
+            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_SHATTER" />
+            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_GUST_OF_WIND" />
+            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_LIGHTNING_BOLT" />
+            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_VAMPIRIC_TOUCH" />
+            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES" />
+            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_BLIGHT" />
+            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_CLOUDKILL" />
+            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_DESTRUCTIVE_WAVE" />
+        </rules>
+    </element>
+    <element name="Despite" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_DESPITE">
+        <description>
+            <p>Your innate hatred of living creatures imbues you with destructive might. Choose a creature type that you despise: aberrations, beasts, dragons, giants, monstrosities, or plants. Alternatively, you can select two races of humanoid (such as humans and elves). You have advantage on spell attacks made against these creatures.</p>
+            <p class="indent">Additionally, you can use your bonus action on each of your turns to soften a creature’s defenses against your magic. When you do, choose a creature of the type you despise that you can see within 120 feet of you. That creature has disadvantage on saving throws made against your druid spells until the start of your next turn.</p>
+            <p class="indent">You choose one additional creature type you despise at 6th and 14th level.</p>
+        </description>
+        <sheet>
+            <description> You have advantage on spell attacks made against these creatures.
+            Additionally, you can use your bonus action on each of your turns to soften a creature’s defenses against your magic. When you do, choose a creature of the type you despise that you can see within 120 feet of you. That creature has disadvantage on saving throws made against your druid spells until the start of your next turn.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Despised Creature Type" supports="despised-type" />
+            <select type="Archetype Feature" name="Despised Creature Type" supports="despised-type" level="6"/>
+            <select type="Archetype Feature" name="Despised Creature Type" supports="despised-type" level="14"/>
+        </rules>
+    </element>
+    <element name="Beasts" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_DESPITE_BEASTS">
+        <supports>despised-type</supports>
         <description>
             <p></p>
+            <p class="indent"></p>
         </description>
         <sheet>
             <description></description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="Aberrations" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_DESPITE_ABERRATIONS">
+        <supports>despised-type</supports>
         <description>
             <p></p>
+            <p class="indent"></p>
         </description>
         <sheet>
             <description></description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Dragons" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_DESPITE_DRAGONS">
+        <supports>despised-type</supports>
         <description>
             <p></p>
+            <p class="indent"></p>
         </description>
         <sheet>
             <description></description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="Giants" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_DESPITE_GIANTS">
+        <supports>despised-type</supports>
         <description>
             <p></p>
+            <p class="indent"></p>
         </description>
         <sheet>
             <description></description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID______">
+    <element name="Monstrosities" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_DESPITE_MONSTROSITIES">
+        <supports>despised-type</supports>
         <description>
             <p></p>
+            <p class="indent"></p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+    </element>
+    <element name="Plants" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_DESPITE_PLANTS">
+        <supports>despised-type</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Humanoid Race 1" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_DESPITE_HUMANOID1">
+        <supports>despised-type</supports>
+        <description>
+            <p>Choose a humanoid race like elves or humans</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Humanoid Race 2" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_DESPITE_HUMANOID2">
+        <supports>despised-type</supports>
+        <requirements>ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_DESPITE_HUMANOID1</requirements>
+        <description>
+            <p>Choose another humanoid race like elves or humans</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Contempt for Life" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_CONTEMPT_FOR_LIFE">
+        <description>
+            <p>On your turn, you can use your bonus action to shut down an enemy’s ability to heal itself. Choose a target that you can see within 120 feet of you. That target cannot regain hit points until the start of your next turn. If the target has the regeneration feature, its feature does not function at the start of its next turn.</p>
+            <p class="indent">Additionally, whenever the creature takes damage from any source, you can use your reaction to regain a number of hit points equal to your levels in this class plus your Wisdom modifier.</p>
+        </description>
+        <sheet>
+            <description>On your turn, you can use your bonus action to shut down an enemy’s ability to heal itself. Choose a target that you can see within 120 feet of you. That target cannot regain hit points until the start of your next turn. If the target has the regeneration feature, its feature does not function at the start of its next turn.
+            Additionally, whenever the creature takes damage from any source, you can use your reaction to regain {{contemptforlife:hp}} hit points.</description>
+        </sheet>
+        <rules>
+            <stat name="contemptforlife:hp" value="level:druid" bonus="base" />
+            <stat name="contemptforlife:hp" value="wisdom:modifier" />
+        </rules>
+    </element>
+    <element name="Wave of Distruption" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_WAVE_OF_DISRUPTION">
+        <description>
+            <p>As an action, you can create a 30-foot cone of negative energy. Choose one of the following conditions: blinded, deafened, frightened, or poisoned. Each creature in the area must succeed on a Constitution saving throw against your spell save DC or become afflicted by the chosen condition until the start of your next turn.</p>
+            <p class="indent">You can use this feature a number of times equal to your Wisdom modifier and regain all expended uses when you complete a short or long rest.</p>
+        </description>
+        <sheet usage="{{wisdom:modifier}}/Short Rest">
+            <description>As an action, you can create a 30-foot cone of negative energy. Choose one of the following conditions: blinded, deafened, frightened, or poisoned. Each creature in the area must succeed on a Constitution saving throw against your spell save DC or become afflicted by the chosen condition until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Total Annihilation" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_WASTELANDS_TOTAL_ANNIHILATION">
+        <description>
+            <p>As an action, you can expend a use of your Wild Shape feature to tear a creature’s life force from it. Choose a creature of the type you despise that you can see within 120 feet of you. If the creature you choose has hit points equal to 5 times your levels in this class or fewer, it dies. Otherwise, the target takes 10d8 necrotic damage.</p>
+        </description>
+        <sheet usage="Wild Shape">
+            <description>As an action, you can expend a use of your Wild Shape feature to tear a creature’s life force from it. Choose a creature of the type you despise that you can see within 120 feet of you. If the creature you choose has hit points equal to {{5xclasslevel}} or fewer, it dies. Otherwise, the target takes 10d8 necrotic damage.</description>
+        </sheet>
+        <rules>
+            <stat name="5xclasslevel" value="level:druid" bonus="base" />
+            <stat name="5xclasslevel" value="level:druid" />
+            <stat name="5xclasslevel" value="level:druid" />
+            <stat name="5xclasslevel" value="level:druid" />
+            <stat name="5xclasslevel" value="level:druid" />
+        </rules>
     </element>
 </elements>
