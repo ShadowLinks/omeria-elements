@@ -9,73 +9,83 @@
     <element name="Ghost" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FIGHTER_GHOST">
         <supports>Martial Archetype</supports>
         <description>
-            <p></p>
+            <p>Blending the techniques and stealth of assassins and rogues, the Dinzer Ghosts haunt the Three Great Wasteland like careful predators. They are also found on The Leash, keeping a watchful eye on the goings-on of their adversaries on the Weysevain Coast.</p>
             <p class="indent"></p>
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_FIGHTER_GHOST_UNSEEN" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_FIGHTER_GHOST_KNIFE" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_FIGHTER_GHOST_FEAR" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_FIGHTER_GHOST_WE_ARE_FEAR" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_FIGHTER_GHOST_DEATH" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_FIGHTER_GHOST_GHOSTS" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="3" />
-            <grant type="Archetype Feature" id="ID_____" level="7" />
-            <grant type="Archetype Feature" id="ID______" level="10" />
-            <grant type="Archetype Feature" id="ID_______" level="15" />
-            <grant type="Archetype Feature" id="ID________" level="18" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_FIGHTER_GHOST_UNSEEN" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_FIGHTER_GHOST_KNIFE" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_FIGHTER_GHOST_FEAR" level="7" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_FIGHTER_GHOST_WE_ARE_FEAR" level="10" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_FIGHTER_GHOST_DEATH" level="15" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_FIGHTER_GHOST_GHOSTS" level="18" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="We are the unseen" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_FIGHTER_GHOST_UNSEEN">
         <description>
-            <p></p>
+            <p>You gain proficiency in the Stealth skill and your proficiency bonus is doubled for any ability check you make that uses Stealth.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" bonus="double"/>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="We are the knifie in the dark" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_FIGHTER_GHOST_KNIFE">
         <description>
-            <p></p>
+            <p>You are an expert at taking advantage of your opponent while their guard is down. Once per turn, you can add your proficiency bonus to your damage roll on one attack if you have advantage on the attack roll. You don’t need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.</p>
+        </description>
+        <sheet usage="1/Turn">
+            <description>Once per turn, you can add +{{proficiency}} bonus to your damage roll on one attack if you have advantage on the attack roll. You don’t need advantage on the attack roll if another enemy of the target is within 5 feet of it, that enemy isn’t incapacitated, and you don’t have disadvantage on the attack roll.</description>
+        </sheet>
+    </element>
+    <element name="We do not know fear" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_FIGHTER_GHOST_FEAR">
+        <description>
+            <p>You’ve learned to anticipate dangers. You add your proficiency bonus to your initiative checks.</p>
+            <p class="indent">Also, you gain proficiency in Dexterity saving throws. If you already have this proficiency, you instead gain proficiency in Intelligence or Wisdom saving throws (your choice).</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <stat name="initiative" value="proficiency"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" requirements="!ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+            <select type="Proficiency" supports="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE|ID_PROFICIENCY_SAVINGTHROW_WISDOM" requirements="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+            
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="For we are fear" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_FIGHTER_GHOST_WE_ARE_FEAR">
         <description>
-            <p></p>
+            <p>You can use your bonus action to make a Charisma (Intimidation) check contested by a target’s Wisdom (Insight) check. The target must be within 30 feet of you and able to see you. If the check is successful, the target is frightened of you until it takes damage or until the end of its next turn. While the creature is frightened of you, you have advantage on attack rolls against it. If the target succeeds on the contest or the effect ends for it, it is immune to this feature for the next 24 hours.</p>
+            <p class="indent">You can use this feature three times and regain all expended uses after you complete a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="3/Long Rest">
+            <description>You can use your bonus action to make a Charisma (Intimidation) check contested by a target’s Wisdom (Insight) check. The target must be within 30 feet of you and able to see you. If the check is successful, the target is frightened of you until it takes damage or until the end of its next turn. While the creature is frightened of you, you have advantage on attack rolls against it. If the target succeeds on the contest or the effect ends for it, it is immune to this feature for the next 24 hours.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID______">
+    <element name="And we are death" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_FIGHTER_GHOST_DEATH">
         <description>
-            <p></p>
+            <p>You can use your action to make a single attack against a target within reach, and you do not gain extra attacks from your Extra Attack feature when you use this feature. You have advantage on the attack roll and the attack scores a critical hit on a roll of 19 or 20. If the attack scores a critical hit, the attack deals the maximum amount of damage.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can use your action to make a single attack against a target within reach, and you do not gain extra attacks from your Extra Attack feature when you use this feature. You have advantage on the attack roll and the attack scores a critical hit on a roll of 19 or 20. If the attack scores a critical hit, the attack deals the maximum amount of damage.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_______">
+    <element name="We are ghosts" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_FIGHTER_GHOST_GHOSTS">
         <description>
-            <p></p>
+            <p>As a bonus action, or as a reaction when a creature hits you with an attack roll or harmful spell, you can become incorporeal. While incorporeal, you gain resistance to all damage except for radiant and force damage, including from the triggering attack. You can move through other creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside an object. You remain incorporeal as long as you concentrate (as if concentrating on a spell), up to 1 minute, until you make an attack or cast a spell, or you use your bonus action to end the effect.</p>
+            <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>As a bonus action, or as a reaction when a creature hits you with an attack roll or harmful spell, you can become incorporeal. While incorporeal, you gain resistance to all damage except for radiant and force damage, including from the triggering attack. You can move through other creatures and objects as if they were difficult terrain, but you take 1d10 force damage if you end your turn inside an object. You remain incorporeal as long as you concentrate (as if concentrating on a spell), up to 1 minute, until you make an attack or cast a spell, or you use your bonus action to end the effect.</description>
         </sheet>
     </element>
 </elements>

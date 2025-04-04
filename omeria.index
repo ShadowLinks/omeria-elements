@@ -38,6 +38,8 @@
 		<file name="cleric-duality.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/cleric-duality.xml"/>
 		<file name="druid-rain.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/druid-rain.xml"/>
 		<file name="druid-wastelands.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/druid-wastelands.xml"/>
+		<file name="fighter-ghost.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/fighter-ghost.xml"/>
+		<file name="fighter-spearwielder.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/fighter-spearwielder.xml"/>
 		
     </files>
 </index>
