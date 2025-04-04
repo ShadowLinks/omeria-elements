@@ -9,63 +9,90 @@
     <element name="Circle of Rain" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_DRUID_RAIN">
         <supports>Druid Circle</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
+            <p>Of course, not all druids are eco-terrorists. The orcish druids of Khulgoghan embrace the path of the world. They don’t see Omeria’s decay as destruction, but as the next phase in its development.</p>
+            <p class="indent">The Khulgoghan shamans are dedicated to the change of seasons. As a village found in a sub-tropical climate, their winters are relatively warm compared to those in the north, and characterized by a rainy season. This period of heavy rains begins shortly after winter solstice and lasts until the middle of Bosva.</p>
+            <p class="indent">Druids of the circle of rain aren’t limited to just the Khugoghans. Similar practices appear in Ditimaya, Steel Church, and even as far north as the Wallingmiotta. In fact, some circle of rain druids doing work within The Wither alongside druids of the circle of wastelands.</p>
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_RAIN_SPELLS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_RAIN_THE_RISING_MIST" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_RAIN_SUMMON_MAGUI" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_RAIN_WEATHER_MASTERY" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_RAIN_IMPROVED_RISING_MIST" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="2" />
-            <grant type="Archetype Feature" id="ID___" level="2" />
-            <grant type="Archetype Feature" id="ID____" level="6" />
-            <grant type="Archetype Feature" id="ID_____" level="10" />
-            <grant type="Archetype Feature" id="ID______" level="14" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_RAIN_SPELLS" level="2" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_RAIN_THE_RISING_MIST" level="2" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_RAIN_SUMMON_MAGUI" level="6" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_RAIN_WEATHER_MASTERY" level="10" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_RAIN_IMPROVED_RISING_MIST" level="14" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID__">
+    <element name="Circle Spells" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_RAIN_SPELLS">
         <description>
-            <p></p>
+            <p>Your connection to weather patterns and the world’s climate grants you access to certain spells. At 2nd level, you learn the resistance cantrip</p>
+            <p class="indent">At 3rd, 5th, 7th, and 9th level, you gain access to the spells listed for that level in the Circle of Rain Spells table. Once you gain access to one of these spells, you always have it prepared, and it doesn’t count against the number of spells you can prepare each day. If you gain access to a spell that doesn’t appear on the druid spell list, the spell is nonetheless a druid spell for you.</p>
+            <table>
+                <thead>
+                    <tr><td>Druid Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>create or destroy water, thunderwave</td></tr>
+                <tr><td>3rd</td><td>calm emotions, gust of wind</td></tr>
+                <tr><td>5th</td><td>call lightning, sleet storm</td></tr>
+                <tr><td>7th</td><td>control water, ice storm</td></tr>
+                <tr><td>9th</td><td>commune with nature, conjure elemental</td></tr>
+            </table>
         </description>
-        <sheet>
+        <sheet display="false">
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Spell" level="2" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_RESISTANCE" />
+            <grant type="Spell" level="2" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" />
+            <grant type="Spell" level="2" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_THUNDERWAVE" />
+            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_CALM_EMOTIONS" />
+            <grant type="Spell" level="3" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_GUST_OF_WIND" />
+            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_CALL_LIGHTNING" />
+            <grant type="Spell" level="5" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_SLEET_STORM" />
+            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_CONTROL_WATER" />
+            <grant type="Spell" level="7" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_ICE_STORM" />
+            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" />
+            <grant type="Spell" level="9" spellcasting="Druid" prepared="true" id="ID_PHB_SPELL_CONJURE_ELEMENTAL" />
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="The Rising Mist" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_RAIN_THE_RISING_MIST">
         <description>
-            <p></p>
+            <p>As an action, you can expend one use of your Wild Shape feature to create a sphere of mist that extends out from you 20 feet in all directions. The mist spreads around corners and the area is heavily obscured, except you can see through this mist as if it wasn’t there. When you move, the mist moves with you. The mist lasts for 10 minutes and wind cannot disperse it.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="Wild Shape">
+            <description>As an action, you can expend one use of your Wild Shape feature to create a sphere of mist that extends out from you 20 feet in all directions. The mist spreads around corners and the area is heavily obscured, except you can see through this mist as if it wasn’t there. When you move, the mist moves with you. The mist lasts for 10 minutes and wind cannot disperse it.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Summon Magui" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_RAIN_SUMMON_MAGUI">
         <description>
-            <p></p>
+            <p>When you conjure the Rising Mist, you also summon Magui, unique, invisible, incorporeal rain spirits that inhabit the mist. When a creature ends its turn within your misty sphere, you can cause the Magui inside the mist to attack the creature. The Magui make a single melee spell attack against the target, using your spell attack modifier to hit. On a hit, the Magui deal force damage equal to 1d6 + your spellcasting modifier. When your mist ends, the Magui leave with it.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When a creature ends its turn within your misty sphere, you can cause the Magui inside the mist to attack the creature. The Magui make a single melee spell attack against the target, using your spell attack modifier to hit. On a hit, the Magui deal force damage equal to 1d6 + {{wisdom:modifier}}. When your mist ends, the Magui leave with it.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="Weather Mastery" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_RAIN_WEATHER_MASTERY">
         <description>
-            <p></p>
+            <p>You are immune to the negative effects caused by nonmagical weather and temperatures. This includes extreme heat, extreme cold, heavy precipitation, and heavy winds. You automatically pass all saving throws related to these conditions, they do not impose disadvantage on your ability checks, saving throws, or attack rolls, and they do not obscure your senses.</p>
+            <p class="indent">Additionally, you can sense a natural change in weather up to 1 hour before it occurs, no action required. And if you spend 10 minutes meditating or focusing on the weather, you can determine the natural weather conditions in the area that you’re in up to 1 mile for the next 24 hours.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You are immune to the negative effects caused by nonmagical weather and temperatures. This includes extreme heat, extreme cold, heavy precipitation, and heavy winds. You automatically pass all saving throws related to these conditions, they do not impose disadvantage on your ability checks, saving throws, or attack rolls, and they do not obscure your senses.
+            Additionally, you can sense a natural change in weather up to 1 hour before it occurs, no action required. And if you spend 10 minutes meditating or focusing on the weather, you can determine the natural weather conditions in the area that you’re in up to 1 mile for the next 24 hours.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID______">
+    <element name="Improved Rising Mist" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DRUID_RAIN_IMPROVED_RISING_MIST">
         <description>
-            <p></p>
+            <p>You and up to six creatures of your choice inside the area created by your Rising Mist can see through the mist as if it wasn’t there.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You and up to six creatures of your choice inside the area created by your Rising Mist can see through the mist as if it wasn’t there.</description>
         </sheet>
     </element>
 </elements>

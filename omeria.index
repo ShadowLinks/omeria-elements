@@ -36,6 +36,7 @@
 		<file name="bard-wanderer.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/bard-wanderer.xml"/>
 		<file name="cleric-destruction.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/cleric-destruction.xml"/>
 		<file name="cleric-duality.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/cleric-duality.xml"/>
+		<file name="druid-rain.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/druid-rain.xml"/>
 		
     </files>
 </index>
