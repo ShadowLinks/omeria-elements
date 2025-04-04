@@ -9,73 +9,102 @@
     <element name="Destruction Domain" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_CLERIC_DESTRUCTION">
         <supports>Divine Domain</supports>
         <description>
-            <p></p>
+            <p>Only the most devoted followers of Yrena achieve the status of priest. Empowered by this direct relationship with their “god,” they have access to some of the deadliest forms of magic in all Omeria. Of course, Yrena isn’t the only danaavrakti whose portfolio includes destruction. Minteco and Hulay, on the rare occasion they take followers, also grant the powers of destruction.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_CLERIC_DESTRUCTION_SPELLS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_CLERIC_DESTRUCTION_CANTRIP" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_CLERIC_DESTRUCTION_CD_DESTRUCTIVE_RAY" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_CLERIC_DESTRUCTION_DISRUPTION" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_CLERIC_DESTRUCTION_POTENT_SPELLCASTING" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_CLERIC_DESTRUCTION_UNWAVERING_DESTRUCTION" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="2" />
-            <grant type="Archetype Feature" id="ID_____" level="6" />
-            <grant type="Archetype Feature" id="ID______" level="8" />
-            <grant type="Archetype Feature" id="ID_______" level="17" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_CLERIC_DESTRUCTION_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_CLERIC_DESTRUCTION_CANTRIP" level="1" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_CLERIC_DESTRUCTION_CD_DESTRUCTIVE_RAY" level="2" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_CLERIC_DESTRUCTION_DISRUPTION" level="6" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_CLERIC_DESTRUCTION_POTENT_SPELLCASTING" level="8" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_CLERIC_DESTRUCTION_UNWAVERING_DESTRUCTION" level="17" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID__">
+    <element name="Domain Spells" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_CLERIC_DESTRUCTION_SPELLS">
         <description>
-            <p></p>
+            <p>You gain domain spells at the cleric levels listed in the Destruction Domain Spells table. </p>
+            <table>
+                <thead>
+                    <tr><td>Cleric Levels</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>1st</td><td>burning hands, thunderwave</td></tr>
+                <tr><td>3rd</td><td>flaming sphere, shatter</td></tr>
+                <tr><td>5th</td><td>call lightning, fireball</td></tr>
+                <tr><td>7th</td><td>blight, wall of fire</td></tr>
+                <tr><td>9th</td><td>destructive wave, flamestrike</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="1" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="1" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_FLAMING_SPHERE" level="3" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_SHATTER" level="3" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_CALL_LIGHTNING" level="5" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="5" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BLIGHT" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="7" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DESTRUCTIVE_WAVE" level="9" spellcasting="Cleric" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" level="9" spellcasting="Cleric" prepared="true" />
+        </rules>
+    </element>
+    <element name="Bonus Cantrip" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_CLERIC_DESTRUCTION_CANTRIP">
+        <description>
+            <p>When you choose this domain, you gain the firebolt cantrip if you don’t already know it. You also gain proficiency in the Intimidation skill.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" spellcasting="Cleric" />
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="Channel Divinity: Destructive Ray" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_CLERIC_DESTRUCTION_CD_DESTRUCTIVE_RAY">
         <description>
-            <p></p>
+            <p>You can use your Channel Divinity to create a destructive ray of force energy.</p>
+            <p class="indent">As an action, you present your holy symbol and target a creature that you can see within 120 feet of you. The creature must make a Dexterity saving throw against your spell save DC. On a failed save, the target takes force damage equal to 1d6 + 1 damage for every level you have in this class. The target is disintegrated if this damage leaves it with 0 Hit Points.</p>
+            <p class="indent">A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a true resurrection or a wish spell.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="Channel Divinity" alt="Destructive Ray" >
+            <description>As an action, you present your holy symbol and target a creature that you can see within 120 feet of you. The creature must make a Dexterity saving throw against your spell save DC. On a failed save, the target takes force damage equal to 1d6 + {{level:cleric}}. The target is disintegrated if this damage leaves it with 0 Hit Points.
+            A disintegrated creature and everything it is wearing and carrying, except magic items, are reduced to a pile of fine gray dust. The creature can be restored to life only by means of a true resurrection or a wish spell.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Disruption" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_CLERIC_DESTRUCTION_DISRUPTION">
         <description>
-            <p></p>
+            <p>When you target an object with a spell that deals damage, the object takes maximum damage from the spell. Additionally, you ignore the damage threshold for objects.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you target an object with a spell that deals damage, the object takes maximum damage from the spell. Additionally, you ignore the damage threshold for objects.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="Potent Spellcasting" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_CLERIC_DESTRUCTION_POTENT_SPELLCASTING">
         <description>
-            <p></p>
+            <p>You add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You add +{{wisdom:modifier}} to the damage you deal with any cleric cantrip.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID______">
+    <element name="Channel Divinity: Unwavering Destruction" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_CLERIC_DESTRUCTION_UNWAVERING_DESTRUCTION">
         <description>
-            <p></p>
+            <p>You can use your Channel Divinity to distort reality around an enemy. As a bonus action, you present your holy symbol and target a creature that you can see within 60 feet of you. The target has disadvantage on the next Strength, Dexterity, or Constitution saving throw it makes so long as it makes the saving throw before the end of your next turn.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="Channel Divinity" action="Bonus Action" alt="Unwavering Destruction">
+            <description>You can use your Channel Divinity to distort reality around an enemy. As a bonus action, you present your holy symbol and target a creature that you can see within 60 feet of you. The target has disadvantage on the next Strength, Dexterity, or Constitution saving throw it makes so long as it makes the saving throw before the end of your next turn.</description>
         </sheet>
     </element>
 </elements>

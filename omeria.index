@@ -34,6 +34,8 @@
 		<file name="barbarian-titanslayer.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/barbarian-titanslayer.xml"/>
 		<file name="bard-taznarchi.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/bard-taznarchi.xml"/>
 		<file name="bard-wanderer.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/bard-wanderer.xml"/>
+		<file name="cleric-destruction.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/cleric-destruction.xml"/>
+		<file name="cleric-duality.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/cleric-duality.xml"/>
 		
     </files>
 </index>
