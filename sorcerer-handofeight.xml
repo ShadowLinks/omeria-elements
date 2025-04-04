@@ -1,0 +1,61 @@
+<elements>
+    <info>
+        <name>Hand of Eight</name>
+        <description>Hand of Eight for Sorcerers from Pexia's Guide to Omeria</description>
+        <update version="0.0.1">
+            <file name="sorcerer-handofeight.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/sorcerer-handofeight.xml"/>
+        </update>
+    </info>
+    <element name="Hand of Eight" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_SORCERER_HANDOFEIGHT">
+        <supports>Sorcerous Origin</supports>
+        <description>
+            <p></p>
+            <p class="indent"></p>
+            <div element="ID___" />
+            <div element="ID____" />
+            <div element="ID_____" />
+            <div element="ID______" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID___" level="1" />
+            <grant type="Archetype Feature" id="ID____" level="6" />
+            <grant type="Archetype Feature" id="ID_____" level="14" />
+            <grant type="Archetype Feature" id="ID______" level="18" />
+        </rules>
+    </element>
+    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID______">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
