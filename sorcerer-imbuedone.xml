@@ -11,6 +11,7 @@
         <description>
             <p></p>
             <p class="indent"></p>
+            <div element="ID__" />
             <div element="ID___" />
             <div element="ID____" />
             <div element="ID_____" />
@@ -20,11 +21,20 @@
             <description></description>
         </sheet>
         <rules>
+            <grant type="Archetype Feature" id="ID__" level="1" />
             <grant type="Archetype Feature" id="ID___" level="1" />
             <grant type="Archetype Feature" id="ID____" level="6" />
             <grant type="Archetype Feature" id="ID_____" level="14" />
             <grant type="Archetype Feature" id="ID______" level="18" />
         </rules>
+    </element>
+    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID__">
+        <description>
+            <p></p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
     </element>
     <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
         <description>
