@@ -9,73 +9,138 @@
     <element name="Oath of the Stonearms" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_PALADIN_STONEARMS">
         <supports>Sacred Oath</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <p>When a Castlegraspian soldier proves themselves during training, demonstrating immeasurable virtue, they are encouraged to take the March of the Stonearms. The soldier must enter the first mines below Castlegrasp and seek the earth elemental Gasta-Harrak. From there, they must kneel before Gasta-Harrak and offer themselves to the earth just as the first Khan did two hundred years prior. If Gasta-Harrak detects the spirit of the Khan within the soldier, they are granted her blessing—an arm of stone. However, if she senses any impurity within the soldier’s heart, she commands the earth to devour them.</p>
+            <h5 class="caption">TENETS OF THE STONEARMS</h5>
+            <p>Below are the exact words and strictures of the Oath of Stonearms. If you use this subclass differently in your own campaign, you are free to change it as befits the character/order.</p>
+            <p class="indent">
+                <b><i>Courage and Will </i></b>
+                 You are a rock; very little can move you.
+            </p>
+            <p class="indent">
+                <b><i>Child of Earth.</i></b>
+                You must obey the will of the land.
+            </p>
+            <p class="indent">
+                <b><i>The Khan’s Protector</i></b>
+                The khan is a direct descendant of the first Khan Hayyan Harrak and wields the word of Gasta-Harrak.
+            </p>
+            <p class="indent">
+                <b><i>Ditimayan Warrior</i></b>
+                You must hone your skills to perfection.
+            </p>
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_SPELLS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_STONEARM" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_CD_PETRIFICATION" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_CD_TREMORSENSE" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_AURA_OF_THE_DEFENDER" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_ARMOR_OF_GRANITE" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_CHILD_OF_GASTAHARRAK" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="3" />
-            <grant type="Archetype Feature" id="ID_____" level="7" />
-            <grant type="Archetype Feature" id="ID______" level="15" />
-            <grant type="Archetype Feature" id="ID_______" level="20" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_STONEARM" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_CD_PETRIFICATION" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_CD_TREMORSENSE" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_AURA_OF_THE_DEFENDER" level="7" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_ARMOR_OF_GRANITE" level="15" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_CHILD_OF_GASTAHARRAK" level="20" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID__">
+    <element name="Oath Spells" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_SPELLS">
         <description>
-            <p></p>
+            <p>You gain oath spells at the paladin levels listed in the Oath of the Stonearms Spells table. See the Sacred Oath class feature for how oath spells work.</p>
+            <table>
+                <thead>
+                    <tr><td>d4</td><td>column2</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>detect magic, entangle</td></tr>
+                <tr><td>5th</td><td>knock, spike growth</td></tr>
+                <tr><td>9th</td><td>meld into stone, slow</td></tr>
+                <tr><td>13th</td><td>stone shape, stoneskin</td></tr>
+                <tr><td>17th</td><td>passwall, wall of stone</td></tr>
+            </table>
         </description>
-        <sheet>
+        <sheet display="false">
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_DETECT_MAGIC" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_ENTANGLE" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_KNOCK" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_SPIKE_GROWTH" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_MELD_INTO_STONE" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_SLOW" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_STONE_SHAPE" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_STONESKIN" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_PASSWALL" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_WALL_OF_STONE" />
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="Stonearm" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_STONEARM">
         <description>
-            <p></p>
+            <p>Your left arm and hand are made of solid stone. Your stonearm counts as a shield which increases your Armor Class by 3. You can benefit from only your arm or a shield, but not both. You still gain the benefits of your stonearm even if you are wielding two weapons or using a weapon with the two-handed property.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your left arm and hand are made of solid stone. Your stonearm counts as a shield which increases your Armor Class by 3. You can benefit from only your arm or a shield, but not both. You still gain the benefits of your stonearm even if you are wielding two weapons or using a weapon with the two-handed property.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Channel Divinity: Petrification" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_CD_PETRIFICATION">
         <description>
-            <p></p>
+            <p>As a bonus action, you can use your Channel Divinity to imbue your weapon with the earth’s might for 1 minute. The next time you hit a creature with an attack roll using that weapon, the effect on the weapon ends, and the target must succeed on a Constitution saving throw against your spell save DC. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends, and the target is no longer restrained. On a failure, the creature is petrified for 1 minute.</p>
+            <p class="indent">The duration of the creature’s petrification increases as you gain levels in this class, increasing to 1 hour when you reach 7th level, 8 hours at 15th level, and permanent at 20th level</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="Channel Divinity" action="Bonus Action" alt="Petrification">
+            <description>As a bonus action, you can use your Channel Divinity to imbue your weapon with the earth’s might for 1 minute. The next time you hit a creature with an attack roll using that weapon, the effect on the weapon ends, and the target must succeed on a Constitution saving throw against your spell save DC. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends, and the target is no longer restrained. On a failure, the creature is petrified for 1 minute.</description>
+            <description level="7">As a bonus action, you can use your Channel Divinity to imbue your weapon with the earth’s might for 1 minute. The next time you hit a creature with an attack roll using that weapon, the effect on the weapon ends, and the target must succeed on a Constitution saving throw against your spell save DC. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends, and the target is no longer restrained. On a failure, the creature is petrified for 1 hour.</description>
+            <description level="15">As a bonus action, you can use your Channel Divinity to imbue your weapon with the earth’s might for 1 minute. The next time you hit a creature with an attack roll using that weapon, the effect on the weapon ends, and the target must succeed on a Constitution saving throw against your spell save DC. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends, and the target is no longer restrained. On a failure, the creature is petrified for 8 hours.</description>
+            <description level="20">As a bonus action, you can use your Channel Divinity to imbue your weapon with the earth’s might for 1 minute. The next time you hit a creature with an attack roll using that weapon, the effect on the weapon ends, and the target must succeed on a Constitution saving throw against your spell save DC. On a failed save, the creature begins to turn to stone and is restrained. It must repeat the saving throw at the end of its next turn. On a success, the effect ends, and the target is no longer restrained. On a failure, the creature is petrified permanently.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="Channel Divinity: Tremorsense" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_CD_TREMORSENSE">
         <description>
-            <p></p>
+            <p>You can use your Channel Divinity to detect and pinpoint the origin of vibrations. As a bonus action, you gain tremorsense out to 60 feet for 1 hour.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="Channel Divinity" action="Bonus Action" alt="Tremorsense">
+            <description>You can use your Channel Divinity to detect and pinpoint the origin of vibrations. As a bonus action, you gain tremorsense out to 60 feet for 1 hour.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID______">
+    <element name="Aura of the Defender" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_AURA_OF_THE_DEFENDER">
         <description>
-            <p></p>
+            <p>You emit an aura of vitality while you aren’t incapacitated. When rolling initiative, you and any creatures of your choice within 10 feet of you gain temporary hit points equal to your level in this class.</p>
+            <p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You emit an aura of vitality while you aren’t incapacitated. When rolling initiative, you and any creatures of your choice within 10 feet of you gain {{level:paladin}} temporary hit points.</description>
+            <description level="18">You emit an aura of vitality while you aren’t incapacitated. When rolling initiative, you and any creatures of your choice within 30 feet of you gain {{level:paladin}} temporary hit points.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_______">
+    <element name="Armor of Granite" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_ARMOR_OF_GRANITE">
         <description>
-            <p></p>
+            <p>Your skin becomes hard as granite. When you are wearing no armor, your AC equals 20 and you do not add your Dexterity modifier to your AC. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits and the benefits you gain from your Stonearm feature apply as normal while you use your natural armor.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your skin becomes hard as granite. When you are wearing no armor, your AC equals 20 and you do not add your Dexterity modifier to your AC. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits and the benefits you gain from your Stonearm feature apply as normal while you use your natural armor.</description>
+        </sheet>
+    </element>
+    <element name="Child of Gasta-Harrak" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_STONEARMS_CHILD_OF_GASTAHARRAK">
+        <description>
+            <p>The stonearms can assume the form of an earth elemental. Using your bonus action, you undergo a transformation. For 1 minute, you gain the following benefits:</p>
+            <ul>
+                <li>You gain immunity to bludgeoning, piercing, and slashing damage from nonmagical attacks.</li>
+                <li>You gain a burrow speed equal to your walking speed. Additionally, you can burrow through nonmagical, unworked earth and stone. While doing so, you don’t disturb the material you move through.</li>
+                <li>You deal double damage to objects and structures.</li>
+            </ul>
+            <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest, unless you expend a 5th-level spell slot to use it again.</p>
+        </description>
+        <sheet usage="1/Long Rest" action="Bonus Action">
+            <description>Using your bonus action, you undergo a transformation. For 1 minute, you gain the following benefits:
+            You gain immunity to bludgeoning, piercing, and slashing damage from nonmagical attacks.
+            You gain a burrow speed equal to your walking speed. Additionally, you can burrow through nonmagical, unworked earth and stone. While doing so, you don’t disturb the material you move through.
+            You deal double damage to objects and structures.
+            You can refresh this feature by expending a 5th level spell slot.</description>
         </sheet>
     </element>
 </elements>

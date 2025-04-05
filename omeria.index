@@ -42,6 +42,8 @@
 		<file name="fighter-spearwielder.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/fighter-spearwielder.xml"/>
 		<file name="monk-gunmage.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/monk-gunmage.xml"/>
 		<file name="monk-winterwarrior.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/monk-winterwarrior.xml"/>
+		<file name="paladin-abjuration.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/paladin-abjuration.xml"/>
+		<file name="paladin-stonearms.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/paladin-stonearms.xml"/>
 		
     </files>
 </index>

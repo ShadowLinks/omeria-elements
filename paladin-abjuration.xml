@@ -9,73 +9,125 @@
     <element name="Oath of Abjuration" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_PALADIN_ABJURATION">
         <supports>Sacred Oath</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <p>Omeria’s first paladins, the Pressonian Abjurers, drew their power from the summer diamonds they discovered in the foothills of modern-day Presson’s Enclave. This discovery led to their eventual victory against the Anorian elves and the demonic god of winter and death, Vapul, paving the way for human dominance in Omeria.</p>
+            <p class="indent">Today, Pressonian Abjurers serve as The Summer Land’s guardians and police force. Although they train with the Otari monks of the White Pillar, Pressonian Abjurers ultimately obey the Mydon Princes.</p>
+            <h5 class="caption">TENETS OF THE ABJURERS</h5>
+            <p>A paladin who assumes the Oath of Abjuration swears to protect others at all costs.</p>
+            <p class="indent">
+                <b><i>Protection. </i></b>
+                You are a shield, all that stands between those who can’t protect themselves and the weapons of evil. 
+            </p>
+            <p class="indent">
+                <b><i> Nationalism.</i></b>
+                If you are a shield for the weak, then The Summer Land is a shield for all of Omeria. You must abide by all of The Summer Land’s laws and always favorably represent your homeland. 
+            </p>
+            <p class="indent">
+                <b><i>Codes of Ushan.</i></b>
+                Not only must you abide by The Summer Land’s laws, but you must also abide by the Codes of Ushan, the documents that forbid the use of conjuration, enchantment, and transmutation magic. 
+            </p>
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_ABJURATION_SPELLS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_ABJURATION_CD_ABJURERS_SHIELD" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_ABJURATION_CD_STRENGTH_OF_USHAN" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_ABJURATION_LIBBYS_AURA" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_ABJURATION_PERFECT_SHIELD" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_ABJURATION_SCION_OF_LIBBY" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="3" />
-            <grant type="Archetype Feature" id="ID_____" level="7" />
-            <grant type="Archetype Feature" id="ID______" level="15" />
-            <grant type="Archetype Feature" id="ID_______" level="20" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_ABJURATION_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_ABJURATION_CD_ABJURERS_SHIELD" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_ABJURATION_CD_STRENGTH_OF_USHAN" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_ABJURATION_LIBBYS_AURA" level="7" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_ABJURATION_PERFECT_SHIELD" level="15" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_ABJURATION_SCION_OF_LIBBY" level="20" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID__">
+    <element name="Oath Spells" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_ABJURATION_SPELLS">
         <description>
-            <p></p>
+            <p>You gain oath spells at the paladin levels listed in the Oath of Abjuration Spells table. See the Sacred Oath class feature for how oath spells work.</p>
+            <table>
+                <thead>
+                    <tr><td>d4</td><td>column2</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>sanctuary, shield</td></tr>
+                <tr><td>5th</td><td>pass without trace, warding bond</td></tr>
+                <tr><td>9th</td><td>counterspell, dispel magic</td></tr>
+                <tr><td>13th</td><td>freedom of movement, private sanctum</td></tr>
+                <tr><td>17th</td><td>antilife shell, dispel evil and good</td></tr>
+            </table>
         </description>
-        <sheet>
+        <sheet display="false">
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_SANCTUARY" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="3" id="ID_PHB_SPELL_SHIELD" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="5" id="ID_PHB_SPELL_WARDING_BOND" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_COUNTERSPELL" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="9" id="ID_PHB_SPELL_DISPEL_MAGIC" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="13" id="ID_PHB_SPELL_MORDENKAINENS_PRIVATE_SANCTUM" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_ANTILIFE_SHELL" />
+            <grant type="Spell" prepared="true" spellcasting="Paladin" level="17" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" />
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="Channel Divinity: Abjurer's Shield" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_ABJURATION_CD_ABJURERS_SHIELD">
         <description>
-            <p></p>
+            <p>You can use your Channel Divinity to protect yourself and others around you from harm. As an action, you can choose a number of creatures you can see within 30 feet of you, up to a number equal to your Charisma modifier (minimum of one creature). Attacks made against you and the other creatures are made with disadvantage until the end of your next turn. On subsequent turns, you can use your action to maintain this effect, extending its duration until the end of your next turn. When you extend the effect’s duration, you do not choose new creatures; the same creatures are affected so long as they are still within 30 feet of you. Any affected creature that is not within 30 feet of you when you extend this effect loses the benefits at the end of your turn and cannot regain the benefits until you use this feature again.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="Channel Divinity" alt="Abjurer's Shield">
+            <description>You can use your Channel Divinity to protect yourself and others around you from harm. As an action, you can choose a number of creatures you can see within 30 feet of you, up to {{charisma:modifier}}. Attacks made against you and the other creatures are made with disadvantage until the end of your next turn. On subsequent turns, you can use your action to maintain this effect, extending its duration until the end of your next turn. When you extend the effect’s duration, you do not choose new creatures; the same creatures are affected so long as they are still within 30 feet of you. Any affected creature that is not within 30 feet of you when you extend this effect loses the benefits at the end of your turn and cannot regain the benefits until you use this feature again.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Channel Divinity: Strength of Ushan" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_ABJURATION_CD_STRENGTH_OF_USHAN">
         <description>
-            <p></p>
+            <p>You can use your action to expend one use of your Channel Divinity to protect yourself against magical effects from the three banned schools of magic. This defense lasts for 1 minute. For the duration, any time a creature targets you with a spell from the conjuration, enchantment, or transmutation schools of magic, you can use your reaction to force it to make a Charisma saving throw against your spell save DC. On a failed saving throw, the spell fails and has no effect and the spellcaster takes psychic damage equal to your level in this class + your Charisma modifier (minimum of 1).</p>
+        </description>
+        <sheet usage="Channel Divinity" alt="Strength of Ushan">
+            <description>You can use your action to expend one use of your Channel Divinity to protect yourself against magical effects from the three banned schools of magic. This defense lasts for 1 minute. For the duration, any time a creature targets you with a spell from the conjuration, enchantment, or transmutation schools of magic, you can use your reaction to force it to make a Charisma saving throw against your spell save DC. On a failed saving throw, the spell fails and has no effect and the spellcaster takes {{ushan-damage}} psychic damage.</description>
+        </sheet>
+        <rules>
+            <stat name="ushan-damage" value="charisma:modifier" />
+            <stat name="ushan-damage" value="level:paladin" />
+        </rules>
+    </element>
+    <element name="Libby's Aura" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_ABJURATION_LIBBYS_AURA">
+        <description>
+            <p>You emit an aura of protection while you aren’t incapacitated. Each creature of your choice within 10 feet of you gains a +2 bonus its armor class.</p>
+            <p class="indent">At 18th level, the range of this aura increases to 30 feet.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You emit an aura of protection while you aren’t incapacitated. Each creature of your choice within 10 feet of you gains a +2 bonus its armor class.</description>
+            <description level="18">You emit an aura of protection while you aren’t incapacitated. Each creature of your choice within 30 feet of you gains a +2 bonus its armor class.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="Perfect Shield" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_ABJURATION_PERFECT_SHIELD">
         <description>
-            <p></p>
+            <p>When you or a creature within 30 feet of you that you can see is hit by an attack or targeted by the magic missile spell, you can use your reaction to create a barrier of magical force to protect the target. The target gains a +5 bonus to its AC, including against the triggering attack, and takes no damage from magic missile, until the start of the target’s next turn.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet action="Reaction">
+            <description>When you or a creature within 30 feet of you that you can see is hit by an attack or targeted by the magic missile spell, you can use your reaction to create a barrier of magical force to protect the target. The target gains a +5 bonus to its AC, including against the triggering attack, and takes no damage from magic missile, until the start of the target’s next turn.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID______">
+    <element name="Scion of Libby" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_PALADIN_ABJURATION_SCION_OF_LIBBY">
         <description>
-            <p></p>
+            <p>As an action, you transform into a personification of protection and defense. For 1 minute, you gain the following benefits:</p>
+            <ul>
+                <li>Whenever you cast an abjuration spell that has a casting time of 1 action, you can cast it using a bonus action instead.</li>
+                <li>Any time a creature attacks you with a melee weapon attack, the creature must make a Charisma saving throw against your spell save DC. The attacker takes 5d8 psychic damage on a failed saving throw or half as much damage on a successful one.</li>
+                <li>When you use your action to take the Dodge action on your turn, you are resistant to all forms of damage until the start of your next turn.</li>
+            </ul>
+            <p class="indent">Once you use this feature, you can’t use it again until you complete a long rest, or unless you expend a 5th-level spell slot.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>As an action, you transform into a personification of protection and defense. For 1 minute, you gain the following benefits:
+            Whenever you cast an abjuration spell that has a casting time of 1 action, you can cast it using a bonus action instead.
+            Any time a creature attacks you with a melee weapon attack, the creature must make a Charisma saving throw against your spell save DC. The attacker takes 5d8 psychic damage on a failed saving throw or half as much damage on a successful one.
+            When you use your action to take the Dodge action on your turn, you are resistant to all forms of damage until the start of your next turn.
+            You can uses this feature again by expending a 5th-level spell slot.</description>
         </sheet>
     </element>
 </elements>
