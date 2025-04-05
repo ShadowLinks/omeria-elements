@@ -37,7 +37,11 @@
         <sheet>
             <description></description>
         </sheet>
-        <stat name="stealth:proficiency" value="proficiency" bonus="double"/>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+            <stat name="stealth:proficiency" value="proficiency" bonus="double" />
+        </rules>
+        
     </element>
     <element name="We are the knifie in the dark" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_FIGHTER_GHOST_KNIFE">
         <description>

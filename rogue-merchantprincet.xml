@@ -51,7 +51,8 @@
             <description></description>
         </sheet>
         <rules>
-            <stat name="deception:proficiency" value="proficiency" bonus="double"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+            <stat name="deception:proficiency" value="proficiency" bonus="double" />
         </rules>
     </element>
     <element name="Intimidation" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_NETOGIATOR_INTIMIDATION">
@@ -63,7 +64,8 @@
             <description></description>
         </sheet>
         <rules>
-            <stat name="intimidation:proficiency" value="proficiency" bonus="double"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+            <stat name="intimidation:proficiency" value="proficiency" bonus="double" />
         </rules>
     </element>
     <element name="Persuasion" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_NETOGIATOR_PERSUASION">
@@ -75,7 +77,8 @@
             <description></description>
         </sheet>
         <rules>
-            <stat name="persuasion:proficiency" value="proficiency" bonus="double"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+            <stat name="persuasion:proficiency" value="proficiency" bonus="double" />
         </rules>
     </element>
     <element name="Adept Appraisal" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_ADEPT_APPRAISAL">
