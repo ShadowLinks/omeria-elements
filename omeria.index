@@ -46,6 +46,8 @@
 		<file name="paladin-stonearms.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/paladin-stonearms.xml"/>
 		<file name="ranger-witchhunter.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/ranger-witchhunter.xml"/>
 		<file name="ranger-sanddancer.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/ranger-sanddancer.xml"/>
+		<file name="rogue-deadrunner.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/rogue-deadrunner.xml"/>
+		<file name="rogue-merchantprincet.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/rogue-merchantprincet.xml"/>
 		
     </files>
 </index>

@@ -9,63 +9,125 @@
     <element name="Merchant Princet" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_ROGUE_MERCHANTPRINCET">
         <supports>Roguish Archetype</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <p>After The Transmuter Wars destroyed central Omeria, many of the surviving Ditimayans and Karnionians moved to Central Omeria’s edges. Soon, The Wound, the large sea dividing the Summer Land from Central Omeria, became home to tribal nations and city-states. Today, these young nations comprise the Tribal Confederation of Mighty Tadju. Tadju’s position on The Wound as well as the vast swaths of desert it claims earns it the top honor as Omeria’s center of trade. In fact, Tadju mints four out of every five coins in Omeria.</p>
+            <p class="indent">Tadju’s founders were survivors. They understood the value of negotiation and were not above underhanded dealings. Three hundred years ago, other Omerians called them rogues. But with great power comes great respect. Today, Omerians refer to them by their preferred titles: merchant princets. Of course, little has changed about the way they do business.</p>
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_NETOGIATOR" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_ADEPT_APPRAISAL" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_STILL_MIND" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_PEACEMAKER" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_MASTER_NEGOTIATOR" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_ULTIMATE_BETRAYAL" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="3" />
-            <grant type="Archetype Feature" id="ID_____" level="9" />
-            <grant type="Archetype Feature" id="ID______" level="13" />
-            <grant type="Archetype Feature" id="ID_______" level="17" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_NETOGIATOR" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_ADEPT_APPRAISAL" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_STILL_MIND" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_PEACEMAKER" level="9" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_MASTER_NEGOTIATOR" level="13" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_ULTIMATE_BETRAYAL" level="17" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="Negotiator" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_NETOGIATOR">
         <description>
-            <p></p>
+            <p>You gain proficiency with one of the following skills: Deception, Intimidation, or Persuasion. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency. Additionally, you learn two languages of your choice.</p>
         </description>
         <sheet>
             <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" supports="negotiator-skill" />
+            <select type="Language" name="Language, Negotiator" number="2" supports="Standard||Exotic" />
+        </rules>
+    </element>
+    <element name="Deception" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_NETOGIATOR_DECEPTION">
+        <supports>negotiator-skill</supports>
+        <description>
+            <p>You gain proficiency with one of the following skills: Deception, Intimidation, or Persuasion. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency. Additionally, you learn two languages of your choice.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="deception:proficiency" value="proficiency" bonus="double"/>
+        </rules>
+    </element>
+    <element name="Intimidation" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_NETOGIATOR_INTIMIDATION">
+        <supports>negotiator-skill</supports>
+        <description>
+            <p>You gain proficiency with one of the following skills: Deception, Intimidation, or Persuasion. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency. Additionally, you learn two languages of your choice.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="intimidation:proficiency" value="proficiency" bonus="double"/>
+        </rules>
+    </element>
+    <element name="Persuasion" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_NETOGIATOR_PERSUASION">
+        <supports>negotiator-skill</supports>
+        <description>
+            <p>You gain proficiency with one of the following skills: Deception, Intimidation, or Persuasion. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency. Additionally, you learn two languages of your choice.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <stat name="persuasion:proficiency" value="proficiency" bonus="double"/>
+        </rules>
+    </element>
+    <element name="Adept Appraisal" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_ADEPT_APPRAISAL">
+        <description>
+            <p>You can cast the spell detect magic at will. Additionally, you can cast the spell identify as a ritual, and do not require material components to do so. When you use this feature to identify a magic item, you also know whether or not the magic item is cursed and what effects it imposes on its user. Intelligence is your spellcasting ability for these spells.</p>
+        </description>
+        <sheet>
+            <description>You can cast the spell detect magic at will. Additionally, you can cast the spell identify as a ritual, and do not require material components to do so. When you use this feature to identify a magic item, you also know whether or not the magic item is cursed and what effects it imposes on its user. Intelligence is your spellcasting ability for these spells.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+            <grant type="Spell" id="ID_PHB_SPELL_IDENTIFY" />
+        </rules>
+    </element>
+    <element name="Still Mind" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_STILL_MIND">
+        <description>
+            <p>You have advantage on saving throws against becoming charmed or frightened.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on saving throws against becoming charmed or frightened.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Peacemaker" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_PEACEMAKER">
         <description>
-            <p></p>
+            <p>As an action, you can make a Charisma (Persuasion) check contested by a creature’s Wisdom (Insight) check. The creature must be able to hear you, and the two of you must share a language. If the target is immune to the charmed condition, it has advantage on its check.</p>
+            <p class="indent">If you succeed on the check and the creature is hostile to you, it becomes indifferent towards you and remains that way until you or any of your companions do anything harmful to the creature.</p>
+            <p class="indent">If you succeed on the check and the creature isn’t hostile to you, it is charmed by you for 1 minute. While charmed, it regards you as a friendly acquaintance. This effect ends immediately if you or your companions do anything harmful to it.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>As an action, you can make a Charisma (Persuasion) check contested by a creature’s Wisdom (Insight) check. The creature must be able to hear you, and the two of you must share a language. If the target is immune to the charmed condition, it has advantage on its check.
+            If you succeed on the check and the creature is hostile to you, it becomes indifferent towards you and remains that way until you or any of your companions do anything harmful to the creature.
+            If you succeed on the check and the creature isn’t hostile to you, it is charmed by you for 1 minute. While charmed, it regards you as a friendly acquaintance. This effect ends immediately if you or your companions do anything harmful to it.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="Master Negotiator" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_MASTER_NEGOTIATOR">
         <description>
-            <p></p>
+            <p>Whenever you make a Charisma ability check that lets you add your proficiency bonus, you can treat a d20 roll of 14 or lower as a 15.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Whenever you make a Charisma ability check that lets you add your proficiency bonus, you can treat a d20 roll of 14 or lower as a 15.</description>
         </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID______">
+    </element><element name="Ultimate Betrayal" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_MERCHANTPRINCET_ULTIMATE_BETRAYAL">
         <description>
-            <p></p>
+            <p>When you attack and hit a creature that is charmed by you, it must make a Wisdom saving throw (DC 8 + your Charisma modifier + your proficiency bonus). On a failed save, double the damage of your attack against the creature.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you attack and hit a creature that is charmed by you, it must make a DC {{ultimate-betrayal}} Wisdom saving throw. On a failed save, double the damage of your attack against the creature.</description>
         </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
+        <rules>
+            <stat name="ultimate-betrayal" value="8" bonus="base" />
+            <stat name="ultimate-betrayal" value="charisma:modifier" />
+            <stat name="ultimate-betrayal" value="proficiency" />
+        </rules>
     </element>
 </elements>

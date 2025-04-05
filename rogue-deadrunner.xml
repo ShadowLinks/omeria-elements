@@ -9,63 +9,380 @@
     <element name="Deadrunner" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_ROGUE_DEADRUNNER">
         <supports>Roguish Archetype</supports>
         <description>
-            <p></p>
+            <p>When the Transmuter Wars of the mid-7th century made trade and travel through the newly formed wastelands next to impossible for merchants, the trade governors of Malembia saw an opportunity. The new dangers inherent in The Wither, Obsidian Plain, and Desolation of Ditimaya would mean fewer safeguards against the transportation of illegal goods. Without hesitation, the trade governors seized the opportunity. They hired brave (and often insane) transporters to traverse the wastelands with their goods. These traders gained the moniker Deadrunner. Three hundred years later, the Deadrunner tradition continues. And while Deadrunners rarely earn as much as they did in those early years, dead running is still one of the best ways for aspiring adventurers to cut their teeth on Omeria.</p>
             <p class="indent"></p>
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_DEADRUNNER_VEHICLE" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_DEADRUNNER_STUNTS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_DEADRUNNER_RIDE_OR_DIE" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_DEADRUNNER_IMPROVED_VEHICLE" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_DEADRUNNER_SHOTGUN" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="3" />
-            <grant type="Archetype Feature" id="ID_____" level="9" />
-            <grant type="Archetype Feature" id="ID______" level="13" />
-            <grant type="Archetype Feature" id="ID_______" level="17" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_DEADRUNNER_VEHICLE" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_DEADRUNNER_STUNTS" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_DEADRUNNER_RIDE_OR_DIE" level="9" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_DEADRUNNER_IMPROVED_VEHICLE" level="13" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_DEADRUNNER_SHOTGUN" level="17" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="Deadrunner Vehicle" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_DEADRUNNER_VEHICLE">
         <description>
-            <p></p>
+            <p>When you officially become a Deadrunner, you gain proficiency in land vehicles and smith’s tools. Additionally, you gain a vehicle. Most Deadrunner vehicles are ramshackle, wheeled monstrosities powered by outdated (and dangerous) elemental engines. Choose the type of vehicle with which you wish to start—Deadrunner Rhino, Deadrunner Sand Fox, or Deadrunner Viper. The vehicle uses your proficiency bonus in several places.</p>
+            <p class="indent">The helm of your vehicle is specifically attuned to you. Other creatures may use the helm; however, only you can add your proficiency bonus to ability checks and saving throws made using your vehicle’s ability scores.</p>
+            <p class="indent">If the mending spell is cast on your vehicle, it regains 2d6 hit points. If it has been destroyed within the last hour, you can use your smith’s tools to repair its functionality, provided you are within 5 feet of it. The vehicle regains its functionality after 1 hour with all its hit points restored.</p>
+            <p class="indent">At the end of a long rest, you can retool your vehicle if you have smith’s tools with you. Choose a new stat block to represent your retooled vehicle.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Choose the type of vehicle with which you wish to start—Deadrunner Rhino, Deadrunner Sand Fox, or Deadrunner Viper. The vehicle uses your proficiency bonus in several places.
+            The helm of your vehicle is specifically attuned to you. Other creatures may use the helm; however, only you can add your proficiency bonus to ability checks and saving throws made using your vehicle’s ability scores.
+            If the mending spell is cast on your vehicle, it regains 2d6 hit points. If it has been destroyed within the last hour, you can use your smith’s tools to repair its functionality, provided you are within 5 feet of it. The vehicle regains its functionality after 1 hour with all its hit points restored.
+            At the end of a long rest, you can retool your vehicle if you have smith’s tools with you. Choose a new stat block to represent your retooled vehicle.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_VEHICLES_LAND" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS" />
+            <select type="Companion" name="Deadrunner Vehicle" supports="deadrunner-vehicle" />
+        </rules>
+    </element>
+    <element name="Deadrunner Stunts" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_DEADRUNNER_STUNTS">
+        <description>
+            <p>On your turn, you can expend 10 feet of movement to perform one free vehicle stunt, such as a wheelie or a burnout. You must be inside your dead runner vehicle to use this stunt. Before the stunt can be performed, your vehicle must move at least 10 feet in a straight line. If you succeed on a DC 10 Dexterity check using the vehicle’s Dexterity, the stunt is successful. Otherwise, you are unable to perform the stunt and can’t attempt another stunt until the start of your next turn. If the check fails by 5 or more, you and all creatures riding it immediately fall prone as the vehicle wipes out and comes to a dead stop.</p>
+            <p class="indent">After you succeed on a stunt, you may choose one of the following benefits:</p>
+            <ul>
+                <li>The next attack roll made from one of your vehicle’s action stations is made with advantage so long as the attack is made before the end of your current turn.</li>
+                <li>The next attack roll made against you, the vehicle, or any other creature inside the vehicle is made with disadvantage so long as the attack is made before the start of your next turn.</li>
+                <li>You target one creature that can see your vehicle within 30 feet of your vehicle. That creature must make a Wisdom saving throw with a DC equal to 8 + your proficiency bonus + the vehicle’s Strength modifier. On a failed saving throw, the target becomes frightened of your vehicle until the end of its next turn.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>On your turn, you can expend 10 feet of movement to perform one free vehicle stunt, such as a wheelie or a burnout. You must be inside your dead runner vehicle to use this stunt. Before the stunt can be performed, your vehicle must move at least 10 feet in a straight line. If you succeed on a DC 10 Dexterity check using the vehicle’s Dexterity, the stunt is successful. Otherwise, you are unable to perform the stunt and can’t attempt another stunt until the start of your next turn. If the check fails by 5 or more, you and all creatures riding it immediately fall prone as the vehicle wipes out and comes to a dead stop.
+            After you succeed on a stunt, you may choose one of the following benefits:
+            The next attack roll made from one of your vehicle’s action stations is made with advantage so long as the attack is made before the end of your current turn.
+            The next attack roll made against you, the vehicle, or any other creature inside the vehicle is made with disadvantage so long as the attack is made before the start of your next turn.
+            You target one creature that can see your vehicle within 30 feet of your vehicle. That creature must make a Wisdom saving throw with a DC equal to 8 + your proficiency bonus + the vehicle’s Strength modifier. On a failed saving throw, the target becomes frightened of your vehicle until the end of its next turn.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Ride or Die" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_DEADRUNNER_RIDE_OR_DIE">
         <description>
-            <p></p>
+            <p>You can use your bonus action on each of your turns to drive and steer your vehicle with its Helm. When you use your bonus action this way, you can use your action to operate a second action station on your vehicle.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet action="Bonus Action">
+            <description>You can use your bonus action on each of your turns to drive and steer your vehicle with its Helm. When you use your bonus action this way, you can use your action to operate a second action station on your vehicle.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="Improved Deadrunner Vehicle" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_DEADRUNNER_IMPROVED_VEHICLE">
         <description>
-            <p></p>
+            <p>Your vehicle improves:</p>
+            <ul>
+                <li>Your vehicle gains a +2 bonus to Armor Class.</li>
+                <li>Your vehicle’s speed increases by 20 feet.</li>
+                <li>You automatically pass all checks to perform stunts with your vehicle.</li>
+                <li>Your vehicle loses its Explosive Engine trait.</li>
+                <li>The vehicle’s weapon attacks are magical.</li>
+            </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>Your vehicle improves:
+            Your vehicle gains a +2 bonus to Armor Class.
+            Your vehicle’s speed increases by 20 feet.
+            You automatically pass all checks to perform stunts with your vehicle.
+            Your vehicle loses its Explosive Engine trait.
+            The vehicle’s weapon attacks are magical.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID______">
+    <element name="Shotgun" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ROGUE_DEADRUNNER_SHOTGUN">
         <description>
-            <p></p>
+            <p>When you use your action to make an attack with one of your Deadrunner vehicle’s weapons, the attack benefits from your Sneak Attack even if you do not meet any of the other qualifiers for making a Sneak Attack.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you use your action to make an attack with one of your Deadrunner vehicle’s weapons, the attack benefits from your Sneak Attack even if you do not meet any of the other qualifiers for making a Sneak Attack.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_______">
+    <element name="Deadrunner Viper" type="Companion" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_VIPER">
+        <supports>deadrunner-vehicle</supports>
         <description>
-            <p></p>
+            <p>500lbs</p>
+        </description>
+        <setters>
+            <set name="strength">14</set>
+            <set name="dexterity">18</set>
+            <set name="constitution">12</set>
+            <set name="intelligence">0</set>
+            <set name="wisdom">0</set>
+            <set name="charisma">0</set>
+            <set name="ac">20 (19 While motionless)</set>
+            <set name="hp">30 + 5 times your rogue level</set>
+            <set name="speed">120 ft. and 12 miles per hour</set>
+            <set name="resistances"></set>
+            <set name="vulnerabilites"></set>
+            <set name="immunities">Poison, Psychic, Blinded, Charmed, Deafened, Exhaustion, Frightened, Incapacitated, Paralyzed, Petrified, Poisoned, Stunned, Unconcious</set>
+            <set name="type">Vehicle</set>
+            <set name="size">large</set>
+            <set name="alignment">unaligned</set>
+            <set name="challenge"></set>
+            <set name="actions">ID_DMDAVE_OMERIA_COMPANION_ACTION_VIPER_JUKE,ID_DMDAVE_OMERIA_COMPANION_ACTION_VIPER_RIFLE,ID_DMDAVE_OMERIA_COMPANION_ACTION_VIPER_HELM</set>
+            <set name="traits">ID_DMDAVE_OMERIA_COMPANION_TRAIT_VIPER_PRONE_DEFICIENCY,ID_DMDAVE_OMERIA_COMPANION_TRAIT_VIPER_JUMP,ID_DMDAVE_OMERIA_COMPANION_TRAIT_VIPER_EXPLOSIVE_ENGINE,ID_DMDAVE_OMERIA_COMPANION_TRAIT_VIPER_EXPLOSIVE_ENGINE,ID_DMDAVE_OMERIA_COMPANION_TRAIT_VIPER_TRAITS</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="20"/>
+            <stat name="companion:hp:max" value="30" bonus="base"/>
+            <stat name="companion:speed" value="120" bonus="base"/>
+        </rules>
+            
+    </element>
+
+    <element name="Helm (Requires 1 crew and grants half cover)" type="Companion Action" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_ACTION_VIPER_HELM">
+        <description>
+            <p>Drive and steer the Viper.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Drive and steer the Viper.</description>
+        </sheet>
+    </element>
+    <element name="Harpoon Rifle (Requires 1 crew and grants half cover)" type="Companion Action" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_ACTION_VIPER_RIFLE">
+        <description>
+            <p>Ranged Weapon Attack: the user’s proficiency bonus plus its Dexterity modifier to hit, range 30/120 ft., one target. Hit: 1d8 + the user’s Dexterity modifier piercing damage.</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: the user’s proficiency bonus plus its Dexterity modifier to hit, range 30/120 ft., one target. Hit: 1d8 + the user’s Dexterity modifier piercing damage.</description>
+        </sheet>
+    </element>
+    <element name="Juke" type="Companion Action" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_ACTION_VIPER_JUKE">
+        <description>
+            <p>If the Viper is able to move, the driver can use its reaction to grant the Viper advantage on a Dexterity saving throw.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>If the Viper is able to move, the driver can use its reaction to grant the Viper advantage on a Dexterity saving throw.</description>
+        </sheet>
+    </element>
+
+    <element name="Additional Traits" type="Companion Trait" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_TRAIT_VIPER_TRAITS">
+        <description>
+            <p>Armor Class 20 (19 while motionless)
+            Hit Points 30 + 5 times your rogue level
+            Damage Threshold 10
+            Creature Capacity 1 Medium creature
+            Cargo Capacity 100 lbs.
+            Travel Pace 12 miles per hour (96 miles per day)
+            Speed 120 ft</p>
+        </description>
+        <sheet>
+            <description>Armor Class 20 (19 while motionless)
+            Hit Points 30 + 5 times your rogue level
+            Damage Threshold 10
+            Creature Capacity 1 Medium creature
+            Cargo Capacity 100 lbs.
+            Travel Pace 12 miles per hour (96 miles per day)
+            Speed 120 ft</description>
+        </sheet>
+    </element>
+    <element name="Explosive Engine" type="Companion Trait" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_TRAIT_VIPER_EXPLOSIVE_ENGINE">
+        <description>
+            <p> If an attacker scores a critical hit against the Viper, the Viper must make a DC 12 Constitution saving throw. On a failed saving throw, its engine explodes and the Viper is destroyed. Each creature inside the Viper and within 15 feet of it must make a DC 11 Dexterity saving throw, taking 10 (3d6) fire damage on a failed saving throw or half as much damage on a successful one.</p>
+        </description>
+        <sheet>
+            <description>If an attacker scores a critical hit against the Viper, the Viper must make a DC 12 Constitution saving throw. On a failed saving throw, its engine explodes and the Viper is destroyed. Each creature inside the Viper and within 15 feet of it must make a DC 11 Dexterity saving throw, taking 10 (3d6) fire damage on a failed saving throw or half as much damage on a successful one.</description>
+        </sheet>
+    </element>
+    <element name="Jump" type="Companion Trait" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_TRAIT_VIPER_JUMP">
+        <description>
+            <p> If the Viper moves at least 30 feet in a straight line, it can clear a distance of up to 60 feet when jumping over a chasm, ravine, or other gap. Each foot it clears on the jump costs a foot of movement.</p>
+        </description>
+        <sheet>
+            <description> If the Viper moves at least 30 feet in a straight line, it can clear a distance of up to 60 feet when jumping over a chasm, ravine, or other gap. Each foot it clears on the jump costs a foot of movement.</description>
+        </sheet>
+    </element>
+    <element name="Prone Deficiency" type="Companion Trait" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_TRAIT_VIPER_PRONE_DEFICIENCY">
+        <description>
+            <p> If the Viper rolls over and falls prone, it can’t right itself and is incapacitated until flipped upright. A creature can use its action to flip the Viper upright, doing so with a successful DC 12 Strength check.</p>
+        </description>
+        <sheet >
+            <description> If the Viper rolls over and falls prone, it can’t right itself and is incapacitated until flipped upright. A creature can use its action to flip the Viper upright, doing so with a successful DC 12 Strength check.</description>
+        </sheet>
+    </element>
+    
+    <element name="Deadrunner Sandfox" type="Companion" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_SANDFOX">
+        <supports>deadrunner-vehicle</supports>
+        <description>
+            <p>3000 lbs</p>
+        </description>
+        <setters>
+            <set name="strength">16</set>
+            <set name="dexterity">14</set>
+            <set name="constitution">14</set>
+            <set name="intelligence">0</set>
+            <set name="wisdom">0</set>
+            <set name="charisma">0</set>
+            <set name="ac">20 (19 While motionless)</set>
+            <set name="hp">50 + 5 times your rogue level</set>
+            <set name="speed">100 ft. and 10 miles per hour</set>
+            <set name="resistances"></set>
+            <set name="vulnerabilites"></set>
+            <set name="immunities">Poison, Psychic, Blinded, Charmed, Deafened, Exhaustion, Frightened, Incapacitated, Paralyzed, Petrified, Poisoned, Stunned, Unconcious</set>
+            <set name="type">Vehicle</set>
+            <set name="size">Huge</set>
+            <set name="alignment">unaligned</set>
+            <set name="challenge"></set>
+            <set name="actions">ID_DMDAVE_OMERIA_COMPANION_ACTION_SANDFOX_JUKE,ID_DMDAVE_OMERIA_COMPANION_ACTION_SANDFOX_RIFLE,ID_DMDAVE_OMERIA_COMPANION_ACTION_SANDFOX_HELM</set>
+            <set name="traits">ID_DMDAVE_OMERIA_COMPANION_TRAIT_SANDFOX_PRONE_DEFICIENCY,ID_DMDAVE_OMERIA_COMPANION_TRAIT_SANDFOX_EXPLOSIVE_ENGINE,ID_DMDAVE_OMERIA_COMPANION_TRAIT_SANDFOX_EXPLOSIVE_ENGINE,ID_DMDAVE_OMERIA_COMPANION_TRAIT_SANDFOX_TRAITS</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="20"/>
+            <stat name="companion:hp:max" value="50" bonus="base"/>
+            <stat name="companion:speed" value="100" bonus="base"/>
+        </rules>
+            
+    </element>
+
+    <element name="Helm (Requires 1 crew and grants three-quarters cover)" type="Companion Action" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_ACTION_SANDFOX_HELM">
+        <description>
+            <p>Drive and steer the Sandfox.</p>
+        </description>
+        <sheet>
+            <description>Drive and steer the Sandfox.</description>
+        </sheet>
+    </element>
+    <element name="Harpoon Rifle (Requires 1 crew and grants half cover)" type="Companion Action" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_ACTION_SANDFOX_RIFLE">
+        <description>
+            <p>Ranged Weapon Attack: the user’s proficiency bonus plus its Dexterity modifier to hit, range 30/120 ft., one target. Hit: 1d8 + the user’s Dexterity modifier piercing damage.</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: the user’s proficiency bonus plus its Dexterity modifier to hit, range 30/120 ft., one target. Hit: 1d8 + the user’s Dexterity modifier piercing damage.</description>
+        </sheet>
+    </element>
+    <element name="Juke" type="Companion Action" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_ACTION_SANDFOX_JUKE">
+        <description>
+            <p>If the Sandfox is able to move, the driver can use its reaction to grant the Sandfox advantage on a Dexterity saving throw.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>If the Sandfox is able to move, the driver can use its reaction to grant the Sandfox advantage on a Dexterity saving throw.</description>
+        </sheet>
+    </element>
+
+    <element name="Additional Traits" type="Companion Trait" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_TRAIT_SANDFOX_TRAITS">
+        <description>
+            <p>Armor Class 20 (19 while motionless)
+            Hit Points 50 + 5 times your rogue level
+            Damage Threshold 10
+            Creature Capacity 4 Medium creatures
+            Cargo Capacity 500 lbs.
+            Travel Pace 10 miles per hour (80 miles per day)
+            Speed 100 ft</p>
+        </description>
+        <sheet>
+            <description>Armor Class 20 (19 while motionless)
+            Hit Points 50 + 5 times your rogue level
+            Damage Threshold 10
+            Creature Capacity 4 Medium creatures
+            Cargo Capacity 500 lbs.
+            Travel Pace 10 miles per hour (80 miles per day)
+            Speed 100 ft</description>
+        </sheet>
+    </element>
+    <element name="Explosive Engine" type="Companion Trait" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_TRAIT_SANDFOX_EXPLOSIVE_ENGINE">
+        <description>
+            <p> If an attacker scores a critical hit against the Sandfox, the Sandfox must make a DC 12 Constitution saving throw. On a failed saving throw, its engine explodes and the Sandfox is destroyed. Each creature inside the Sandfox and within 15 feet of it must make a DC 12 Dexterity saving throw, taking 10 (3d6) fire damage on a failed saving throw or half as much damage on a successful one.</p>
+        </description>
+        <sheet>
+            <description>If an attacker scores a critical hit against the Sandfox, the Sandfox must make a DC 12 Constitution saving throw. On a failed saving throw, its engine explodes and the Sandfox is destroyed. Each creature inside the Sandfox and within 15 feet of it must make a DC 12 Dexterity saving throw, taking 10 (3d6) fire damage on a failed saving throw or half as much damage on a successful one.</description>
+        </sheet>
+    </element>
+    <element name="Prone Deficiency" type="Companion Trait" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_TRAIT_SANDFOX_PRONE_DEFICIENCY">
+        <description>
+            <p> If the Sandfox rolls over and falls prone, it can’t right itself and is incapacitated until flipped upright. A creature can use its action to flip the Sandfox upright, doing so with a successful DC 16 Strength check.</p>
+        </description>
+        <sheet >
+            <description> If the Sandfox rolls over and falls prone, it can’t right itself and is incapacitated until flipped upright. A creature can use its action to flip the Sandfox upright, doing so with a successful DC 16 Strength check.</description>
+        </sheet>
+    </element>
+    
+    <element name="Deadrunner Rhino" type="Companion" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_RHINO">
+        <supports>deadrunner-vehicle</supports>
+        <description>
+            <p>9000 ;bs</p>
+        </description>
+        <setters>
+            <set name="strength">20</set>
+            <set name="dexterity">10</set>
+            <set name="constitution">20</set>
+            <set name="intelligence">0</set>
+            <set name="wisdom">0</set>
+            <set name="charisma">0</set>
+            <set name="ac">20</set>
+            <set name="hp">150 + 5 times your rogue level</set>
+            <set name="speed">60 ft. and 6 miles per hour</set>
+            <set name="resistances"></set>
+            <set name="vulnerabilites"></set>
+            <set name="immunities">Poison, Psychic, Blinded, Charmed, Deafened, Exhaustion, Frightened, Incapacitated, Paralyzed, Petrified, Poisoned, Stunned, Unconcious</set>
+            <set name="type">Vehicle</set>
+            <set name="size">Huge</set>
+            <set name="alignment">unaligned</set>
+            <set name="challenge"></set>
+            <set name="actions">ID_DMDAVE_OMERIA_COMPANION_ACTION_RHINO_RIFLE,ID_DMDAVE_OMERIA_COMPANION_ACTION_RHINO_HELM</set>
+            <set name="traits">ID_DMDAVE_OMERIA_COMPANION_TRAIT_RHINO_PRONE_DEFICIENCY,ID_DMDAVE_OMERIA_COMPANION_TRAIT_RHINO_EXPLOSIVE_ENGINE,ID_DMDAVE_OMERIA_COMPANION_TRAIT_RHINO_EXPLOSIVE_ENGINE,ID_DMDAVE_OMERIA_COMPANION_TRAIT_RHINO_TRAITS</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="20"/>
+            <stat name="companion:hp:max" value="150" bonus="base"/>
+            <stat name="companion:speed" value="60" bonus="base"/>
+        </rules>
+            
+    </element>
+
+    <element name="Helm (Requires 1 crew and grants three-quarters cover)" type="Companion Action" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_ACTION_RHINO_HELM">
+        <description>
+            <p>Drive and steer the Rhino.</p>
+        </description>
+        <sheet>
+            <description>Drive and steer the Rhino.</description>
+        </sheet>
+    </element>
+    <element name="Harpoon Rifle (Requires 1 crew and grants half cover)" type="Companion Action" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_ACTION_RHINO_RIFLE">
+        <description>
+            <p>Ranged Weapon Attack: the user’s proficiency bonus plus its Dexterity modifier to hit, range 30/120 ft., one target. Hit: 1d8 + the user’s Dexterity modifier piercing damage.</p>
+        </description>
+        <sheet>
+            <description>Ranged Weapon Attack: the user’s proficiency bonus plus its Dexterity modifier to hit, range 30/120 ft., one target. Hit: 1d8 + the user’s Dexterity modifier piercing damage.</description>
+        </sheet>
+    </element>
+
+    <element name="Additional Traits" type="Companion Trait" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_TRAIT_RHINO_TRAITS">
+        <description>
+            <p>Armor Class 20 (19 while motionless)
+            Hit Points 30 + 5 times your rogue level
+            Damage Threshold 10
+            Creature Capacity 1 Medium creature
+            Cargo Capacity 100 lbs.
+            Travel Pace 12 miles per hour (96 miles per day)
+            Speed 120 ft</p>
+        </description>
+        <sheet>
+            <description>Armor Class 20
+            Hit Points 150 + 5 times your rogue level
+            Damage Threshold 10
+            Creature Capacity 8 Medium creatures
+            Cargo Capacity 2 tons
+            Travel Pace 6 miles per hour (60 miles per day)
+            Speed 60 ft</description>
+        </sheet>
+    </element>
+    <element name="Explosive Engine" type="Companion Trait" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_TRAIT_RHINO_EXPLOSIVE_ENGINE">
+        <description>
+            <p> If an attacker scores a critical hit against the Rhino, the Rhino must make a DC 15 Constitution saving throw. On a failed saving throw, its engine explodes and the Rhino is destroyed. Each creature inside the Rhino and within 15 feet of it must make a DC 15 Dexterity saving throw, taking 10 (3d6) fire damage on a failed saving throw or half as much damage on a successful one.</p>
+        </description>
+        <sheet>
+            <description>If an attacker scores a critical hit against the Rhino, the Rhino must make a DC 15 Constitution saving throw. On a failed saving throw, its engine explodes and the Rhino is destroyed. Each creature inside the Rhino and within 15 feet of it must make a DC 15 Dexterity saving throw, taking 10 (3d6) fire damage on a failed saving throw or half as much damage on a successful one.</description>
+        </sheet>
+    </element>
+    <element name="Prone Deficiency" type="Companion Trait" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_TRAIT_RHINO_PRONE_DEFICIENCY">
+        <description>
+            <p> If the Rhino rolls over and falls prone, it can’t right itself and is incapacitated until flipped upright. A creature can use its action to flip the Rhino upright, doing so with a successful DC 20 Strength check.</p>
+        </description>
+        <sheet >
+            <description> If the Rhino rolls over and falls prone, it can’t right itself and is incapacitated until flipped upright. A creature can use its action to flip the Rhino upright, doing so with a successful DC 20 Strength check.</description>
         </sheet>
     </element>
 </elements>
