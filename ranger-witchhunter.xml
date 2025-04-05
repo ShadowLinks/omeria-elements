@@ -9,63 +9,82 @@
     <element name="Aspaethan Witch Hunter" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_RANGER_WITCHHUNTER">
         <supports>Ranger Archetype</supports>
         <description>
-            <p></p>
+            <p>The Witch Hunters of Aspaeth are a 500-year-old organization dedicated to the eradication of transmuters and other practitioners of dark magic. The Witch Hunters were originally tribal warriors inhabiting the lands of Aspaeth (known as Izu in their time). When the Pressonian settlers brought the plague of transmutation to their lands, the Witch Hunters, under the leadership of Isik the Yellow-Eyed, united to drive them out. The process took nearly a century, culminating in The Transmuter Wars.</p>
             <p class="indent"></p>
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_RANGER_WITCHHUNTER_DEEP_CUT" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_RANGER_WITCHHUNTER_MAGIC" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_RANGER_WITCHHUNTER_SPELL_DEFLECTION" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_RANGER_WITCHHUNTER_RESISTANCE" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_RANGER_WITCHHUNTER_SPELL_SIPHON" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="3" />
-            <grant type="Archetype Feature" id="ID_____" level="7" />
-            <grant type="Archetype Feature" id="ID______" level="11" />
-            <grant type="Archetype Feature" id="ID_______" level="15" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_RANGER_WITCHHUNTER_DEEP_CUT" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_RANGER_WITCHHUNTER_MAGIC" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_RANGER_WITCHHUNTER_SPELL_DEFLECTION" level="7" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_RANGER_WITCHHUNTER_RESISTANCE" level="11" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_RANGER_WITCHHUNTER_SPELL_SIPHON" level="15" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="Deep Cut" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_RANGER_WITCHHUNTER_DEEP_CUT">
         <description>
-            <p></p>
+            <p>Once per turn, when you hit a creature with an attack, you can force it to make a Constitution saving throw against your spell save DC. If the target fails its saving throw, it takes an additional 1d8 psychic damage and it can’t cast spells until the start of your next turn.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Once per turn, when you hit a creature with an attack, you can force it to make a Constitution saving throw against your spell save DC. If the target fails its saving throw, it takes an additional 1d8 psychic damage and it can’t cast spells until the start of your next turn.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Witch Hunter Magic" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_RANGER_WITCHHUNTER_MAGIC">
         <description>
-            <p></p>
+            <p>You learn an additional spell when you reach certain levels in this class. Each spell counts as a ranger spell for you, but it doesn’t count against the number of ranger spells you know.</p>
+            <table>
+                <thead>
+                    <tr><td>Ranger Level</td><td>Spell</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>detect magic</td></tr>
+                <tr><td>5th</td><td>detect thoughts</td></tr>
+                <tr><td>9th</td><td>dispel magic</td></tr>
+                <tr><td>13th</td><td>banishment</td></tr>
+                <tr><td>17th</td><td>dispel evil and good</td></tr>
+            </table>
         </description>
-        <sheet>
+        <sheet display="false">
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" level="3" spellcasting="Ranger" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" level="5" spellcasting="Ranger" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" level="9" spellcasting="Ranger" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_BANISHMENT" level="13" spellcasting="Ranger" prepared="true" />
+            <grant type="Spell" id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD" level="17" spellcasting="Ranger" prepared="true" />
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="Spell Deflection" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_RANGER_WITCHHUNTER_SPELL_DEFLECTION">
         <description>
-            <p></p>
+            <p>When you are targeted by a spell attack or magic missile, you can use your reaction to protect yourself with a magical barrier. You gain a bonus to your AC equal to your Wisdom modifier against the triggering attack, and you take no damage from a magic missile that targets you. This effect wears off after the triggering attack is made.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet action="Reaction">
+            <description>When you are targeted by a spell attack or magic missile, you can use your reaction to protect yourself with a magical barrier. You gain a +{{wisdom:modifier}} bonus to your AC against the triggering attack, and you take no damage from a magic missile that targets you. This effect wears off after the triggering attack is made.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID______">
+    <element name="Witch Hunter Resistance" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_RANGER_WITCHHUNTER_RESISTANCE">
         <description>
-            <p></p>
+            <p>You have advantage on saving throws against spells and other magical effects.</p>
+            <p class="indent">In addition, whenever you or a creature you can see within 120 feet of you succeeds on a saving throw against a spell, you gain a number of temporary hit points equal to the spell’s level.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You have advantage on saving throws against spells and other magical effects.
+            In addition, whenever you or a creature you can see within 120 feet of you succeeds on a saving throw against a spell, you gain a number of temporary hit points equal to the spell’s level.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_______">
+    <element name="Spell Siphon" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_RANGER_WITCHHUNTER_SPELL_SIPHON">
         <description>
-            <p></p>
+            <p>When a creature that you can see within 15 feet of you casts a spell, you can use your reaction to force the creature to make a Wisdom saving throw against your spell save DC. The creature gains a bonus to this saving throw equal to the spell level cast (cantrips count as 0). If the creature’s saving throw fails, the creature’s spell fails and has no effect.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet action="Reaction">
+            <description>When a creature that you can see within 15 feet of you casts a spell, you can use your reaction to force the creature to make a Wisdom saving throw against your spell save DC. The creature gains a bonus to this saving throw equal to the spell level cast (cantrips count as 0). If the creature’s saving throw fails, the creature’s spell fails and has no effect.</description>
         </sheet>
     </element>
 </elements>
