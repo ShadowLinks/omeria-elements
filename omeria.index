@@ -40,6 +40,8 @@
 		<file name="druid-wastelands.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/druid-wastelands.xml"/>
 		<file name="fighter-ghost.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/fighter-ghost.xml"/>
 		<file name="fighter-spearwielder.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/fighter-spearwielder.xml"/>
+		<file name="monk-gunmage.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/monk-gunmage.xml"/>
+		<file name="monk-winterwarrior.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/monk-winterwarrior.xml"/>
 		
     </files>
 </index>

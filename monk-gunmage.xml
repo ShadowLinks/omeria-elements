@@ -9,73 +9,96 @@
     <element name="Way of the Gunmage" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_MONK_GUNMAGE">
         <supports>Monastic Tradition</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <p>Perhaps the name mage is deceptive. After all, the Vaskil Warriorbrood are hardly mages. Certainly, magic flows through their veins, along their arm, into their trigger fingers, and through their firearms. But this magic is not the magic of the cloistered wizards of Odonburg or the stalwart abjurers of Presson’s Enclave. Nor is it powered by the elementals who built Grand Casar. But their magic is the true magic: the magic of self, fueled by the purest existence.</p>
+            <p class="indent">Forbidden to use magic by their Pressonian masters, the Anorians were instead awarded the pistol, a primitive weapon invented during the Year of Fire by the azers. But they accepted this gift and made it their own. Guns in hand, the Warriorbrood is a force to be reckoned with.</p>
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_WAY_OF_THE_GUN" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_KI_AIM" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_BONUS_PROFICIENCY" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_QUICK_DRAW" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_MAGIC_BULLETS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_BULLETPROOF_MONK" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_RAIN_OF_BULLETS" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="3" />
-            <grant type="Archetype Feature" id="ID_____" level="6" />
-            <grant type="Archetype Feature" id="ID______" level="11" />
-            <grant type="Archetype Feature" id="ID_______" level="17" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_WAY_OF_THE_GUN" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_KI_AIM" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_BONUS_PROFICIENCY" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_QUICK_DRAW" level="6" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_MAGIC_BULLETS" level="6" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_BULLETPROOF_MONK" level="11" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_RAIN_OF_BULLETS" level="17" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID__">
+    <element name="Way of the Gun" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_WAY_OF_THE_GUN">
         <description>
-            <p></p>
+            <p>Your special martial arts training leads you to master the use of firearms (see below). You gain proficiency with firearms if you don’t already have it, and these weapons are monk weapons for you. You also gain the following benefits:</p>
+            <ul>
+                <li>You ignore the loading and reloading properties for firearms with which you are proficient.</li>
+                <li>Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls.</li>
+                <li>You can draw or stow two one-handed firearms when you would normally be able to draw or stow only one.</li>
+            </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>Firearms count as monk weapons for you and you ignore loading and reloading properties of firearms.
+            Being within 5 feet of a hostile creature doesn’t impose disadvantage on your ranged attack rolls.
+            You can draw or stow two one-handed firearms when you would normally be able to draw or stow only one.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS" />
+        </rules>
+    </element>
+    <element name="Ki Aim" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_KI_AIM">
+        <description>
+            <p>As a bonus action, you can double your proficiency bonus on the next ranged weapon attack you make using a firearm so long as you make the attack before the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can double your proficiency bonus on the next ranged weapon attack you make using a firearm so long as you make the attack before the start of your next turn.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="Bonus Proficiency" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_BONUS_PROFICIENCY">
         <description>
-            <p></p>
+            <p>You gain proficiency in smith’s tools or leatherworker’s tools (your choice).</p>
         </description>
-        <sheet>
+        <sheet display="false">
             <description></description>
         </sheet>
+        <rules>
+            <select type="Proficiency" name="Bonus Proficiency, Gunmage" supports="ID_PROFICIENCY_TOOL_PROFICIENCY_SMITHS_TOOLS|ID_PROFICIENCY_TOOL_PROFICIENCY_LEATHERWORKERS_TOOLS" />
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Quick Draw" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_QUICK_DRAW">
         <description>
-            <p></p>
+            <p>During the first round of combat, on initiative count 20 plus your Dexterity modifier, you can spend 2 ki points to draw a one-handed firearm and make a single ranged attack with it. You can’t use this feature when you are surprised.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>During the first round of combat, on initiative count 20 plus your Dexterity modifier, you can spend 2 ki points to draw a one-handed firearm and make a single ranged attack with it. You can’t use this feature when you are surprised.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="Magic Bullets" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_MAGIC_BULLETS">
         <description>
-            <p></p>
+            <p>Your attacks with your firearms count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your attacks with your firearms count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID______">
+    <element name="Bulletproof Monk" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_BULLETPROOF_MONK">
         <description>
-            <p></p>
+            <p>You get a special reaction that you can take once on every creature’s turn, except your turn. You can use this special reaction only to use your Deflect Missiles feature, and you can’t use it on the same turn that you take your normal reaction.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You get a special reaction that you can take once on every creature’s turn, except your turn. You can use this special reaction only to use your Deflect Missiles feature, and you can’t use it on the same turn that you take your normal reaction.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_______">
+    <element name="Rain of Bullets" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_GUNMAGE_RAIN_OF_BULLETS">
         <description>
-            <p></p>
+            <p>You learn how to shower your enemies in a hail of gunfire few can avoid. As an action, you can spend 1 ki point to create a 30-foot cone of bullets. To do so, you must be wielding a firearm and it must be loaded. Each creature in the area must make a Dexterity saving throw against your ki save DC. A target takes the damage normal for your firearm on a failed saving throw, or half as much damage on a success. This attack expends only one piece of ammunition.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>As an action, you can spend 1 ki point to create a 30-foot cone of bullets. To do so, you must be wielding a firearm and it must be loaded. Each creature in the area must make a Dexterity saving throw against your ki save DC. A target takes the damage normal for your firearm on a failed saving throw, or half as much damage on a success. This attack expends only one piece of ammunition.</description>
         </sheet>
     </element>
 </elements>

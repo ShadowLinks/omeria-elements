@@ -9,63 +9,78 @@
     <element name="Way of the Winter Warrior" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_MONK_WINTERWARRIOR">
         <supports>Monastic Tradition</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
+            <p>Monks who follow the Way of the Winter Warrior train in the harshest parts of the world, particularly those subject to year-round freezing conditions. These disciplined fighters hone their skills to become defensive combatants capable of withstanding extreme punishment from the large and dangerous creatures native to polar environments.</p>
+            <p class="indent">The most famous school of Winter Warriors in Omeria were the Brothers of Xidar. Now extinct, this exclusively Tathdarian elven monastery created hundreds of monks who followed this tradition until they mysteriously vanished sometime around 500 AT.</p>
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_WINTERWARRIOR_COLD_STRIKE" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_WINTERWARRIOR_WINTERS_ARMOR" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_WINTERWARRIOR_FOG_OF_FROST" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_WINTERWARRIOR_ICE_SHIELD" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_WINTERWARRIOR_COLD_ABSORBTION" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="3" />
-            <grant type="Archetype Feature" id="ID_____" level="6" />
-            <grant type="Archetype Feature" id="ID______" level="11" />
-            <grant type="Archetype Feature" id="ID_______" level="17" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_WINTERWARRIOR_COLD_STRIKE" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_WINTERWARRIOR_WINTERS_ARMOR" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_WINTERWARRIOR_FOG_OF_FROST" level="6" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_WINTERWARRIOR_ICE_SHIELD" level="11" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_WINTERWARRIOR_COLD_ABSORBTION" level="17" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="Cold Strike" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_WINTERWARRIOR_COLD_STRIKE">
         <description>
-            <p></p>
+            <p>Whenever you take the Dodge action on your turn, you can use your bonus action to make one unarmed strike.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Whenever you take the Dodge action on your turn, you can use your bonus action to make one unarmed strike.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Winter's Armor" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_WINTERWARRIOR_WINTERS_ARMOR">
         <description>
-            <p></p>
+            <p>You can use an action to spend 1 ki point to encase yourself in a protective layer of hard ice. When you do, you gain 4 temporary hit points for each level you have in this class.</p>
+            <p class="indent">While this feature is active, you gain immunity to cold damage and vulnerability to fire damage. The ice lasts for 10 minutes or until you lose all your temporary hit points. When you reach 6th level in this class, you can spend 1 additional ki point (2) to increase the duration to 1 hour, and when you reach 11th level in this class, you can spend another ki point (3) to increase the duration to 8 hours.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can use an action to spend 1 ki point to encase yourself in a protective layer of hard ice. When you do, you gain {{winters-armor:hp}} temporary hit points.
+            While this feature is active, you gain immunity to cold damage and vulnerability to fire damage. The ice lasts for 10 minutes or until you lose all your temporary hit points.</description>
+            <description level="6">You can use an action to spend 1 ki point to encase yourself in a protective layer of hard ice. When you do, you gain {{winters-armor:hp}} temporary hit points.
+            While this feature is active, you gain immunity to cold damage and vulnerability to fire damage. The ice lasts for 10 minutes or until you lose all your temporary hit points. You can spend 1 additional ki point (2) to increase the duration to 1 hour.</description>
+            <description level="11">You can use an action to spend 1 ki point to encase yourself in a protective layer of hard ice. When you do, you gain {{winters-armor:hp}} temporary hit points.
+            While this feature is active, you gain immunity to cold damage and vulnerability to fire damage. The ice lasts for 10 minutes or until you lose all your temporary hit points. You can spend 1 additional ki point (2) to increase the duration to 1 hour and you can spend another ki point (3) to increase the duration to 8 hours.</description>
+        </sheet>
+        <rules>
+            <stat name="winters-armor:hp" value="level:monk" />
+            <stat name="winters-armor:hp" value="level:monk" />
+            <stat name="winters-armor:hp" value="level:monk" />
+            <stat name="winters-armor:hp" value="level:monk" />
+        </rules>
+    </element>
+    <element name="Fog of Frost" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_WINTERWARRIOR_FOG_OF_FROST">
+        <description>
+            <p>You can use your bonus action to spend 2 ki points to create a chilly fog that extends from you 10 feet in all directions. The area inside the fog is lightly obscured. While the fog is active, any hostile creature that ends its turn in the fog must make a Constitution saving throw against your Ki save DC. On a failed saving throw, a creature takes cold damage equal to your martial arts die and its movement speed is reduced by half until the end of its next turn. On a successful saving throw, the creature takes half as much damage and its movement isn’t affected. The fog lasts for as long as you concentrate (as if concentrating on a spell), up to 1 minute.</p>
+        </description>
+        <sheet>
+            <description>You can use your bonus action to spend 2 ki points to create a chilly fog that extends from you 10 feet in all directions. The area inside the fog is lightly obscured. While the fog is active, any hostile creature that ends its turn in the fog must make a Constitution saving throw against your Ki save DC. On a failed saving throw, a creature takes cold damage equal to your martial arts die and its movement speed is reduced by half until the end of its next turn. On a successful saving throw, the creature takes half as much damage and its movement isn’t affected. The fog lasts for as long as you concentrate (as if concentrating on a spell), up to 1 minute.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="Ice Shield" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_WINTERWARRIOR_ICE_SHIELD">
         <description>
-            <p></p>
+            <p>If you are hit with an attack while using your Winter’s Armor feature, you can spend 1 ki point as a reaction to create a shield of solid ice. Until the start of your next turn, you have a bonus to AC equal to your proficiency bonus.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>If you are hit with an attack while using your Winter’s Armor feature, you can spend 1 ki point as a reaction to create a shield of solid ice. Until the start of your next turn, you have a +{{proficiency}} bonus to AC.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID______">
+    <element name="Cold Absorbtion" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_MONK_WINTERWARRIOR_COLD_ABSORBTION">
         <description>
-            <p></p>
+            <p>You gain immunity to cold damage, even while you aren’t using your Winter’s Armor feature. Whenever you are subjected to cold damage, you can spend 1 ki point to absorb the damage. When you do, you take no damage and instead you regain hit points equal to the damage dealt.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain immunity to cold damage, even while you aren’t using your Winter’s Armor feature. Whenever you are subjected to cold damage, you can spend 1 ki point to absorb the damage. When you do, you take no damage and instead you regain hit points equal to the damage dealt.</description>
         </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_COLD" />
+        </rules>
     </element>
 </elements>
