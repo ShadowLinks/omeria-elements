@@ -9,53 +9,81 @@
     <element name="Hand of Eight" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_SORCERER_HANDOFEIGHT">
         <supports>Sorcerous Origin</supports>
         <description>
-            <p></p>
+            <p>If sorcery is the least common form of spellcasting in Omeria, then those who possess the sorcerous origin Hand of the Eight are truly legendary in their rarity. The Hand of the Eight are humanoids imbued with the power of Omeria’s greatest spellcaster, Odon. This allows them to tap into the combined power of the eight cosmic arcane energies. So far, Omeria has only witnessed two Hands of the Eight, both of whom considered the most dangerous beings on all Casar, their power considered comparable with the proxies themselves.</p>
             <p class="indent"></p>
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_SORCERER_HANDOFEIGHT_ACCESS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_SORCERER_HANDOFEIGHT_MIGHT" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_SORCERER_HANDOFEIGHT_MAGIC_RESILIENCE" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_SORCERER_HANDOFEIGHT_HAND" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="6" />
-            <grant type="Archetype Feature" id="ID_____" level="14" />
-            <grant type="Archetype Feature" id="ID______" level="18" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_SORCERER_HANDOFEIGHT_ACCESS" level="1" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_SORCERER_HANDOFEIGHT_MIGHT" level="6" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_SORCERER_HANDOFEIGHT_MAGIC_RESILIENCE" level="14" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_SORCERER_HANDOFEIGHT_HAND" level="18" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="Access to the Eight" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_SORCERER_HANDOFEIGHT_ACCESS">
         <description>
-            <p></p>
+            <p>You have few limits to the spells you can cast. After you finish a long rest, you can choose any spell of your choice so long as it is of a level that you can normally cast as a sorcerer. You know this spell until you cast the spell or finish another long rest. This temporary spell does not count towards the number of spells you know, and the spell counts as a sorcerer spell for you even if it’s not on the sorcerer spell list. You still must expend a sorcerer spell slot of the appropriate level to cast the spell.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You have few limits to the spells you can cast. After you finish a long rest, you can choose any spell of your choice so long as it is of a level that you can normally cast as a sorcerer. You know this spell until you cast the spell or finish another long rest. This temporary spell does not count towards the number of spells you know, and the spell counts as a sorcerer spell for you even if it’s not on the sorcerer spell list. You still must expend a sorcerer spell slot of the appropriate level to cast the spell.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Might to the Eight" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_SORCERER_HANDOFEIGHT_MIGHT">
         <description>
-            <p></p>
+            <p>You can draw on the power of one or more of the eight pseudo-elemental energies. As an action, you can expend 3 or more sorcery points. For every 3 sorcery points you spend in this way, you gain one of the following benefits of your choice, the effects of which last until you complete a long rest.</p>
+            <ul>
+                <li><strong><em></em></strong>Abjurer’s Ward. You gain a number of temporary hit points equal to twice your sorcerer level + your Charisma modifier. </li>
+                <li><strong><em></em></strong>Conjurer’s Step. You can cast the misty step spell at will for the duration. </li>
+                <li><strong><em></em></strong>Diviner’s Vision. When you or a creature that you can see makes an attack roll, saving throw, or ability check, you can use your reaction to roll a d4. You can then choose to add or subtract the number rolled to the d20. </li>
+                <li><strong><em></em></strong>Enchanter’s Voice. You gain advantage on Charisma (Deception, Intimidation, and Persuasion) checks for the duration. </li>
+                <li><strong><em></em></strong>Evoker’s Finesse. When you cast an evocation spell that forces other creatures you can see to make a saving throw, you can choose a number of them equal to your Charisma modifier (minimum of 1). These creatures automatically succeed on their saving throws against the spell. If a successful save means a chosen creature would take half damage from the spell, it instead takes no damage from it. </li>
+                <li><strong><em></em></strong>Illusionist’s Double. You can cast the invisibility spell at will for the duration. </li>
+                <li><strong><em></em></strong>Necromancer’s Resilience. You gain resistance to necrotic damage for the duration. Additionally, you are immune to any spell or effect that would reduce any of your ability scores. </li>
+                <li><strong><em></em></strong>Transmuter’s Form. You can cast alter self at will for the duration. </li>
+            </ul>
         </description>
         <sheet>
-            <description></description>
+            <description>As an action, you can expend 3 or more sorcery points. For every 3 sorcery points you spend in this way, you gain one of the following benefits of your choice, the effects of which last until you complete a long rest.
+            Abjurer’s Ward. You gain {{abjurers-ward:hp}} temporary hit points. 
+            Conjurer’s Step. You can cast the misty step spell at will for the duration. 
+            Diviner’s Vision. When you or a creature that you can see makes an attack roll, saving throw, or ability check, you can use your reaction to roll a d4. You can then choose to add or subtract the number rolled to the d20.
+            Enchanter’s Voice. You gain advantage on Charisma (Deception, Intimidation, and Persuasion) checks for the duration.
+            Evoker’s Finesse. When you cast an evocation spell that forces other creatures you can see to make a saving throw, you can choose a number of them up to {{charisma:modifier}}. These creatures automatically succeed on their saving throws against the spell. If a successful save means a chosen creature would take half damage from the spell, it instead takes no damage from it.
+            Illusionist’s Double. You can cast the invisibility spell at will for the duration.
+            Necromancer’s Resilience. You gain resistance to necrotic damage for the duration. Additionally, you are immune to any spell or effect that would reduce any of your ability scores.
+            Transmuter’s Form. You can cast alter self at will for the duration. </description>
         </sheet>
+        <rules>
+            <stat name="abjurers-ward:hp" value="level:sorcerer" />
+            <stat name="abjurers-ward:hp" value="level:sorcerer" />
+            <stat name="abjurers-ward:hp" value="charisma:modifier" />
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="Magic Resilience" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_SORCERER_HANDOFEIGHT_MAGIC_RESILIENCE">
         <description>
-            <p></p>
+            <p>You have advantage on saving throws against spells and magical effects. Additionally, when you take damage from a spell, you can use your reaction to deflect the spell’s damage. When you do so, the damage you take from the spell is reduced by 1d10 + your Charisma modifier + your sorcerer level.</p>
+            <p class="indent"></p>
         </description>
         <sheet>
-            <description></description>
+            <description>You have advantage on saving throws against spells and magical effects. Additionally, when you take damage from a spell, you can use your reaction to deflect the spell’s damage. When you do so, the damage you take from the spell is reduced by 1d10 + {{magic-resilience:reduction}}.</description>
         </sheet>
+        <rules>
+            <stat name="magic-resilience:reduction" value="level:sorcerer" />
+            <stat name="magic-resilience:reduction" value="charisma:modifier" />
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID______">
+    <element name="The Hand of Eight" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_SORCERER_HANDOFEIGHT_HAND">
         <description>
-            <p></p>
+            <p>You can channel the power of all eight pseudo-elemental powers to unleash a destructive force few creatures can resist. As an action, you create a 60-foot line of energy that’s 5 feet wide. Choose an ability score: Strength, Dexterity, Constitution, Intelligence, Wisdom, or Charisma. The creatures in the line make a saving throw of the chosen ability score. A target takes 3d10 force or necrotic damage (your choice) on a failed saving throw, or half as much damage on a successful one.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>As an action, you create a 60-foot line of energy that’s 5 feet wide. Choose an ability score: Strength, Dexterity, Constitution, Intelligence, Wisdom, or Charisma. The creatures in the line make a saving throw of the chosen ability score. A target takes 3d10 force or necrotic damage (your choice) on a failed saving throw, or half as much damage on a successful one.</description>
         </sheet>
     </element>
 </elements>

@@ -9,63 +9,280 @@
     <element name="Imbued One" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_SORCERER_IMBUEDONE">
         <supports>Sorcerous Origin</supports>
         <description>
-            <p></p>
+            <p>Imbued ones have a lot in common with Hands of the Eight. Both draw their power from one or more of the eight arcane energies of the Cosmos. However, imbued ones are sorcerers who draw their power from one specific energy versus all eight. Imbued ones can trace their bloodlines back to one of three sources: the titans, danaavrakti, or elves. As such, humans and other races not created or related to one of these sources rarely possess the innate ability to wield imbued one magic.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_SORCERER_IMBUEDONE_ARCANE_COMPREHENSION" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_SORCERER_IMBUEDONE_ENERGY_SOURCE" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_SORCERER_IMBUEDONE_FOCUSED_FLEXIBLE_CASTING" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_SORCERER_IMBUEDONE_HAND_OF_THE_ONE" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_SORCERER_IMBUEDONE_MAGICAL_MAGNIFICENCE" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="1" />
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="6" />
-            <grant type="Archetype Feature" id="ID_____" level="14" />
-            <grant type="Archetype Feature" id="ID______" level="18" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_SORCERER_IMBUEDONE_ARCANE_COMPREHENSION" level="1" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_SORCERER_IMBUEDONE_ENERGY_SOURCE" level="1" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_SORCERER_IMBUEDONE_FOCUSED_FLEXIBLE_CASTING" level="6" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_SORCERER_IMBUEDONE_HAND_OF_THE_ONE" level="14" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_SORCERER_IMBUEDONE_MAGICAL_MAGNIFICENCE" level="18" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID__">
+    <element name="Arcane Comprehension" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_SORCERER_IMBUEDONE_ARCANE_COMPREHENSION">
         <description>
-            <p></p>
+            <p>You were born with an innate understanding of magic. You gain proficiency in the Arcana skill. Your proficiency bonus is doubled for any ability check you make that uses this skill.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You have experise in arcana.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+            <stat name="arcana:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Energy Source" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_SORCERER_IMBUEDONE_ENERGY_SOURCE">
+        <description>
+            <p>Choose one of the arcane energies from the list below. Your imbued one features depend on the chosen energy, as detailed below. You can change your energy source whenever you gain a level in this class. When you change your energy source, you lose the benefits from the energy source out of which you changed.</p>
+            <p class="indent"><strong><em>Abjuration. </em></strong>You can cast mage armor on yourself at will, without expending a spell slot or material components. </p>
+            <p class="indent"><strong><em>Conjuration.</em></strong> You can cast mage hand at will. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the hand. On a hit, the target takes force damage equal to 1d4 + your spellcasting ability modifier. As a bonus action on your turn, you can move the hand up to 30 feet and repeat the attack against a creature within 5 feet of it. </p>
+            <p class="indent"><strong><em>Divination.</em></strong> You can cast detect magic at will, without expending a spell slot. </p>
+            <p class="indent"><strong><em>Enchantment.</em></strong> When a creature that you can see within 30 feet of you makes an attack roll, ability check, or saving throw, you can use your reaction to force the creature to subtract 2 from the result. You can use this reaction after the roll is made but before the outcome is determined. You can use this benefit a number of times equal to your proficiency bonus and regain all expended uses when you finish a long rest. </p>
+            <p class="indent"><strong><em>Evocation.</em></strong> You can cast eldritch blast at will. This spell counts as a sorcerer spell for you. When you cast eldritch blast using this feature, add your Charisma modifier to the damage it deals on a hit. </p>
+            <p class="indent"><strong><em>Illusion.</em></strong> You can cast disguise self at will, without expending a spell slot. </p>
+            <p class="indent"><strong><em>Necromancy.</em></strong> You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components. </p>
+            <p class="indent"><strong><em>Transmutation.</em></strong> You can cast the prestidigitation cantrip at will. When you use this feature to cast this spell, the duration is until dispelled. As normal, if you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action. </p>
+        </description>
+        <sheet>
+            <description>Choose one of the arcane energies from the list below. Your imbued one features depend on the chosen energy, as detailed below. You can change your energy source whenever you gain a level in this class. When you change your energy source, you lose the benefits from the energy source out of which you changed.</description>
+        </sheet>
+        <rules>
+            <select type="Archetype Feature" name="Energy Source" supports="Energy-Source" />
+        </rules>
+    </element>
+    <element name="Abjuration" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ABJURATION">
+        <supports>Energy-Source</supports>
+        <description>
+            <p>You can cast mage armor on yourself at will, without expending a spell slot or material components.</p>
+        </description>
+        <sheet>
+            <description>You can cast mage armor on yourself at will, without expending a spell slot or material components.</description>
+            <description level="14">You can cast mage armor on yourself at will, without expending a spell slot or material components.
+            When you cast mage armor on yourself, your base AC becomes 16 + your {{dexterity:modifier}}.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MAGE_ARMOR" />
+        </rules>
+    </element>
+    <element name="Conjuration" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_CONJURATION">
+        <supports>Energy-Source</supports>
+        <description>
+            <p>You can cast mage hand at will. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the hand. On a hit, the target takes force damage equal to 1d4 + your spellcasting ability modifier. As a bonus action on your turn, you can move the hand up to 30 feet and repeat the attack against a creature within 5 feet of it.</p>
+        </description>
+        <sheet>
+            <description>You can cast mage hand at will. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the hand. On a hit, the target takes force damage equal to 1d4 + {{charisma:modifier}}. As a bonus action on your turn, you can move the hand up to 30 feet and repeat the attack against a creature within 5 feet of it.</description>
+            <description level="14">You can cast mage hand at will. When you cast the spell, you can make a melee spell attack against a creature within 5 feet of the hand. On a hit, the target takes force damage equal to 1d4 + {{charisma:modifier}}. As a bonus action on your turn, you can move the hand up to 30 feet and repeat the attack against a creature within 5 feet of it.
+            You can cast misty step at will without expending a spell slot or using verbal components. You can also cast teleportation circle without expending a spell slot or using material components. When you cast teleportation circle using this feature, you can’t do so again until you finish a long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" />
+            <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="14" />
+        </rules>
+    </element>
+    <element name="Divination" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_DIVINATION">
+        <supports>Energy-Source</supports>
+        <description>
+            <p>You can cast detect magic at will, without expending a spell slot.</p>
+        </description>
+        <sheet>
+            <description>You can cast detect magic at will, without expending a spell slot.</description>
+            <description level="14">You can cast detect magic at will, without expending a spell slot.
+            You gain truesight out to 60 feet.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+            <grant type="Vision" id="ID_VISION_TRUESIGHT" level="14" />
+        </rules>
+    </element>
+    <element name="Enchantment" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ENCHANTMENT">
+        <supports>Energy-Source</supports>
+        <description>
+            <p> When a creature that you can see within 30 feet of you makes an attack roll, ability check, or saving throw, you can use your reaction to force the creature to subtract 2 from the result. You can use this reaction after the roll is made but before the outcome is determined. You can use this benefit a number of times equal to your proficiency bonus and regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest" action="Reaction">
+            <description>When a creature that you can see within 30 feet of you makes an attack roll, ability check, or saving throw, you can use your reaction to force the creature to subtract 2 from the result. You can use this reaction after the roll is made but before the outcome is determined.</description>
+            <description level="14">When a creature that you can see within 30 feet of you makes an attack roll, ability check, or saving throw, you can use your reaction to force the creature to subtract 2 from the result. You can use this reaction after the roll is made but before the outcome is determined.
+            You can cast hold monster at will without expending a spell slot or material components. When using this feature to cast the spell, you may not target the same creature again without first finishing a long rest.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_HOLD_MONSTER" />
+        </rules>
+    </element>
+    <element name="Evocation" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_EVOCATION">
+        <supports>Energy-Source</supports>
+        <description>
+            <p>You can cast eldritch blast at will. This spell counts as a sorcerer spell for you. When you cast eldritch blast using this feature, add your Charisma modifier to the damage it deals on a hit.</p>
+        </description>
+        <sheet>
+            <description>You can cast eldritch blast at will. This spell counts as a sorcerer spell for you. When you cast eldritch blast using this feature, add {{charisma:modifier}} to the damage it deals on a hit.</description>
+            <description level="14">You can cast eldritch blast at will. This spell counts as a sorcerer spell for you. When you cast eldritch blast using this feature, add {{charisma:modifier}} to the damage it deals on a hit.
+            When you cast eldritch blast, you may create one additional beam, giving you five beams at 14th level and six beams at 17th level.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ELDRITCH_BLAST" />
+        </rules>
+    </element>
+    <element name="Illusion" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ILLUSION">
+        <supports>Energy-Source</supports>
+        <description>
+            <p>You can cast disguise self at will, without expending a spell slot.</p>
+        </description>
+        <sheet>
+            <description>You can cast disguise self at will, without expending a spell slot.</description>
+            <description level="14">You can cast disguise self at will, without expending a spell slot.
+            You can cast invisibility at will targeting yourself without expending a spell slot or material components. When using this feature to cast the spell, you may spend 2 sorcery points to instead cast greater invisibility targeting yourself.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" />
+            <grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" level="14" />
+            <grant type="Spell" id="ID_PHB_SPELL_GREATER_INVISIBILITY" level="14" />
+        </rules>
+    </element>
+    <element name="Necromancy" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_NECROMANCY">
+        <supports>Energy-Source</supports>
+        <description>
+            <p>You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components.</p>
+        </description>
+        <sheet>
+            <description>You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components.</description>
+            <description level="14">You can cast false life on yourself at will as a 1st-level spell, without expending a spell slot or material components.
+             As an action, you can touch a humanoid that has been dead for no longer than 1 minute. The creature becomes your undead servant. It is friendly to you and your companions and obeys your commands. The creature uses the Undead Servant stat block below. It uses your proficiency bonus in several places.
+             In combat, the servant acts during your turn. It can move and use its reaction on its own, but the only action it takes is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you have more than one attack when you take the Attack action, you can sacrifice one of your attacks to command the servant to take the Attack action. If you are incapacitated, the servant can take any action of its choice, not just Dodge.
+             If the servant was destroyed within the last hour, you can use your action to touch it and expend a spell slot of 1st level or higher. The servant returns to life (or unlife, as it were) after 1 minute with all its hit points restored.
+             When you finish a long rest, you can animate a new undead servant targeting a new corpse. If you already have an undead servant from this feature, the previous servant unanimates when the new servant animates. The servant also unaminates if you die.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FALSE_LIFE" />
+            <select type="Companion" supports="undead-servant" level="14" />
+        </rules>
+    </element>
+
+    <element name="Transmutation" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_TRANSMUTATION">
+        <supports>Energy-Source</supports>
+        <description>
+            <p>You can cast the prestidigitation cantrip at will. When you use this feature to cast this spell, the duration is until dispelled. As normal, if you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</p>
+        </description>
+        <sheet>
+            <description>You can cast the prestidigitation cantrip at will. When you use this feature to cast this spell, the duration is until dispelled. As normal, if you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.</description>
+            <description level="14">You can cast the prestidigitation cantrip at will. When you use this feature to cast this spell, the duration is until dispelled. As normal, if you cast this spell multiple times, you can have up to three of its non-instantaneous effects active at a time, and you can dismiss such an effect as an action.
+            You can cast alter self at will, without expending a spell slot. When you cast this spell using this feature, the duration of the spell is until dispelled, no concentration required.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION" />
+            <grant type="Spell" id="ID_PHB_SPELL_ALTER_SELF" />
+        </rules>
+    </element>
+    <element name="Focused Flexible Casting" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_SORCERER_IMBUEDONE_FOCUSED_FLEXIBLE_CASTING">
+        <description>
+            <p>Each time you cast a spell of 1st level or higher that is part of the school of your chosen energy source, you gain 1 sorcery point.</p>
+        </description>
+        <sheet>
+            <description>Each time you cast a spell of 1st level or higher that is part of the school of your chosen energy source, you gain 1 sorcery point.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="The Hand of the One" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_SORCERER_IMBUEDONE_HAND_OF_THE_ONE">
         <description>
-            <p></p>
+            <p>You gain additional magic features as determined by your chosen energy source.</p>
+            <p class="indent"><strong><em>Abjuration.</em></strong> When you cast mage armor on yourself, your base AC becomes 16 + your Dexterity modifier. </p>
+            <p class="indent"><strong><em>Conjuration.</em></strong> You can cast misty step at will without expending a spell slot or using verbal components. You can also cast teleportation circle without expending a spell slot or using material components. When you cast teleportation circle using this feature, you can’t do so again until you finish a long rest. </p>
+            <p class="indent"><strong><em>Divination.</em></strong> You gain truesight out to 60 feet. </p>
+            <p class="indent"><strong><em>Enchantment.</em></strong> You can cast hold monster at will without expending a spell slot or material components. When using this feature to cast the spell, you may not target the same creature again without first finishing a long rest. </p>
+            <p class="indent"><strong><em>Evocation.</em></strong> When you cast eldritch blast, you may create one additional beam, giving you five beams at 14th level and six beams at 17th level. </p>
+            <p class="indent"><strong><em>Illusion.</em></strong> You can cast invisibility at will targeting yourself without expending a spell slot or material components. When using this feature to cast the spell, you may spend 2 sorcery points to instead cast greater invisibility targeting yourself. </p>
+            <p class="indent"><strong><em>Necromancy.</em></strong> As an action, you can touch a humanoid that has been dead for no longer than 1 minute. The creature becomes your undead servant. It is friendly to you and your companions and obeys your commands. The creature uses the Undead Servant stat block below. It uses your proficiency bonus in several places. </p>
+            <p class="indent">In combat, the servant acts during your turn. It can move and use its reaction on its own, but the only action it takes is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you have more than one attack when you take the Attack action, you can sacrifice one of your attacks to command the servant to take the Attack action. If you are incapacitated, the servant can take any action of its choice, not just Dodge.</p>
+            <p class="indent">If the servant was destroyed within the last hour, you can use your action to touch it and expend a spell slot of 1st level or higher. The servant returns to life (or unlife, as it were) after 1 minute with all its hit points restored.</p>
+            <p class="indent">When you finish a long rest, you can animate a new undead servant targeting a new corpse. If you already have an undead servant from this feature, the previous servant unanimates when the new servant animates. The servant also unaminates if you die.</p>
+            <p class="indent"><strong><em>Transmutation.</em></strong> You can cast alter self at will, without expending a spell slot. When you cast this spell using this feature, the duration of the spell is until dispelled, no concentration required. </p>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain additional magic features as determined by your chosen energy source.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Magical Magnificence" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_SORCERER_IMBUEDONE_MAGICAL_MAGNIFICENCE">
         <description>
-            <p></p>
+            <p>Choose one sorcerer spell of 3rd level or lower from a school of magic related to your chosen energy source. You learn the spell, unless you already know it, and it does not count towards the total number of spells that you know. You can cast this spell at its lowest level without expending a spell slot or material components.</p>
+            <p class="indent">If you change your energy source, you lose access to this spell and must choose a new spell.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Choose one sorcerer spell of 3rd level or lower from a school of magic related to your chosen energy source. You learn the spell, unless you already know it, and it does not count towards the total number of spells that you know. You can cast this spell at its lowest level without expending a spell slot or material components.
+            If you change your energy source, you lose access to this spell and must choose a new spell.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="Undead Servant" type="Companion" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_UNDEAD_SERVANT">
+        <supports>undead-servant</supports>
         <description>
             <p></p>
         </description>
+        <setters>
+            <set name="strength">16</set>
+            <set name="dexterity">10</set>
+            <set name="constitution">15</set>
+            <set name="intelligence">3</set>
+            <set name="wisdom">10</set>
+            <set name="charisma">5</set>
+            <set name="ac">13+proficiency</set>
+            <set name="hp">5 + 5 times your sorcerer level</set>
+            <set name="speed">30 ft.</set>
+            <set name="senses">darkvision 60 ft., passive Perception 10</set>
+            <set name="immunities">Poison, Poisoned</set>
+            <set name="type">undead</set>
+            <set name="size">medium</set>
+            <set name="languages">languages you speak</set>
+            <set name="alignment">unaligned</set>
+            <set name="challenge"></set>
+            <set name="actions">ID_DMDAVE_OMERIA_COMPANION_ACTION_UNDEAD_SERVANT_SLAM</set>
+            <set name="traits">ID_DMDAVE_OMERIA_COMPANION_TRAIT_UNDEAD_SERVANT_NECROMANTIC_BOND,ID_DMDAVE_OMERIA_COMPANION_TRAIT_UNDEAD_SERVANT_UNDEAD_FORTITUDE,ID_DMDAVE_OMERIA_COMPANION_TRAIT_UNDEAD_SERVANT_TRAITS</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="13" />
+            <stat name="companion:hp:max" value="5" bonus="base"/>
+            <stat name="companion:speed" value="30" bonus="base"/>
+        </rules>
+            
+    </element>
+
+    <element name="Slam" type="Companion Action" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_ACTION_UNDEAD_SERVANT_SLAM">
+        <description>
+            <p> Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d8 + 3 + your proficiency bonus slashing damage.</p>
+        </description>
         <sheet>
-            <description></description>
+            <description> Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target. Hit: 1d8 + 3 + your proficiency bonus slashing damage.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID______">
+    <element name="Necromantic Bond" type="Companion Trait" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_TRAIT_UNDEAD_SERVANT_NECROMANTIC_BOND">
         <description>
-            <p></p>
+            <p>You can add your proficiency bonus to any ability check or saving throw that the servant makes.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can add your proficiency bonus to any ability check or saving throw that the servant makes.</description>
+        </sheet>
+    </element>
+    <element name="Traits" type="Companion Trait" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_TRAIT_UNDEAD_SERVANT_TRAITS">
+        <description>
+            <p>Armor Class 13 + proficiency bonus (natural armor)
+            Hit Points 5 + five times your sorcerer level (the servant has a number of Hit Dice [d8s] equal to your sorcerer level)</p>
+        </description>
+        <sheet>
+            <description>Armor Class 13 + proficiency bonus (natural armor)
+            Hit Points 5 + five times your sorcerer level (the servant has a number of Hit Dice [d8s] equal to your sorcerer level)</description>
+        </sheet>
+    </element>
+    <element name="Undead Fortitude" type="Companion Trait" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_TRAIT_UNDEAD_SERVANT_UNDEAD_FORTITUDE">
+        <description>
+            <p>If damage reduces the servant to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the servant drops to 1 hit point instead.</p>
+        </description>
+        <sheet>
+            <description>If damage reduces the servant to 0 hit points, it must make a Constitution saving throw with a DC of 5 + the damage taken, unless the damage is radiant or from a critical hit. On a success, the servant drops to 1 hit point instead.</description>
         </sheet>
     </element>
 </elements>

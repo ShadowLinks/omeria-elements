@@ -48,6 +48,8 @@
 		<file name="ranger-sanddancer.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/ranger-sanddancer.xml"/>
 		<file name="rogue-deadrunner.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/rogue-deadrunner.xml"/>
 		<file name="rogue-merchantprincet.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/rogue-merchantprincet.xml"/>
+		<file name="sorcerer-handofeight.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/sorcerer-handofeight.xml"/>
+		<file name="sorcerer-imbuedone.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/sorcerer-imbuedone.xml"/>
 		
     </files>
 </index>
