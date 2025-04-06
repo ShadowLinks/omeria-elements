@@ -9,53 +9,92 @@
     <element name="True Emperor" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_WARLOCK_TRUEEMPEROR">
         <supports>Otherworldly Patron</supports>
         <description>
-            <p></p>
-            <p class="indent"></p>
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
+            <p>Just a little over a decade ago, a mysterious faction appeared in the city Mighty Tadju. Calling themselves The Paragons of the True Emperor, this autocratic faction rejected Tadju and Hasastan’s leaders, citing that the church of Xardos should have no hand in government. Originally, these protests were peaceful, but they soon grew violent.</p>
+            <p class="indent">Known to few, the organization is guided by a select group of warlocks who draw power directly from their so-called True Emperor, an as yet unrevealed entity. These manipulative warlocks keep to the shadows, content to use their illegal enchantments to charm and dominate important figures within their organization.</p>
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_TRUEEMPEROR_SPELLS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_TRUEEMPEROR_CONFIDENT_ENCHANTMENT" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_TRUEEMPEROR_PSYCHIC_BOND" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_TRUEEMPEROR_MIND_FORTRESS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_TRUEEMPEROR_MENTAL_DISRUPTION" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="6" />
-            <grant type="Archetype Feature" id="ID_____" level="10" />
-            <grant type="Archetype Feature" id="ID______" level="14" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_TRUEEMPEROR_SPELLS" level="1" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_TRUEEMPEROR_CONFIDENT_ENCHANTMENT" level="1" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_TRUEEMPEROR_PSYCHIC_BOND" level="6" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_TRUEEMPEROR_MIND_FORTRESS" level="10" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_TRUEEMPEROR_MENTAL_DISRUPTION" level="14" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="Expanded Spell List" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_TRUEEMPEROR_SPELLS">
         <description>
-            <p></p>
+            <p>The True Emperor lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
+            <table>
+                <thead>
+                    <tr><td>d4</td><td>column2</td></tr>
+                </thead>
+                <tr><td>1st</td><td>bane, command</td></tr>
+                <tr><td>2nd</td><td>calm emotions, suggestion</td></tr>
+                <tr><td>3rd</td><td>clairvoyance, nondetection</td></tr>
+                <tr><td>4th</td><td>compulsion, confusion</td></tr>
+                <tr><td>5th</td><td>dominate person, modify memory</td></tr>
+            </table>
         </description>
-        <sheet>
+        <sheet display="false">
             <description></description>
         </sheet>
+        <spellcasting name="Warlock" extend="true">
+            <extend>ID_PHB_SPELL_BANE</extend>
+            <extend>ID_PHB_SPELL_COMMAND</extend>
+            <extend>ID_PHB_SPELL_CALM_EMOTIONS</extend>
+            <extend>ID_PHB_SPELL_SUGGESTION</extend>
+            <extend>ID_PHB_SPELL_CLAIRVOYANCE</extend>
+            <extend>ID_PHB_SPELL_NONDETECTION</extend>
+            <extend>ID_PHB_SPELL_COMPULSION</extend>
+            <extend>ID_PHB_SPELL_CONFUSION</extend>
+            <extend>ID_PHB_SPELL_DOMINATE_PERSON</extend>
+            <extend>ID_PHB_SPELL_MODIFY_MEMORY</extend>
+        </spellcasting>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Confident Enchantment" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_TRUEEMPEROR_CONFIDENT_ENCHANTMENT">
         <description>
-            <p></p>
+            <p>When you cast an enchantment spell that requires a saving throw to resist its effects and the target succeeds, you can use your reaction to force the creature to repeat its saving throw. The target must keep the new result, even if it’s better.</p>
+            <p class="indent"></p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest" action="Reaction">
+            <description>When you cast an enchantment spell that requires a saving throw to resist its effects and the target succeeds, you can use your reaction to force the creature to repeat its saving throw. The target must keep the new result, even if it’s better.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="Psychic Bond" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_TRUEEMPEROR_PSYCHIC_BOND">
         <description>
-            <p></p>
+            <p>You learn the spell detect thoughts. It counts as a warlock spell for you, but it doesn’t count against the number of spells you know. You can also cast it once without a spell slot, and you regain the ability to do so when you finish a long rest.</p>
+            <p class="indent">Whenever you cast this spell, the target of the spell has disadvantage on attack rolls against you and on saving throws made to resist your enchantment spells.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You learn the spell detect thoughts. It counts as a warlock spell for you, but it doesn’t count against the number of spells you know. You can also cast it once without a spell slot.
+            Whenever you cast this spell, the target of the spell has disadvantage on attack rolls against you and on saving throws made to resist your enchantment spells.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" prepared="true" spellcasting="Warlock" />
+        </rules>
+    </element>
+    <element name="Mind Fortress" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_TRUEEMPEROR_MIND_FORTRESS">
+        <description>
+            <p>Whenever you make a saving throw against a spell or effect that would cause you to become charmed or frightened, you can treat a d20 roll of 12 or lower as a 13. Additionally, if you succeed on a saving throw against an effect that would cause you to become charmed or frightened, you can use your reaction to deal 2d12 psychic damage to the source of the effect.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>Whenever you make a saving throw against a spell or effect that would cause you to become charmed or frightened, you can treat a d20 roll of 12 or lower as a 13. Additionally, if you succeed on a saving throw against an effect that would cause you to become charmed or frightened, you can use your reaction to deal 2d12 psychic damage to the source of the effect.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID______">
+    <element name="Mental Disruption" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_TRUEEMPEROR_MENTAL_DISRUPTION">
         <description>
-            <p></p>
+            <p>You can force a creature currently under the effects of your detect thoughts spell to make an Intelligence saving throw. If the target has 100 hit points or more, it automatically passes its saving throw. If the target fails its saving throw, it becomes stunned and it must repeat its saving throw at the end of its next turn. If it fails its second saving throw, it dies. Otherwise, the stunned condition ends for it.</p>
+            <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>You can force a creature currently under the effects of your detect thoughts spell to make an Intelligence saving throw. If the target has 100 hit points or more, it automatically passes its saving throw. If the target fails its saving throw, it becomes stunned and it must repeat its saving throw at the end of its next turn. If it fails its second saving throw, it dies. Otherwise, the stunned condition ends for it.</description>
         </sheet>
     </element>
 </elements>

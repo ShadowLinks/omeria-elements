@@ -50,6 +50,7 @@
 		<file name="rogue-merchantprincet.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/rogue-merchantprincet.xml"/>
 		<file name="sorcerer-handofeight.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/sorcerer-handofeight.xml"/>
 		<file name="sorcerer-imbuedone.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/sorcerer-imbuedone.xml"/>
-		
+		<file name="warlock-borrower.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/warlock-borrower.xml"/>
+		<file name="warlock-trueemperor.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/warlock-trueemperor.xml"/>
     </files>
 </index>

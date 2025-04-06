@@ -9,53 +9,70 @@
     <element name="Borrower" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_WARLOCK_BORROWER">
         <supports>Otherworldly Patron</supports>
         <description>
-            <p></p>
+            <p>In Omeria, the term “borrower” has two meanings. First, it’s the generic nickname for warlocks, clerics, and other spellcasters who “borrow” their magic from Casar’s proxies and powers. Second, it’s the term for warlocks who draw power from more than one otherworldly patron. Because many patrons are jealous and petty beings, becoming a Borrower is a dangerous scheme that often ends in total annihilation. Still, those who succeed wield unfathomable magical might on par with the titans themselves.</p>
             <p class="indent"></p>
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_BORROWER_1" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_BORROWER_2" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_BORROWER_3" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_BORROWER_4" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID___" level="1" />
-            <grant type="Archetype Feature" id="ID____" level="6" />
-            <grant type="Archetype Feature" id="ID_____" level="10" />
-            <grant type="Archetype Feature" id="ID______" level="14" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_BORROWER_1" level="1" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_BORROWER_2" level="6" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_BORROWER_3" level="10" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_BORROWER_4" level="14" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="First Patron" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_BORROWER_1">
         <description>
-            <p></p>
+            <p>When you first create your character, choose a patron available to your character. You gain the 1st-level of that patron as normal, as well as access to that patron’s expanded spell list (if any). As you gain levels in this class, you gain the patron’s features as normal.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When you first create your character, choose a patron available to your character. You gain the 1st-level of that patron as normal, as well as access to that patron’s expanded spell list (if any). As you gain levels in this class, you gain the patron’s features as normal.</description>
         </sheet>
+        <rules>
+            <select type="Archetype" name="Otherworldly Patron" supports="Otherworldly Patron"/>
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Second Patron" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_BORROWER_2">
         <description>
-            <p></p>
+            <p>Choose a second patron from which you will borrow your powers. You gain that patron’s 1st- and 6th-level features. As you gain levels in this class, you gain the features for both your first and second patron choices.</p>
+            <p class="indent">Each day after you finish a long rest, choose one of the two patrons to serve as your primary patron for that day. You may use that patron’s features and expanded spells without consequence until you complete another long rest. You may also use the features of your non-primary patron using the same mechanical rules detailed under the patron’s description. Once you use the non-primary patron’s feature, you must make a Charisma saving throw. The DC for the saving throw equals 10 plus the warlock level at which you earned the feature or spell. On a successful saving throw, you suffer no ill effects. On a failed saving throw, you anger the non-primary patron; you take 1d8 psychic damage times the warlock level at which you earned the triggering feature or spell. This damage ignores resistance and immunity. If you fail the check by 10 or more, the patron revokes access to its powers and you may no longer use its features or cast spells offered by its Expanded Spell List feature. It’s possible to regain the trust of a patron, but doing so generally requires a lot of lip service (GM’s discretion).</p>
+            <p class="indent">For example, you are a 16th-level Borrower warlock who draws power from The Fiend, The Great Old One, the Archfey, and the Hexblade. After you complete a long rest, you choose the Great Old One as your primary patron. Until you complete another long rest, you may use the Great Old One’s features and expanded spells without consequence. During combat, you use the Fiend’s Hurl Through Hell feature on an opponent. Since you gain the Hurl Through Hell feature at 14th level and The Fiend is not your primary patron that day, you must make a DC 24 Charisma saving throw. On a failed saving throw, you take 14d8 psychic damage, punishment for borrowing power from two patrons.</p>
+            <p class="indent">When you reach a level in this class that rewards you with an ability score increase, you may swap one of your otherworldly patrons for another viable option.</p>
         </description>
         <sheet>
-            <description></description>
+            <description> You gain that patron’s 1st- and 6th-level features. As you gain levels in this class, you gain the features for both your first and second patron choices.
+            Each day after you finish a long rest, choose one of the two patrons to serve as your primary patron for that day. You may use that patron’s features and expanded spells without consequence until you complete another long rest. You may also use the features of your non-primary patron using the same mechanical rules detailed under the patron’s description. Once you use the non-primary patron’s feature, you must make a Charisma saving throw. The DC for the saving throw equals 10 plus the warlock level at which you earned the feature or spell. On a successful saving throw, you suffer no ill effects. On a failed saving throw, you anger the non-primary patron; you take 1d8 psychic damage times the warlock level at which you earned the triggering feature or spell. This damage ignores resistance and immunity. If you fail the check by 10 or more, the patron revokes access to its powers and you may no longer use its features or cast spells offered by its Expanded Spell List feature. It’s possible to regain the trust of a patron, but doing so generally requires a lot of lip service (GM’s discretion).
+            When you reach a level in this class that rewards you with an ability score increase, you may swap one of your otherworldly patrons for another viable option.</description>
         </sheet>
+        <rules>
+            <select type="Archetype" name="Otherworldly Patron" supports="Otherworldly Patron"/>
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="Third Patron" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_BORROWER_3">
         <description>
-            <p></p>
+            <p>You choose a third otherworldly patron.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Archetype" name="Otherworldly Patron" supports="Otherworldly Patron"/>
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID______">
+    <element name="Fourth Patron" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WARLOCK_BORROWER_4">
         <description>
-            <p></p>
+            <p>You choose a fourth otherworldly patron.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <select type="Archetype" name="Otherworldly Patron" supports="Otherworldly Patron"/>
+        </rules>
     </element>
 </elements>
