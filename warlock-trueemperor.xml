@@ -33,7 +33,7 @@
             <p>The True Emperor lets you choose from an expanded list of spells when you learn a warlock spell. The following spells are added to the warlock spell list for you.</p>
             <table>
                 <thead>
-                    <tr><td>d4</td><td>column2</td></tr>
+                    <tr><td>Spell Level</td><td>Spells</td></tr>
                 </thead>
                 <tr><td>1st</td><td>bane, command</td></tr>
                 <tr><td>2nd</td><td>calm emotions, suggestion</td></tr>
