@@ -9,63 +9,157 @@
     <element name="Esoteric Delver" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_WIZARD_DELVER">
         <supports>Arcane Tradition</supports>
         <description>
-            <p></p>
+            <p>Esoteric delvers are wizards obsessed with forbidden lore, hidden secrets, and discovering the unknown. Many of Omeria’s esoteric delvers hail from Odonburg, but there are plenty to be found in Northern Omeria as well. Many of the mages who work in the Archivist’s Sanctum Library and Desneorus consider themselves esoteric delvers, as do many of Steel Church’s Adherents.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_DELVER_DELVERS_KNOWLEDGE" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_DELVER_ARCANE_INTERPRETATION" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_DELVER_COMMAND_THOUGHTS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_DELVER_EXTRAPLANAR_AWARENESS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_DELVER_BEYONDER" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="2" />
-            <grant type="Archetype Feature" id="ID___" level="2" />
-            <grant type="Archetype Feature" id="ID____" level="6" />
-            <grant type="Archetype Feature" id="ID_____" level="10" />
-            <grant type="Archetype Feature" id="ID______" level="14" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_DELVER_DELVERS_KNOWLEDGE" level="2" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_DELVER_ARCANE_INTERPRETATION" level="2" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_DELVER_COMMAND_THOUGHTS" level="6" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_DELVER_EXTRAPLANAR_AWARENESS" level="10" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_DELVER_BEYONDER" level="14" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID__">
+    <element name="Delver's Knowledge" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_DELVER_DELVERS_KNOWLEDGE">
         <description>
-            <p></p>
+            <p>You learn two languages of your choice. You also become proficient in your choice of two of the following skills: Arcana, History, Nature, or Religion.</p>
+            <p class="indent">Your proficiency bonus is doubled for any ability check you make that uses either of those skills.</p>
         </description>
         <sheet>
             <description></description>
+        </sheet>
+        <rules>
+            <select type="Language" name="Language, Delver's Knowledge" supports="Standard||Exotic" number="2" />
+            <select type="Archetype Feature" name="Expertise, Delver's Knowledge" supports="delver-skills" />
+        </rules>
+    </element>    
+    <element name="Arcana" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_DELVER_DELVERS_KNOWLEDGE_ARCANA">
+        <supports>delver-skills</supports>
+        <description>
+            <p>You gain proficiency with Arcana. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+            <stat name="arcana:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="History" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_DELVER_DELVERS_KNOWLEDGE_HISTORY">
+        <supports>delver-skills</supports>
+        <description>
+            <p>You gain proficiency with History. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_HISTORY" />
+            <stat name="history:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Nature" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_DELVER_DELVERS_KNOWLEDGE_NATURE">
+        <supports>delver-skills</supports>
+        <description>
+            <p>You gain proficiency with Nature. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+            <stat name="nature:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Religion" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_DELVER_DELVERS_KNOWLEDGE_RELIGION">
+        <supports>delver-skills</supports>
+        <description>
+            <p>You gain proficiency with Religion. Your proficiency bonus is doubled for any ability check you make that uses the chosen proficiency.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_RELIGION" />
+            <stat name="religion:proficiency" value="proficiency" bonus="double" />
+        </rules>
+    </element>
+    <element name="Arcane Interpretation" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_DELVER_ARCANE_INTERPRETATION">
+        <description>
+            <p>You add an additional spell to your spellbook when you reach certain levels in this class, as shown on the Esoteric Delver Spells table. The spell counts as a wizard spell for you, but it doesn’t count against the number of spells you add to your spellbook when you gain levels in this class.</p>
+            <table>
+                <thead>
+                    <tr><td>Wizard Level</td><td>Spell</td></tr>
+                </thead>
+                <tr><td>2nd</td><td>detect evil and good</td></tr>
+                <tr><td>3rd</td><td>augury</td></tr>
+                <tr><td>5th</td><td>speak with dead</td></tr>
+                <tr><td>7th</td><td>divination</td></tr>
+                <tr><td>9th</td><td>legend lore</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" level="2" spellcasting="Wizard" />
+            <grant type="Spell" id="ID_PHB_SPELL_AUGURY" level="3" spellcasting="Wizard" />
+            <grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_DEAD" level="5" spellcasting="Wizard" />
+            <grant type="Spell" id="ID_PHB_SPELL_DIVINATION" level="7" spellcasting="Wizard" />
+            <grant type="Spell" id="ID_PHB_SPELL_LEGEND_LORE" level="9" spellcasting="Wizard" />
+        </rules>
+    </element>
+    <element name="Command Thoughts" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_DELVER_COMMAND_THOUGHTS">
+        <description>
+            <p>As an action, choose one creature that you can see within 60 feet of you. That creature must make a Wisdom saving throw. If the creature succeeds on the saving throw, you can’t use this feature on it again until you finish a long rest.</p>
+            <p class="indent">If the creature fails its saving throw, you can read its surface thoughts (those foremost in its mind, reflecting its current emotions and what it is actively thinking about) when it is within 60 feet of you. This effect lasts for 1 minute.</p>
+            <p class="indent">During that time, you can use your action to end this effect and use one of the following magical effects, targeting the creature. Spells cast this way do not expend a spell slot and the target automatically fails its saving throw against the spell. Creatures immune to the charmed condition cannot be affected by these effects.</p>
+            <ul>
+                <li>The creature magically falls unconscious for 1 minute, until it takes damage, or another creature uses its action to slap or shake the sleeping creature awake.</li>
+                <li>You cast the suggestion spell on the target.</li>
+                <li>If the creature is a humanoid, you cast the hold person spell on the target.</li>
+            </ul>
+        </description>
+        <sheet>
+            <description>As an action, choose one creature that you can see within 60 feet of you. That creature must make a Wisdom saving throw. If the creature succeeds on the saving throw, you can’t use this feature on it again until you finish a long rest.
+            If the creature fails its saving throw, you can read its surface thoughts (those foremost in its mind, reflecting its current emotions and what it is actively thinking about) when it is within 60 feet of you. This effect lasts for 1 minute.
+            During that time, you can use your action to end this effect and use one of the following magical effects, targeting the creature. Spells cast this way do not expend a spell slot and the target automatically fails its saving throw against the spell. Creatures immune to the charmed condition cannot be affected by these effects.
+            The creature magically falls unconscious for 1 minute, until it takes damage, or another creature uses its action to slap or shake the sleeping creature awake.
+            You cast the suggestion spell on the target.
+            If the creature is a humanoid, you cast the hold person spell on the target.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="Extraplanar Awareness" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_DELVER_EXTRAPLANAR_AWARENESS">
         <description>
-            <p></p>
+            <p>You can cast detect evil and good at will, and do not expend a spell slot when you do. Additionally, you can use your bonus action to target one aberration, celestial, elemental, fey, fiend, or undead that you can see. The next spell attack you make against that creature is made with advantage so long as you make the spell attack before the start of your next turn.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can cast detect evil and good at will, and do not expend a spell slot when you do. Additionally, you can use your bonus action to target one aberration, celestial, elemental, fey, fiend, or undead that you can see. The next spell attack you make against that creature is made with advantage so long as you make the spell attack before the start of your next turn.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD" />
+        </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Beyonder" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_DELVER_BEYONDER">
         <description>
-            <p></p>
+            <p>You can cast etherealness at will without expending a spell slot. When you cast etherealness using this feature, you remain in the Ethereal Plane until you use your action to dismiss the spell. Also, when the spell ends, you can choose to return to the plane of existence from which you entered the Border Ethereal, or into another plane of existence that borders your current position on the Border Ethereal.</p>
+            <p class="indent">When you cast etherealness using this feature, you may expend a spell slot of 7th level or higher to allow up to six willing creatures who link hands together with you to gain the same benefits.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can cast etherealness at will without expending a spell slot. When you cast etherealness using this feature, you remain in the Ethereal Plane until you use your action to dismiss the spell. Also, when the spell ends, you can choose to return to the plane of existence from which you entered the Border Ethereal, or into another plane of existence that borders your current position on the Border Ethereal.
+            When you cast etherealness using this feature, you may expend a spell slot of 7th level or higher to allow up to six willing creatures who link hands together with you to gain the same benefits.</description>
         </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_ETHEREALNESS" />
+        </rules>
     </element>
 </elements>

@@ -9,63 +9,152 @@
     <element name="Remote Traveler" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_WIZARD_TRAVELER">
         <supports>Arcane Tradition</supports>
         <description>
-            <p></p>
+            <p>Remote traveler suits allow arcane spellcasters to project their consciousness into constructs. The spellcaster sees the world through the eyes of its remote traveler. This allows the spellcaster to experience the world without ever leaving the safety and comfort of their home. The first prototypes for these suits were invented in the late 9th century.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_TRAVELER_REMOTE_TRAVEL_PILOT" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_TRAVELER_REMOTE_CASTING" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_TRAVELER_MULTIATTACK" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_TRAVELER_IMPROVED_RESPONSE" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_TRAVELER_FLIGHT" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="2" />
-            <grant type="Archetype Feature" id="ID___" level="2" />
-            <grant type="Archetype Feature" id="ID____" level="6" />
-            <grant type="Archetype Feature" id="ID_____" level="10" />
-            <grant type="Archetype Feature" id="ID______" level="14" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_TRAVELER_REMOTE_TRAVEL_PILOT" level="2" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_TRAVELER_REMOTE_CASTING" level="2" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_TRAVELER_MULTIATTACK" level="6" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_TRAVELER_IMPROVED_RESPONSE" level="10" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_TRAVELER_FLIGHT" level="14" />
         </rules>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID__">
+    <element name="Remote Travel Pilot" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_TRAVELER_REMOTE_TRAVEL_PILOT">
         <description>
-            <p></p>
+            <p>You gain access to a remote traveler suit which uses your proficiency bonus (PB) in several places. To pilot the suit, you must conduct an hour-long ritual that binds your consciousness to the suit. Once bound to the suit, half of any damage the suit takes (rounded down) is transferred to you as psychic damage. Damage dealt this way ignores resistances or immunities to psychic damages.</p>
+            <p class="indent">In combat, the suit shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the suit can take any action of its choice, not just Dodge.</p>
+            <p class="indent">On your turn, as a bonus action, you can switch from using its senses to using your own, or back again. While you are using its senses, you are blinded and deafened in regard to your own surroundings. This connection lasts until you end the connection as an action, you and your suit are on different planes of existence, or the suit is destroyed. While piloting the suit in this way, the suit uses your Intelligence, Wisdom, and Charisma scores, as well as any saving throws and skill proficiencies related to Intelligence, Wisdom, and Charisma.</p>
+            <p class="indent">You can expend one 1st-level spell slot to mend the suit. The suit regains 2d6 hit points. When you expend a spell slot of 2nd level or higher, the hit points the suit regains increases by 1d6 for each slot level above 2nd.</p>
+            <p class="indent">At the end of a long rest, you can create a new remote traveler if you have smith’s tools with you. You must then reestablish your psychic connection with the new suit, spending 1 hour to do so. If you already have a suit from this feature, the first one no longer functions. The suit stops functioning if you die.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You gain access to a remote traveler suit which uses your proficiency bonus (PB) in several places. To pilot the suit, you must conduct an hour-long ritual that binds your consciousness to the suit. Once bound to the suit, half of any damage the suit takes (rounded down) is transferred to you as psychic damage. Damage dealt this way ignores resistances or immunities to psychic damages.
+            In combat, the suit shares your initiative count, but it takes its turn immediately after yours. It can move and use its reaction on its own, but the only action it takes on its turn is the Dodge action unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the suit can take any action of its choice, not just Dodge.
+            On your turn, as a bonus action, you can switch from using its senses to using your own, or back again. While you are using its senses, you are blinded and deafened in regard to your own surroundings. This connection lasts until you end the connection as an action, you and your suit are on different planes of existence, or the suit is destroyed. While piloting the suit in this way, the suit uses your Intelligence, Wisdom, and Charisma scores, as well as any saving throws and skill proficiencies related to Intelligence, Wisdom, and Charisma.
+            You can expend one 1st-level spell slot to mend the suit. The suit regains 2d6 hit points. When you expend a spell slot of 2nd level or higher, the hit points the suit regains increases by 1d6 for each slot level above 2nd.
+            At the end of a long rest, you can create a new remote traveler if you have smith’s tools with you. You must then reestablish your psychic connection with the new suit, spending 1 hour to do so. If you already have a suit from this feature, the first one no longer functions. The suit stops functioning if you die.</description>
+        </sheet>
+        <rules>
+            <select type="Companion" supports="Remote-travel-suit" />
+        </rules>
+    </element>
+    <element name="Remote Travel Suit" type="Companion" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_REMOTE_TRAVEL_SUIT">
+        <supports>Remote-travel-suit</supports>
+        <description>
+            <p>___</p>
+        </description>
+        <setters>
+            <set name="size">Medium</set>
+            <set name="type">Construct</set>
+            <set name="alignment">unaligned</set>
+            <set name="ac">13 + proficiency</set>
+            <set name="hp">2 + your INT + 5 times your Wizard Level (wizard level d8)</set>
+            <set name="speed">30 ft.</set>
+            <set name="strength">14</set>
+            <set name="dexterity">12</set>
+            <set name="constitution">14</set>
+            <set name="intelligence">6</set>
+            <set name="wisdom">7</set>
+            <set name="charisma">6</set>
+            <set name="resistances">___</set>
+            <set name="immunities">Poison</set>
+            <set name="conditionImmunities">Charmed, Exhaustion, Poisoned</set>            
+            <set name="senses">Darkvision 60 ft. passive Perception 10 + (PB x 2)</set>
+            <set name="languages">Languages you speak</set>
+            <set name="challenge">0</set>
+            <set name="skills">Athletics +2 plus PB, Perception -2 plus PB x 2</set>
+            <set name="traits">ID_DMDAVE_OMERIA_COMPANION_REMOTE_TRAVEL_SUIT_TRAIT_TRAITS,ID_DMDAVE_OMERIA_COMPANION_REMOTE_TRAVEL_SUIT_TRAIT_MAGIC_DEFLECTION,ID_DMDAVE_OMERIA_COMPANION_REMOTE_TRAVEL_SUIT_TRAIT_MAGIC_WEAPONS</set>
+            <set name="actions">ID_DMDAVE_OMERIA_COMPANION_REMOTE_TRAVEL_SUIT_ACTION_SLAM, ID_DMDAVE_OMERIA_COMPANION_REMOTE_TRAVEL_SUIT_ACTION_AUTOREPAIR</set>
+        </setters>
+        <rules>
+            <stat name="companion:ac" value="13" />
+            <stat name="companion:hp:max" value="2" bonus="base" />
+            <stat name="companion:speed" value="30" bonus="base" />
+        </rules>
+    </element>
+    <element name="Slam" type="Companion Action" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_REMOTE_TRAVEL_SUIT_ACTION_SLAM">
+        <description>
+            <p><i>Melee Weapon Attack:</i> your spell attack modifier to hit, reach 5 ft., one target you can see. <i>Hit:</i> 1d8 + PB bludgeoning damage.</p>
+        </description>
+        <sheet>
+            <description>Melee Weapon Attack: +your spell attack modifier to hit, reach 5 ft., one target you can see. Hit: 1d8 + PB bludgeoning damage.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="Auto Repair (3/day)" type="Companion Action" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_REMOTE_TRAVEL_SUIT_ACTION_AUTOREPAIR">
         <description>
-            <p></p>
+            <p>The magical mechanisms inside the suit restore 2d6 + PB hit points to itself.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>The magical mechanisms inside the suit restore 2d6 + PB hit points to itself.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Traits" type="Companion Trait" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_REMOTE_TRAVEL_SUIT_TRAIT_TRAITS">
         <description>
             <p></p>
         </description>
         <sheet>
-            <description></description>
+            <description>AC = 13 + PB (Natural Armor)
+            HP = 2 + your INT + (5 x Wizard Level)
+            Hit Die = d8 per Wizard Level
+            Althletics +2 + PB
+            Perception -2 + (PB x 2)</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="Magic Deflection" type="Companion Trait" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_REMOTE_TRAVEL_SUIT_TRAIT_MAGIC_DEFLECTION">
         <description>
-            <p></p>
+            <p>Damage the suit takes from spells is reduced by an amount equal to 2 + your wizard level.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Damage the suit takes from spells is reduced by an amount equal to 2 + your wizard level.</description>
         </sheet>
     </element>
-    <element name="FeatureName" type="Archetype Feature" source="Omeria" id="ID______">
+    <element name="Magic Weapons" type="Companion Trait" source="Omeria" id="ID_DMDAVE_OMERIA_COMPANION_REMOTE_TRAVEL_SUIT_TRAIT_MAGIC_WEAPONS">
         <description>
-            <p></p>
+            <p>The remote traveler’s weapon attacks are magical.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>The remote traveler’s weapon attacks are magical.</description>
+        </sheet>
+    </element>
+    <element name="Remote Casting" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_TRAVELER_REMOTE_CASTING">
+        <description>
+            <p>While you are using the suit’s senses, you can cast spells through it as if it was the spellcaster and not you.</p>
+        </description>
+        <sheet>
+            <description>While you are using the suit’s senses, you can cast spells through it as if it was the spellcaster and not you.</description>
+        </sheet>
+    </element>
+    <element name="Multiattack" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_TRAVELER_MULTIATTACK">
+        <description>
+            <p>The suit can attack twice, rather than once, whenever it takes the Attack action on its turn.</p>
+        </description>
+        <sheet>
+            <description>The suit can attack twice, rather than once, whenever it takes the Attack action on its turn.</description>
+        </sheet>
+    </element>
+    <element name="Improved Response" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_TRAVELER_IMPROVED_RESPONSE">
+        <description>
+            <p>The suit gains a bonus to its Strength, Dexterity, and Constitution saving throws equal to your Intelligence modifier.</p>
+        </description>
+        <sheet>
+            <description>The suit gains a bonus to its Strength, Dexterity, and Constitution saving throws equal to your Intelligence modifier.</description>
+        </sheet>
+    </element>
+    <element name="Flight" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_WIZARD_TRAVELER_FLIGHT">
+        <description>
+            <p>Your suit gains a flying speed of 30 feet.</p>
+        </description>
+        <sheet>
+            <description>Your suit gains a flying speed of 30 feet.</description>
         </sheet>
     </element>
 </elements>

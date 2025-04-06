@@ -52,5 +52,7 @@
 		<file name="sorcerer-imbuedone.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/sorcerer-imbuedone.xml"/>
 		<file name="warlock-borrower.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/warlock-borrower.xml"/>
 		<file name="warlock-trueemperor.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/warlock-trueemperor.xml"/>
+		<file name="wizard-delver.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/wizard-delver.xml"/>
+		<file name="wizard-traveler.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/wizard-traveler.xml"/>
     </files>
 </index>
