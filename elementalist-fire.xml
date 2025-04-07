@@ -68,16 +68,16 @@
             <description>Whenever you gain an elementalist level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a conjuration or evocation spell from the elementalist, sorcerer, warlock, or wizard spell list.</description>
         </sheet>
         <rules>
-            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3" />
-            <grant type="Spell" id="ID_PHB_SPELL_HELLISH_REBUKE" level="3" />
-            <grant type="Spell" id="ID_PHB_SPELL_FLAME_BLADE" level="5" />
-            <grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" level="5" />
-            <grant type="Spell" id="ID_DMDAVE_OMERIA_SPELL_BLAZE" level="9" />
-            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="9" />
-            <grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" level="13" />
-            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="13" />
-            <grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" level="17" />
-            <grant type="Spell" id="ID_DMDAVE_OMERIA_SPELL_INFERNO" level="17" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_BURNING_HANDS" level="3" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_HELLISH_REBUKE" level="3" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_FLAME_BLADE" level="5" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_SCORCHING_RAY" level="5" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_DMDAVE_OMERIA_SPELL_BLAZE" level="9" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_FIREBALL" level="9" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_FIRE_SHIELD" level="13" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_WALL_OF_FIRE" level="13" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_FLAME_STRIKE" level="17" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_DMDAVE_OMERIA_SPELL_INFERNO" level="17" />
         </rules>
     </element>
     <element name="Fire Walk with Me" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_FIRE_WALK_WITH_ME">

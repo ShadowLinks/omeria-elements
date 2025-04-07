@@ -9,94 +9,132 @@
     <element name="Water Soul" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_ELMENTALIST_WATER">
         <supports>Elemental-Bond</supports>
         <description>
-            <p></p>
+            <p>The Bottomless Deep is a realm of endless water in which creatures good and evil, chaotic and lawful thrive. All creatures of water represent water’s features: calm, flexibility, and wisdom.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_PROFICIENCIES" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_SPELLS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_ONE_WITH_WATER" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_FLEXIBLE_MIND" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_HEALING_COMPANIONS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_BUBBLE" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_WATERS_AVATAR" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="3" />
-            <grant type="Archetype Feature" id="ID_____" level="3" />
-            <grant type="Archetype Feature" id="ID______" level="9" />
-            <grant type="Archetype Feature" id="ID_______" level="14" />
-            <grant type="Archetype Feature" id="ID________" level="20" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_PROFICIENCIES" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_ONE_WITH_WATER" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_FLEXIBLE_MIND" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_HEALING_COMPANIONS" level="9" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_BUBBLE" level="14" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_WATERS_AVATAR" level="20" />
         </rules>
     </element>
-     <element name="featurename" type="Archetype Feature" source="Omeria" id="ID__">
+     <element name="Water Proficiencies" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_PROFICIENCIES">
         <description>
-            <p></p>
+            <p>You gain proficiency with any three skills of your choice. Choose one of the skills. When you make an ability check using that skill, you add double your proficiency bonus to the die result instead of just your proficiency bonus.</p>
+            <p class="indent">You can also read, write, and speak Aquan.</p>
+            <p class="indent">You also gain one additional water boon of your choice.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Language" id="ID_MM_LANGUAGE_AQUAN" />
+            <select type="Class Feature" name="Water Proficiency" supports="water-boon" />
+            <select type="Class Feature" name="Expertise, Skill Expert" supports="Expertise, Skill"/>
+            <select type="Proficiency" name="Skill Proficiency (Water Proficiency)" supports="Skill" number="3" />
+        </rules>
     </element>
-    <element name="featurename" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="Water Spells" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_SPELLS">
         <description>
-            <p></p>
+            <p>You learn additional spells when you reach certain levels in this class, as shown on the Water Spells table. Each of these spells counts as an elementalist spell for you, but it doesn’t count against the number of spells you prepare each day.</p>
+            <p class="indent">Whenever you gain an elementalist level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be an abjuration or evocation spell from the elementalist, sorcerer, warlock, or wizard spell list. Spells marked with an asterisk are Omeria spells.</p>
             <h5>Water Spells</h5>
             <table>
                 <thead>
                     <tr><td class="col-10">Elementalist Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>3rd</td><td>data1</td></tr>
-                <tr><td>5th</td><td>data2</td></tr>
-                <tr><td>9th</td><td>data3</td></tr>
-                <tr><td>13th</td><td>data4</td></tr>
-                <tr><td>17th</td><td>data5</td></tr>
+                <tr><td>3rd</td><td>create or destroy water, cure wounds</td></tr>
+                <tr><td>5th</td><td>calm emotions, lesser restoration</td></tr>
+                <tr><td>9th</td><td>water breathing, water walk</td></tr>
+                <tr><td>13th</td><td>control water, riptide*</td></tr>
+                <tr><td>17th</td><td>drown*, greater restoration</td></tr>
             </table>
         </description>
-        <sheet display="false">
-            <description></description>
+        <sheet>
+            <description>Whenever you gain an elementalist level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be an abjuration or evocation spell from the elementalist, sorcerer, warlock, or wizard spell list.</description>
         </sheet>
+        <rules>
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" level="3" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_CURE_WOUNDS" level="3" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_CALM_EMOTIONS" level="5" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_LESSER_RESTORATION" level="5" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_WATER_BREATHING" level="9" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_WATER_WALK" level="9" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_CONTROL_WATER" level="13" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_DMDAVE_OMERIA_SPELL_RIPTIDE" level="13" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_DMDAVE_OMERIA_SPELL_DROWN" level="17" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_GREATER_RESTORATION" level="17" />
+        </rules>
     </element>
-    <element name="featurename" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="One with Water" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_ONE_WITH_WATER">
         <description>
-            <p></p>
+            <p>You gain a swimming speed equal to your walking speed. Additionally, you can hold your breath underwater for a number of hours equal to your level in this class.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can hold your breath underwater for a {{level:elementalist}} hours</description>
+        </sheet>
+        <rules>
+            <stat name="speed:swim" value="speed" />
+        </rules>
+    </element>
+    <element name="Flexible Mind" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_FLEXIBLE_MIND">
+        <description>
+            <p>Before you perform an Intelligence or Wisdom ability check with a skill in which you are proficient, you can choose to make the check with advantage.</p>
+            <p class="indent">You can use this feature a number of times equal to your Wisdom modifier and regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage="{{wisdom:modifier}}/Long Rest">
+            <description>Before you perform an Intelligence or Wisdom ability check with a skill in which you are proficient, you can choose to make the check with advantage.</description>
         </sheet>
     </element>
-    <element name="featurename" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="Healing Companions" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_HEALING_COMPANIONS">
         <description>
-            <p></p>
+            <p>You can use your bonus action on your turn to transfer hit points from your elemental companions to yourself or to a friendly creature that you can see within 5 feet of you. Reduce your elemental companions’ hit points up to a maximum of their remaining hit points. The target then regains a number of hit points equal to twice the number by which you decreased the companions’ hit points.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet action="Bonus Action">
+            <description>You can use your bonus action on your turn to transfer hit points from your elemental companions to yourself or to a friendly creature that you can see within 5 feet of you. Reduce your elemental companions’ hit points up to a maximum of their remaining hit points. The target then regains a number of hit points equal to twice the number by which you decreased the companions’ hit points.</description>
         </sheet>
     </element>
-    <element name="featurename" type="Archetype Feature" source="Omeria" id="ID______">
+    <element name="Bubble" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_BUBBLE">
         <description>
-            <p></p>
+            <p>As a bonus action, you can expand the range of your elemental companions into a 15-foot-radius sphere centered on you. The sphere lasts until the end of your next turn. On subsequent turns, you can use your bonus action to maintain this effect, extending its duration until the end of your next turn. The sphere ends early if your companions’ hit points are reduced to 0 or you are incapacitated.</p>
+            <p class="indent">You and friendly creatures inside the sphere gain the same benefits from your elemental companions that you do. If a hostile creature tries to enter the sphere, it must succeed on a Strength check against your spell save DC or it fails to enter. Any ranged weapon that attempts to hit a target in the sphere is made with disadvantage, and fire damage is halved if the fire effect passes through the sphere to reach its target.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet action="Bonus Action">
+            <description>As a bonus action, you can expand the range of your elemental companions into a 15-foot-radius sphere centered on you. The sphere lasts until the end of your next turn. On subsequent turns, you can use your bonus action to maintain this effect, extending its duration until the end of your next turn. The sphere ends early if your companions’ hit points are reduced to 0 or you are incapacitated.
+            You and friendly creatures inside the sphere gain the same benefits from your elemental companions that you do. If a hostile creature tries to enter the sphere, it must succeed on a Strength check against your spell save DC or it fails to enter. Any ranged weapon that attempts to hit a target in the sphere is made with disadvantage, and fire damage is halved if the fire effect passes through the sphere to reach its target.</description>
         </sheet>
     </element>
-    <element name="featurename" type="Archetype Feature" source="Omeria" id="ID_______">
+    <element name="Water's Avatar" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_WATER_WATERS_AVATAR">
         <description>
-            <p></p>
+            <p>You can assume a watery form, which grants you the following benefits for 1 hour:</p>
+            <ul>
+                <li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
+                <li>You are immune to the grappled, paralyzed, prone, and restrained conditions.</li>
+                <li>You cannot be affected by difficult terrain, and spells and other magical effects can neither reduce your speed.</li>
+                <li>You can enter a hostile creature’s space and stop there, and you can move through a space as narrow as 1 inch wide without squeezing.</li>
+            </ul>
+            <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
         </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="featurename" type="Archetype Feature" source="Omeria" id="ID________">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Long Rest">
+            <description>You can assume a watery form, which grants you the following benefits for 1 hour:
+            You have resistance to bludgeoning, piercing, and slashing damage.
+            You are immune to the grappled, paralyzed, prone, and restrained conditions.
+            You cannot be affected by difficult terrain, and spells and other magical effects can neither reduce your speed.
+            You can enter a hostile creature’s space and stop there, and you can move through a space as narrow as 1 inch wide without squeezing.</description>
         </sheet>
     </element>
 </elements>

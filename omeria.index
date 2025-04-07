@@ -34,7 +34,7 @@
 		<file name="elementalist-air.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/elementalist-air.xml"/>
 		<file name="elementalist-earth.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/elementalist-earth.xml"/>
 		<file name="elementalist-fire.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/elementalist-fire.xml"/>
-		
+		<file name="elementalist-water.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/elementalist-water.xml"/>
 
 		<!-- Archetypes -->
         <file name="barbarian-rasgaxhowler.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/barbarian-rasgaxhowler.xml"/>
