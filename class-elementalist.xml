@@ -264,7 +264,8 @@
     </element>
     <element name="Elemental Bond" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_BOND">
         <description>
-            <p>Choose the type of element to which you feel closest: Air, Earth, Fire, or Water, each of which is detailed after the class’s description. Your choice grants you features at 3rd level and again at 9th, 14th, and 20th level.</p>
+            <p>While many elementalists might attune themselves to multiple elemental planes, most specialize in one particular plane that best fits their attitude and philosophy.</p>
+            <p class="indent">Choose the type of element to which you feel closest: Air, Earth, Fire, or Water, each of which is detailed after the class’s description. Your choice grants you features at 3rd level and again at 9th, 14th, and 20th level.</p>
         </description>
         <sheet display="false">
             <description></description>
