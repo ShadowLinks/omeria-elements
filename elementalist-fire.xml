@@ -35,6 +35,7 @@
      <element name="Fire Proficiencies" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_PROFICIENCIES">
         <description>
             <p>You gain proficiency with martial weapons, medium armor, and shields, and you can speak, read, and write Ignan.</p>
+            <p class="indent">You also gain one additional fire boon of your choice.</p>
         </description>
         <sheet>
             <description>You can speak, read, and write Ignan</description>
@@ -43,7 +44,8 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
             <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
             <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
-            <grant type="Language" id="ID_LANGUAGE_IGNAN" />
+            <grant type="Language" id="ID_MM_LANGUAGE_IGNAN" />
+            <select type="Class Feature" name="Fire Proficiency" supports="fire-boon" />
         </rules>
     </element>
     <element name="Fire Spells" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_SPELLS">
@@ -88,36 +90,39 @@
     <element name="Fire Cunning" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_FIRE_CUNNING">
         <description>
             <p>When you perform an ability check or saving throw, you can grant a bonus to the result equal to your Wisdom modifier (minimum of 1). If the check or saving throw already uses your Wisdom modifier, you may add it a second time. You can use this feature after you roll the die, but before the outcome is determined.</p>
-            <p class="indent"></p>
+            <p class="indent">You can use this feature a number of times equal to your proficiency bonus and regain all expended uses after you complete a long rest.</p>
         </description>
-        <sheet>
-            <description>When you perform an ability check or saving throw,
-you can grant a +{{wisdom:modifier}} bonus to the result. If the check or
-saving throw already uses your Wisdom modifier, you may add it a second time. You can use this feature after you roll the die, but before the outcome is determined.</description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>When you perform an ability check or saving throw, you can grant a +{{wisdom:modifier}} wisdom bonus to the result. If the check or saving throw already uses your Wisdom modifier, you may add it a second time. You can use this feature after you roll the die, but before the outcome is determined.</description>
         </sheet>
     </element>
     <element name="Burning Companions" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_BURNING_COMPANIONS">
         <description>
-            <p></p>
+            <p>When your elemental companions deal damage, you can choose to have them deal fire damage instead of force damage.</p>
+            <p class="indent">Also, when you take the Attack action on your turn and make an attack with a melee weapon, you can make a second attack with your elemental companions against the same target so long as your elemental companions are still active.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>When your elemental companions deal damage, you can choose to have them deal fire damage instead of force damage.
+            Also, when you take the Attack action on your turn and make an attack with a melee weapon, you can make a second attack with your elemental companions against the same target so long as your elemental companions are still active.</description>
         </sheet>
     </element>
     <element name="Flame Wreath" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_FLAME_WREATH">
         <description>
-            <p></p>
+            <p>A halo of fire encircles your head. So long as your elemental companions are still active, whenever a hostile creature ends its turns within 5 feet of you, it takes fire damage equal to your proficiency bonus.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>A halo of fire encircles your head. So long as your elemental companions are still active, whenever a hostile creature ends its turns within 5 feet of you, it takes {{proficiency}} fire damage.</description>
         </sheet>
     </element>
     <element name="Friend of Fire" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_FRIEND_OF_FIRE">
         <description>
-            <p></p>
+            <p>You gain immunity to fire damage. In addition, when you are subjected to fire damage, you take no damage and instead, you can use your reaction to regain a number of hit points equal to the fire damage you would have taken. Once you use this feature, you can’t use it again until you complete a short or long rest.</p>
         </description>
-        <sheet>
-            <description></description>
+        <sheet usage="1/Short Rest">
+            <description>When you are subjected to fire damage, you take no damage and instead, you can use your reaction to regain a number of hit points equal to the fire damage you would have taken.</description>
         </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" />
+        </rules>
     </element>
 </elements>
