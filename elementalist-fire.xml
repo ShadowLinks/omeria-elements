@@ -1,0 +1,8 @@
+<elements>
+    <info>
+        <name>Fire Heart</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="elementalist-fire.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/elementalist-fire.xml"/>
+        </update>
+    </info>

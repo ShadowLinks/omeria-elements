@@ -1,0 +1,8 @@
+<elements>
+    <info>
+        <name>Earth Guardian</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="elementalist-earth.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/elementalist-earth.xml"/>
+        </update>
+    </info>

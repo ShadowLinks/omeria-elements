@@ -1,0 +1,8 @@
+<elements>
+    <info>
+        <name>Water Soul</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="elementalist-water.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/elementalist-water.xml"/>
+        </update>
+    </info>
