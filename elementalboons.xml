@@ -7,7 +7,7 @@
     </info>
 
     <element name="Arrow of the Wind" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ARROW_OF_THE_WIND">
-        <supports>elemental-boons,wind-boon</supports>
+        <supports>elemental-boons,air-boon</supports>
         <description>
             <p>The long ranges for your ranged weapon attacks are doubled and attacking at long range doesn’t impose disadvantage on your ranged weapon attack rolls.</p>
         </description>
@@ -16,7 +16,7 @@
         </sheet>
     </element>
     <element name="Elude" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELUDE">
-        <supports>elemental-boons,wind-boon</supports>
+        <supports>elemental-boons,air-boon</supports>
         <description>
             <p>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, and only half damage on a failed saving throw.</p>
         </description>
@@ -25,7 +25,7 @@
         </sheet>
     </element>
     <element name="Eyes of the Eagle" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_EYES_OF_THE_EAGLE">
-        <supports>elemental-boons,wind-boon</supports>
+        <supports>elemental-boons,air-boon</supports>
         <description>
             <p>You have advantage on Wisdom (Perception) checks that rely on sight.</p>
         </description>
@@ -36,7 +36,7 @@
     <element name="Fling" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_FLING">
         <prerequisite>Prerequisite: 5th level</prerequisite>
         <requirements>[level:5]</requirements>
-        <supports>elemental-boons,wind-boon</supports>
+        <supports>elemental-boons,air-boon</supports>
         <description>
             <p>When a creature targets you with a ranged weapon attack and misses, you can use your reaction to redirect the attack to another creature that you can see within 20 feet of you, including the original attacker. You make the attack roll using your ranged spell attack bonus.</p>
             <p class="indent">You can use this boon a number of times equal to your proficiency bonus and regain all expended uses when you finish a long rest.</p>
@@ -46,7 +46,7 @@
         </sheet>
     </element>
     <element name="Flyby" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_FLYBY">
-        <supports>elemental-boons,wind-boon</supports>
+        <supports>elemental-boons,air-boon</supports>
         <description>
             <p>You do not provoke attacks of opportunity when you move out of an enemy’s reach.</p>
         </description>
@@ -57,7 +57,7 @@
     <element name="Improved Flight" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_IMPROVED_FLIGHT">
         <prerequisite>Prerequisite: Wind Walker feature</prerequisite>
         <requirements>ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_WIND_WALKER</requirements>
-        <supports>elemental-boons,wind-boon</supports>
+        <supports>elemental-boons,air-boon</supports>
         <description>
             <p>Your flying speed increases by 10 feet and you can hover.</p>
         </description>
@@ -69,7 +69,7 @@
         </rules>
     </element>
     <element name="Reactive" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_REACTIVE">
-        <supports>elemental-boons,wind-boon</supports>
+        <supports>elemental-boons,air-boon</supports>
         <description>
             <p>You gain a bonus to your initiative equal to your Wisdom modifier (minimum of 1).</p>
         </description>
@@ -81,7 +81,7 @@
         </rules>
     </element>    
     <element name="Sneak" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_SNEAK">
-        <supports>elemental-boons,wind-boon</supports>
+        <supports>elemental-boons,air-boon</supports>
         <description>
             <p>You can take the Hide action as a bonus action on each of your turns.</p>
         </description>
@@ -92,7 +92,7 @@
     <element name="Vanisher" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_VANISHER">
         <prerequisite>Prerequisite: 11th level</prerequisite>
         <requirements>[level:11]</requirements>
-        <supports>elemental-boons,wind-boon</supports>
+        <supports>elemental-boons,air-boon</supports>
         <description>
             <p>You can cast the invisibility spell at will without expending a spell slot or using material components.</p>
         </description>
@@ -106,7 +106,7 @@
     <element name="Tornadic" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_TORNADIC">
         <prerequisite>Prerequisite: Whirlwind Companions feature</prerequisite>
         <requirements>ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_WHIRLWIND_COMPANIONS</requirements>
-        <supports>elemental-boons,wind-boon</supports>
+        <supports>elemental-boons,air-boon</supports>
         <description>
             <p>Your Whirlwind Companions’ area of effect increases by 10 feet to 20 feet.</p>
         </description>
