@@ -48,7 +48,7 @@
             <set name="isRitual">false</set>
         </setters>
     </element>
-    <element name="Blade" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_BLADE">
+    <element name="Blaze" type="Spell" source="Omeria" id="ID_DMDAVE_OMERIA_SPELL_BLAZE">
         <supports>Sorcerer, Warlock, Wizard, Spell Saving Throw</supports>
         <description>
             <p>You target one creature that you can see within range. The target must succeed on a Constitution saving throw or take 2d10 fire damage and the target catches fire. Until a creature, including the target, uses its action to douse the flames, the target automatically takes 1d10 fire damage at the start of each of its turns.</p>
