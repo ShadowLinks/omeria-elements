@@ -50,7 +50,8 @@
     </element>
     <element name="Fire Spells" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_SPELLS">
         <description>
-            <p></p>
+            <p>You learn additional spells when you reach certain levels in this class, as shown on the Fire Heart Spells table. Each of these spells counts as an elementalist spell for you, but it doesn’t count against the number of spells you prepare each day.</p>
+            <p class="indent">Whenever you gain an elementalist level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a conjuration or evocation spell from the elementalist, sorcerer, warlock, or wizard spell list. Spells marked with an asterisk are Omeria Spells.</p>
             <h5>Fire Spells</h5>
             <table>
                 <thead>
@@ -63,8 +64,8 @@
                 <tr><td>17th</td><td>flame strike, inferno*</td></tr>
             </table>
         </description>
-        <sheet display="false">
-            <description></description>
+        <sheet>
+            <description>Whenever you gain an elementalist level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be a conjuration or evocation spell from the elementalist, sorcerer, warlock, or wizard spell list.</description>
         </sheet>
         <rules>
             <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3" />
