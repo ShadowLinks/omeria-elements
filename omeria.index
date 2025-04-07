@@ -31,9 +31,10 @@
 		<file name="class-elementalist.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/class-elementalist.xml"/>
 		<file name="elementalboons.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/elementalboons.xml"/>
 		<file name="elementalist-spelllist.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/elementalist-spelllist.xml"/>
-
-
+		<file name="elementalist-air.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/elementalist-air.xml"/>
 		
+
+
 		<!-- Archetypes -->
         <file name="barbarian-rasgaxhowler.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/barbarian-rasgaxhowler.xml"/>
 		<file name="barbarian-titanslayer.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/barbarian-titanslayer.xml"/>

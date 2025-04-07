@@ -6,3 +6,136 @@
             <file name="elementalist-air.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/elementalist-air.xml"/>
         </update>
     </info>
+    <element name="Air Warden" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_ELEMENTALIST_AIR">
+        <supports>Elemental-Bond</supports>
+        <description>
+            <p>The Elemental Plane of Air is a boundless realm of blue. Air wardens, those who create a bond with air usually represent the tenets of the realm: grace, humility, and speed.</p>
+            <p class="indent"></p>
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_PROFICIENCIES" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_SPELLS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_SWIFT_LIKE_THE_WIND" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_WIND_RESISTANCE" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_WHIRLWIND_COMPANIONS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_WIND_WALKER" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_AVATAR_OF_AIR" />
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_PROFICIENCIES" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_SWIFT_LIKE_THE_WIND" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_WIND_RESISTANCE" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_WHIRLWIND_COMPANIONS" level="9" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_WIND_WALKER" level="14" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_AVATAR_OF_AIR" level="20" />
+        </rules>
+    </element>
+    <element name="Air Proficiencies" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_PROFICIENCIES">
+        <description>
+            <p>You gain proficiency in rapiers, scimitars, shortswords, and longbows, and you can read, write, and speak Auran.</p>
+        </description>
+        <sheet>
+            <description>You can read, write, and speak Auran.</description>
+        </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SCIMITAR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" />
+            <grant type="Language" id="ID_MM_LANGUAGE_AURAN" />
+        </rules>
+    </element>
+    <element name="Air Spells" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_SPELLS">
+        <description>
+            <p>You learn additional spells when you reach certain levels in this class, as shown on the Air Spells table. Each of these spells counts as an elementalist spell for you, but it doesn’t count against the number of spells you can prepare each day.</p>
+            <h5>Air Spells</h5>
+            <table>
+                <thead>
+                    <tr><td class="col-10">Elementalist Level</td><td>Spells</td></tr>
+                </thead>
+                <tr><td>3rd</td><td>fog cloud, thunderwave</td></tr>
+                <tr><td>5th</td><td>gust of wind, misty step</td></tr>
+                <tr><td>9th</td><td>gaseous form, wind wall</td></tr>
+                <tr><td>13th</td><td>air strike*, ice storm</td></tr>
+                <tr><td>17th</td><td>cloudkill, cone of cold</td></tr>
+            </table>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_FOG_CLOUD" level="3" prepared="true" spellcasting="Elementalist" />
+            <grant type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" level="3" prepared="true" spellcasting="Elementalist" />
+            <grant type="Spell" id="ID_PHB_SPELL_GUST_OF_WIND" level="5" prepared="true" spellcasting="Elementalist" />
+            <grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" level="5" prepared="true" spellcasting="Elementalist" />
+            <grant type="Spell" id="ID_PHB_SPELL_GASEOUS_FORM" level="9" prepared="true" spellcasting="Elementalist" />
+            <grant type="Spell" id="ID_PHB_SPELL_WIND_WALL" level="9" prepared="true" spellcasting="Elementalist" />
+            <grant type="Spell" id="ID_DMDAVE_OMERIA_SPELL_AIRSTRIKE" level="13" prepared="true" spellcasting="Elementalist" />
+            <grant type="Spell" id="ID_PHB_SPELL_ICE_STORM" level="13" prepared="true" spellcasting="Elementalist" />
+            <grant type="Spell" id="ID_PHB_SPELL_CLOUDKILL" level="17" prepared="true" spellcasting="Elementalist" />
+            <grant type="Spell" id="ID_PHB_SPELL_CONE_OF_COLD" level="17" prepared="true" spellcasting="Elementalist" />
+        </rules>
+    </element>
+    <element name="Swift Like the Wind" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_SWIFT_LIKE_THE_WIND">
+        <description>
+            <p>Your speed increases by 10 feet while you aren’t wearing heavy armor. Additionally, you can take the Dash action as a bonus action on each of your turns.</p>
+        </description>
+        <sheet>
+            <description>Your speed increases by 10 feet while you aren’t wearing heavy armor. Additionally, you can take the Dash action as a bonus action on each of your turns.</description>
+        </sheet>
+        <rules>
+            <stat name="speed" value="10" equipped="![armor:heavy]"/>
+        </rules>
+    </element>
+    <element name="Wind Resistance" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_WIND_RESISTANCE">
+        <description>
+            <p>When you are targeted by a ranged weapon attack, you can use your reaction to impose disadvantage on the attack roll.</p>
+        </description>
+        <sheet action="Reaction">
+            <description>When you are targeted by a ranged weapon attack, you can use your reaction to impose disadvantage on the attack roll.</description>
+        </sheet>
+    </element>
+    <element name="Whirlwind Companions" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_WHIRLWIND_COMPANIONS">
+        <description>
+            <p>So long as your elemental companions are active, you can use your action to create a whirlwind around you in a 10-foot radius and moves with you. Each creature of your choice in the area must make a Strength saving throw against your spell save DC. On a failed saving throw, a target takes the damage normal for your elemental companions and is flung up to 20 feet away from you in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a Dexterity saving throw against your spell save DC or take the same damage and be knocked prone.</p>
+            <p class="indent">If the save is successful, the target takes half the damage and isn’t flung away or knocked prone.</p>
+            <p class="indent">You can use this feature a number of times equal to your Wisdom modifier and regain all expended uses after you finish a long rest.</p>
+        </description>
+        <sheet usage="{{wisdom:modifier}}/Long Rest">
+            <description>So long as your elemental companions are active, you can use your action to create a whirlwind around you in a 10-foot radius and moves with you. Each creature of your choice in the area must make a Strength saving throw against your spell save DC. On a failed saving throw, a target takes the damage normal for your elemental companions and is flung up to 20 feet away from you in a random direction and knocked prone. If a thrown target strikes an object, such as a wall or floor, the target takes 3 (1d6) bludgeoning damage for every 10 feet it was thrown. If the target is thrown at another creature, that creature must succeed on a Dexterity saving throw against your spell save DC or take the same damage and be knocked prone.
+            If the save is successful, the target takes half the damage and isn’t flung away or knocked prone.</description>
+        </sheet>
+    </element>
+    <element name="Wind Walker" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_WIND_WALKER">
+        <description>
+            <p>You gain a flying speed equal to your walking speed.</p>
+        </description>
+        <sheet>
+            <description>You gain a flying speed equal to your walking speed.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:fly" value="speed" />
+        </rules>
+    </element>
+    <element name="Avatar of Air" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_AVATAR_OF_AIR">
+        <description>
+            <p>You can use your action to assume air form for 1 hour. While in this form, you gain the following benefits:</p>
+            <ul>
+                <li>You have resistance to bludgeoning, piercing, and slashing damage.</li>
+                <li>You are immune to the grappled, paralyzed, prone, and restrained conditions.</li>
+                <li>You cannot be affected by difficult terrain, and spells and other magical effects cannot reduce your speed.</li>
+                <li>You can enter a hostile creature’s space and stop there, and you can move through a space as narrow as 1 inch wide without squeezing.</li>
+            </ul>
+            <p class="indent">Once you use this feature, you can’t use it again until you finish a long rest.</p>
+        </description>
+        <sheet usage="1/Long Rest">
+            <description>You can use your action to assume air form for 1 hour. While in this form, you gain the following benefits:
+            You have resistance to bludgeoning, piercing, and slashing damage.
+            You are immune to the grappled, paralyzed, prone, and restrained conditions.
+            You cannot be affected by difficult terrain, and spells and other magical effects cannot reduce your speed.
+            </description>
+        </sheet>
+    </element>
+</elements>
