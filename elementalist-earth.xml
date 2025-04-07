@@ -9,91 +9,121 @@
     <element name="Earth Guardian" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_ELMENTALIST_EARTH">
         <supports>Elemental-Bond</supports>
         <description>
-            <p></p>
+            <p>The elemental plane of earth is known to its natives as The Anvil. And like a skilled smith with a hammer, earth guardians are patient, stable, and strong.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_PROFICIENCIES" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_SPELLS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_GROUNDED" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_ROCK_ARMOR" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_EARTHEN_COMPANIONS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_ROCK_FORM" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_EXEMPLAR_OF_EARTH" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="3" />
-            <grant type="Archetype Feature" id="ID_____" level="3" />
-            <grant type="Archetype Feature" id="ID______" level="9" />
-            <grant type="Archetype Feature" id="ID_______" level="14" />
-            <grant type="Archetype Feature" id="ID________" level="20" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_PROFICIENCIES" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_GROUNDED" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_ROCK_ARMOR" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_EARTHEN_COMPANIONS" level="9" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_ROCK_FORM" level="14" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_EXEMPLAR_OF_EARTH" level="20" />
         </rules>
     </element>
-     <element name="featurename" type="Archetype Feature" source="Omeria" id="ID__">
+     <element name="Earth Proficiencies" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_PROFICIENCIES">
         <description>
-            <p></p>
+            <p>You gain proficiency with flails, mauls, and warhammers, as well as shields, and you can speak, read, and write Terran.</p>
+            <p class="indent">You also gain one additional earth boon of your choice.</p>
         </description>
         <sheet>
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_FLAIL" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MAUL" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WARHAMMER" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+            <grant type="Language" id="ID_MM_LANGUAGE_TERRAN" />
+            <select type="Class Feature" name="Earth Proficiency" supports="earth-boon" />
+        </rules>
     </element>
-    <element name="featurename" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="Earth Spells" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_SPELLS">
         <description>
-            <p></p>
+            <p>You learn additional spells when you reach certain levels in this class, as shown on the Earth Spells table. Each of these spells counts as an elementalist spell for you, but it doesn’t count against the number of spells you prepare each day.</p>
+            <p class="indent">Whenever you gain an elementalist level, you can replace one spell you gained from this feature with another spell of the same level. The new spell must be an abjuration or transmutation spell from the elementalist, sorcerer, warlock, or wizard spell list. Spells marked with an asterisk are Omeria spells.</p>
             <h5>Earth Spells</h5>
             <table>
                 <thead>
                     <tr><td class="col-10">Elementalist Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>3rd</td><td>data1</td></tr>
-                <tr><td>5th</td><td>data2</td></tr>
-                <tr><td>9th</td><td>data3</td></tr>
-                <tr><td>13th</td><td>data4</td></tr>
-                <tr><td>17th</td><td>data5</td></tr>
+                <tr><td>3rd</td><td>crush*, earth shield*</td></tr>
+                <tr><td>5th</td><td>pass without trace, spike growth</td></tr>
+                <tr><td>9th</td><td>earth fist*, meld into stone</td></tr>
+                <tr><td>13th</td><td>stone shape, stoneskin</td></tr>
+                <tr><td>17th</td><td>passwall, wall of stone</td></tr>
             </table>
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_DMDAVE_OMERIA_SPELL_CRUSH" level="3" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_DMDAVE_OMERIA_SPELL_EARTH_SHIELD" level="3" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_PASS_WITHOUT_TRACE" level="5" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_SPIKE_GROWTH" level="5" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_DMDAVE_OMERIA_SPELL_EARTH_FIST" level="9" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_MELD_INTO_STONE" level="9" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_STONE_SHAPE" level="13" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_STONESKIN" level="13" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_PASSWALL" level="17" />
+            <grant type="Spell" prepared="true" spellcasting="Elementalist" id="ID_PHB_SPELL_WALL_OF_STONE" level="17" />
+        </rules>
     </element>
-    <element name="featurename" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Grounded" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_GROUNDED">
         <description>
-            <p></p>
+            <p>You have advantage on saving throws and ability checks against effects that would push you back or knock you prone.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You have advantage on saving throws and ability checks against effects that would push you back or knock you prone.</description>
         </sheet>
     </element>
-    <element name="featurename" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="Rock Armor" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_ROCK_ARMOR">
         <description>
-            <p></p>
+            <p>You develop a thick hide made of pebbly, orange rock, which serves as natural armor for you. While you aren’t wearing armor, your AC equals 18 (you do not add your Dexterity modifier to this value). You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor.</p>
+            <p class="indent">You also have resistance against effects that cause the petrified condition, such as a medusa’s gaze or the flesh to stone spell.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>While you aren’t wearing armor, your AC equals 18 (you do not add your Dexterity modifier to this value). You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor.
+            You also have resistance against effects that cause the petrified condition, such as a medusa’s gaze or the flesh to stone spell.</description>
+        </sheet>
+        <rules>
+            <stat name="ac:calculation" value="18" bonus="calculation" equipped="[armor:none]" alt="Rock Armor"/>
+        </rules>
+    </element>
+    <element name="Earthen Companions" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_EARTHEN_COMPANIONS">
+        <description>
+            <p>Your elemental companions hit especially hard, dealing double damage to objects and structures.</p>
+            <p class="indent">Additionally, when a creature takes damage from your elemental companions, you can force the creature to make a Constitution saving throw against your spell save DC. On a failed saving throw, the target is stunned until the start of your next turn. You can use this benefit a number of times equal to your Wisdom modifier and regain all expended uses after you finish a long rest.</p>
+        </description>
+        <sheet usage="{{wisdom:modifier}}/Long Rest">
+            <description>Your elemental companions hit especially hard, dealing double damage to objects and structures.
+            Additionally, when a creature takes damage from your elemental companions, you can force the creature to make a Constitution saving throw against your spell save DC. On a failed saving throw, the target is stunned until the start of your next turn.</description>
         </sheet>
     </element>
-    <element name="featurename" type="Archetype Feature" source="Omeria" id="ID______">
+    <element name="Rock Form" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_ROCK_FORM">
         <description>
-            <p></p>
+            <p>Your rocky hide further improves, granting you a damage threshold of 7. You have immunity to all damage unless you take an amount of damage from a single attack or effect equal to or greater than the damage threshold, in which case you take the damage as normal. Any damage that fails to meet or exceed this threshold is considered superficial and doesn’t reduce your hit points.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>Your rocky hide further improves, granting you a damage threshold of 7. You have immunity to all damage unless you take an amount of damage from a single attack or effect equal to or greater than the damage threshold, in which case you take the damage as normal. Any damage that fails to meet or exceed this threshold is considered superficial and doesn’t reduce your hit points.</description>
+            <description level="20">Your rocky hide further improves, granting you a damage threshold of 15. You have immunity to all damage unless you take an amount of damage from a single attack or effect equal to or greater than the damage threshold, in which case you take the damage as normal. Any damage that fails to meet or exceed this threshold is considered superficial and doesn’t reduce your hit points.</description>
         </sheet>
     </element>
-    <element name="featurename" type="Archetype Feature" source="Omeria" id="ID_______">
+    <element name="Exemplar of Earth" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_EARTH_EXEMPLAR_OF_EARTH">
         <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="featurename" type="Archetype Feature" source="Omeria" id="ID________">
-        <description>
-            <p></p>
+            <p>Your damage threshold increases by 8 to a total of 15.</p>
         </description>
         <sheet>
             <description></description>
