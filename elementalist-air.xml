@@ -46,7 +46,7 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" />
             <grant type="Language" id="ID_MM_LANGUAGE_AURAN" />
-            <select type="Class Feature" name="Air Proficiency" supports="air-boons" />
+            <select type="Class Feature" name="Air Proficiency" supports="air-boon" />
         </rules>
     </element>
     <element name="Air Spells" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_SPELLS">
