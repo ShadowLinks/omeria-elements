@@ -35,6 +35,7 @@
     <element name="Air Proficiencies" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_PROFICIENCIES">
         <description>
             <p>You gain proficiency in rapiers, scimitars, shortswords, and longbows, and you can read, write, and speak Auran.</p>
+            <p class="indent">You also gain one additional air boon of your choice.</p>
         </description>
         <sheet>
             <description>You can read, write, and speak Auran.</description>
@@ -45,6 +46,7 @@
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
             <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGBOW" />
             <grant type="Language" id="ID_MM_LANGUAGE_AURAN" />
+            <select type="Class Feature" name="Air Proficiency" supports="air-boons" />
         </rules>
     </element>
     <element name="Air Spells" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_SPELLS">
