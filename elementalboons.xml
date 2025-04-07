@@ -1,0 +1,438 @@
+<elements>
+    <info>
+        <name>Elemental Boons</name>
+        <update version="0.0.1">
+            <file name="elementalboons.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/elementalboons.xml"/>
+        </update>
+    </info>
+
+    <element name="Arrow of the Wind" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ARROW_OF_THE_WIND">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>The long ranges for your ranged weapon attacks are doubled and attacking at long range doesn’t impose disadvantage on your ranged weapon attack rolls.</p>
+        </description>
+        <sheet>
+            <description>The long ranges for your ranged weapon attacks are doubled and attacking at long range doesn’t impose disadvantage on your ranged weapon attack rolls.</description>
+        </sheet>
+    </element>
+    <element name="Elude" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELUDE">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, and only half damage on a failed saving throw.</p>
+        </description>
+        <sheet>
+            <description>When you are subjected to an effect that allows you to make a Dexterity saving throw to take only half damage, you can use your reaction to take no damage if you succeed on the saving throw, and only half damage on a failed saving throw.</description>
+        </sheet>
+    </element>
+    <element name="Eyes of the Eagle" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_EYES_OF_THE_EAGLE">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>You have advantage on Wisdom (Perception) checks that rely on sight.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Wisdom (Perception) checks that rely on sight.</description>
+        </sheet>
+    </element>
+    <element name="Fling" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_FLING">
+        <prerequisite>Prerequisite: 5th level</prerequisite>
+        <requirements>[level:5]</requirements>
+        <supports>elemental-boons</supports>
+        <description>
+            <p>When a creature targets you with a ranged weapon attack and misses, you can use your reaction to redirect the attack to another creature that you can see within 20 feet of you, including the original attacker. You make the attack roll using your ranged spell attack bonus.</p>
+            <p class="indent">You can use this boon a number of times equal to your proficiency bonus and regain all expended uses when you finish a long rest.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest" action="Reaction">
+            <description>When a creature targets you with a ranged weapon attack and misses, you can use your reaction to redirect the attack to another creature that you can see within 20 feet of you, including the original attacker. You make the attack roll using your ranged spell attack bonus.</description>
+        </sheet>
+    </element>
+    <element name="Flyby" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_FLYBY">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>You do not provoke attacks of opportunity when you move out of an enemy’s reach.</p>
+        </description>
+        <sheet>
+            <description>You do not provoke attacks of opportunity when you move out of an enemy’s reach.</description>
+        </sheet>
+    </element>
+    <element name="Improved Flight" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_IMPROVED_FLIGHT">
+        <prerequisite>Prerequisite: Wind Walker feature</prerequisite>
+        <requirements>ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_WIND_WALKER</requirements>
+        <supports>elemental-boons</supports>
+        <description>
+            <p>Your flying speed increases by 10 feet and you can hover.</p>
+        </description>
+        <sheet>
+            <description>Your flying speed increases by 10 feet and you can hover.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:flying" value="10" />
+        </rules>
+    </element>
+    <element name="Reactive" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_REACTIVE">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>You gain a bonus to your initiative equal to your Wisdom modifier (minimum of 1).</p>
+        </description>
+        <sheet>
+            <description>You gain a bonus to your initiative equal to your Wisdom modifier (minimum of 1).</description>
+        </sheet>
+        <rules>
+            <stat name="initiative:misc" value="{{wisdom:modifier}}" />
+        </rules>
+    </element>    
+    <element name="Sneak" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_SNEAK">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>You can take the Hide action as a bonus action on each of your turns.</p>
+        </description>
+        <sheet>
+            <description>You can take the Hide action as a bonus action on each of your turns.</description>
+        </sheet>
+    </element>
+    <element name="Vanisher" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_VANISHER">
+        <prerequisite>Prerequisite: 11th level</prerequisite>
+        <requirements>[level:11]</requirements>
+        <supports>elemental-boons</supports>
+        <description>
+            <p>You can cast the invisibility spell at will without expending a spell slot or using material components.</p>
+        </description>
+        <sheet>
+            <description>You can cast the invisibility spell at will without expending a spell slot or using material components.</description>
+        </sheet>
+        <rules>
+            <grant spell="ID_PHB_SPELL_INVISIBILITY" />
+        </rules>
+    </element>    
+    <element name="Tornadic" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_TORNADIC">
+        <prerequisite>Prerequisite: Whirlwind Companions feature</prerequisite>
+        <requirements>ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_AIR_WHIRLWIND_COMPANIONS</requirements>
+        <supports>elemental-boons</supports>
+        <description>
+            <p>Your Whirlwind Companions’ area of effect increases by 10 feet to 20 feet.</p>
+        </description>
+        <sheet>
+            <description>Your Whirlwind Companions’ area of effect increases by 10 feet to 20 feet.</description>
+        </sheet>
+    </element>
+    <element name="Bonk" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_BONK">
+        <prerequisite>Prerequisite: Stone Fists boon</prerequisite>
+        <requirements>ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_STONE_FISTS</requirements>
+        <supports>elemental-boons</supports>
+        <description>
+            <p>When you hit a creature with your stone fists, you can force the creature to make a Constitution saving throw against your spell save DC. On a failure, the creature’s speed becomes 0 until the end of its next turn, and it can’t take reactions. Once you use this boon, you can’t use it again until you finish a short or long rest.</p>
+        </description>
+        <sheet usage="1/Short Rest">
+            <description>When you hit a creature with your stone fists, you can force the creature to make a Constitution saving throw against your spell save DC. On a failure, the creature’s speed becomes 0 until the end of its next turn, and it can’t take reactions.</description>
+        </sheet>
+    </element>
+    <element name="Earthen Resilience" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_EARTHEN_RESILIENCE">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>Your hit point maximum increases by an amount equal to your level when you gain this boon. Whenever you gain a level thereafter, your hit point maximum increases by an additional 1 hit point.</p>
+        </description>
+        <sheet>
+            <description>Your hit point maximum increases by an amount equal to your level when you gain this boon. Whenever you gain a level thereafter, your hit point maximum increases by an additional 1 hit point.</description>
+        </sheet>
+        <rules>
+            <stat name="hp" value="level"/>
+        </rules>
+    </element>
+    <element name="Earthshaker" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_EARTHSHAKER">
+        <prerequisite>Prerequisite: Stone Fists boon</prerequisite>
+        <requirements>ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_STONE_FISTS</requirements>
+        <supports>elemental-boons</supports>
+        <description>
+            <p>Before you make a melee attack with your Stone Fists, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack’s damage. If you have a feat or trait that allows you to take a similar penalty in exchange for damage, you can only use one or the other.</p>
+        </description>
+        <sheet>
+            <description>Before you make a melee attack with your Stone Fists, you can choose to take a -5 penalty to the attack roll. If the attack hits, you add +10 to the attack’s damage. If you have a feat or trait that allows you to take a similar penalty in exchange for damage, you can only use one or the other.</description>
+        </sheet>
+    </element>
+    <element name="Hard-Headed" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_HARD_HEADED">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>You can make a Wisdom saving throw instead of a Constitution saving throw to maintain concentration when you take damage, and you have advantage on the saving throw.</p>
+        </description>
+        <sheet>
+            <description>You can make a Wisdom saving throw instead of a Constitution saving throw to maintain concentration when you take damage, and you have advantage on the saving throw.</description>
+        </sheet>
+    </element>
+    <element name="Immovable Object" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_IMMOVABLE_OBJECT">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>If a target within 5 feet of you uses an effect that would push you back or knock you prone, such as a gladiator’s Shield Bash or a rhinoceros’ Charge, and you succeed on your saving throw, the target takes bludgeoning damage equal to your Strength modifier (minimum of 1).</p>
+        </description>
+        <sheet>
+            <description>If a target within 5 feet of you uses an effect that would push you back or knock you prone, such as a gladiator’s Shield Bash or a rhinoceros’ Charge, and you succeed on your saving throw, the target takes {{strength:modifier}} bludgeoning damage.</description>
+        </sheet>
+    </element>
+    <element name="Improved Stone Fists" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_IMPROVED STONE_FISTS">
+        <prerequisite>Prerequisite: Stone Fists boon</prerequisite>
+        <requirements>ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_STONE_FISTS</requirements>
+        <supports>elemental-boons</supports>
+        <description>
+            <p>Your unarmed strike uses a d10 for damage. When you hit a creature using your unarmed strike, you can use a bonus action to attempt to grapple the target.</p>
+        </description>
+        <sheet>
+            <description>Your unarmed strike uses a d10 for damage. When you hit a creature using your unarmed strike, you can use a bonus action to attempt to grapple the target.</description>
+        </sheet>
+    </element>
+    <element name="Stone Fists" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_STONE_FISTS">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>Your unarmed strike uses a d8 for damage.</p>
+        </description>
+        <sheet>
+            <description>Your unarmed strike uses a d8 for damage.</description>
+        </sheet>
+    </element>
+    <element name="Stony Grip" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_STONY_GRIP">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>You have advantage on attack rolls against a creature you are grappling.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on attack rolls against a creature you are grappling.</description>
+        </sheet>
+    </element>
+    <element name="Stony Hide" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_STONY_HIDE">
+        <prerequisite>Prerequisite: Rock Armor feature</prerequisite>
+        <requirements>ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELEMENTALIST_EARTH_ROCK_ARMOR</requirements>
+        <supports>elemental-boons</supports>
+        <description>
+            <p>When you take bludgeoning, piercing, and slashing damage from nonmagical weapons, the damage is reduced by 3. If you have the Rock Form trait, this damage is subtracted from the damage dealt after considerations for your damage threshold are made.</p>
+        </description>
+        <sheet>
+            <description>When you take bludgeoning, piercing, and slashing damage from nonmagical weapons, the damage is reduced by 3. If you have the Rock Form trait, this damage is subtracted from the damage dealt after considerations for your damage threshold are made.</description>
+        </sheet>
+    </element>
+    <element name="Unstoppable Force" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_UNSTOPPABLE_FORCE">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>If you move at least 10 feet in a straight line and then make a melee weapon attack against a target and the attack hits, the attack deals one extra die of its damage and the target must make a Strength saving throw with a DC equal to 8 + your Strength modifier + your proficiency bonus. On a failed saving throw, the target is knocked prone or pushed back 10 feet (your choice).</p>
+        </description>
+        <sheet>
+            <description>If you move at least 10 feet in a straight line and then make a melee weapon attack against a target and the attack hits, the attack deals one extra die of its damage and the target must make a Strength saving throw with a DC {{Unstoppable-force:dc}}. On a failed saving throw, the target is knocked prone or pushed back 10 feet (your choice).</description>
+        </sheet>
+        <rules>
+            <stat name="Unstoppable-force:dc" value="8" bonus="base" />
+            <stat name="Unstoppable-force:dc" value="strength:modifier" />
+            <stat name="Unstoppable-force:dc" value="proficiency" />
+
+        </rules>
+    </element>
+    <element name="Burning Savagery" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_BURNING_SAVAGERY">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>When you roll damage for a melee weapon attack, you can reroll one of the weapon’s damage dice. You must keep the new result even if it’s lower.</p>
+        </description>
+        <sheet>
+            <description>When you roll damage for a melee weapon attack, you can reroll one of the weapon’s damage dice. You must keep the new result even if it’s lower.</description>
+        </sheet>
+    </element>
+    <element name="Burnout" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_BURNOUT">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>When you hit a creature with a melee weapon attack, you can expend one spell slot to deal fire damage to the target in addition to the weapon’s damage. The extra damage is 2d6 for a 1st-level spell slot, and an additional 1d6 for each spell level higher than 1st, to a maximum of 5d6.</p>
+        </description>
+        <sheet>
+            <description>When you hit a creature with a melee weapon attack, you can expend one spell slot to deal fire damage to the target in addition to the weapon’s damage. The extra damage is 2d6 for a 1st-level spell slot, and an additional 1d6 for each spell level higher than 1st, to a maximum of 5d6.</description>
+        </sheet>
+    </element>
+    <element name="Eruption" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ERUPTION">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.</p>
+        </description>
+        <sheet>
+            <description>On your turn, when you score a critical hit with a melee weapon or reduce a creature to 0 hit points with one, you can make one melee weapon attack as a bonus action.</description>
+        </sheet>
+    </element>
+    <element name="Fire's Resilience" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_FIRES_RESILIENCE">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>When you roll a Hit Die to regain hit points, the minimum number of hit points you regain from the roll is equal to twice your Constitution modifier (minimum of 2).</p>
+        </description>
+        <sheet>
+            <description>When you roll a Hit Die to regain hit points, the minimum number of hit points you regain from the roll is {{fire-resilience:min}} (min of 2).</description>
+        </sheet>
+        <rules>
+            <stat name="fire-resilience:min" value="constitution:modifier" />
+            <stat name="fire-resilience:min" value="constitution:modifier" />
+        </rules>
+    </element>
+    <element name="Flame's Cunning" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_FLAMES_CUNNING">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>You have a +5 bonus to your passive Wisdom (Perception) and passive Intelligence (Investigation) scores.</p>
+        </description>
+        <sheet>
+            <description>You have a +5 bonus to your passive Wisdom (Perception) and passive Intelligence (Investigation) scores.</description>
+        </sheet>
+        <rules>
+            <stat name="perception:passive" value="5" />
+            <stat name="investigation:passive" value="5" />
+        </rules>
+    </element>
+    <element name="Hellfire" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_HELLFIRE">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>Spells you cast ignore resistance to fire damage. If your elemental companions deal fire damage, their attacks also gain this benefit.</p>
+        </description>
+        <sheet>
+            <description>Spells you cast ignore resistance to fire damage. If your elemental companions deal fire damage, their attacks also gain this benefit.</description>
+        </sheet>
+    </element>
+    <element name="Hot-Headded" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_HOT_HEADDED">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>As a bonus action, you can cause your head to erupt into flames. The flames are harmless but emit bright light in a 30-foot radius and dim light for an additional 30 feet. The flames remain until you use your bonus action to extinguish them, your head is submerged in water or 1 gallon of water is poured atop it, or you are incapacitated.</p>
+        </description>
+        <sheet>
+            <description>As a bonus action, you can cause your head to erupt into flames. The flames are harmless but emit bright light in a 30-foot radius and dim light for an additional 30 feet. The flames remain until you use your bonus action to extinguish them, your head is submerged in water or 1 gallon of water is poured atop it, or you are incapacitated.</description>
+        </sheet>
+    </element>
+    <element name="Flamestruck" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_FLAMESTRUCK">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>Creatures provoke opportunity attacks from you even if they take the Disengage action before leaving your reach. And when a creature within 5 feet of you makes an attack against a target other than you, you can use your reaction to make a melee weapon attack against the attacking creature.</p>
+        </description>
+        <sheet>
+            <description>Creatures provoke opportunity attacks from you even if they take the Disengage action before leaving your reach. And when a creature within 5 feet of you makes an attack against a target other than you, you can use your reaction to make a melee weapon attack against the attacking creature.</description>
+        </sheet>
+    </element>
+    <element name="Impulsive Attack" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_IMPULSIVE_ATTACK">
+        <prerequisite>Prerequisite: 5th level</prerequisite>
+        <requirements>[level:5]</requirements>
+        <supports>elemental-boons</supports>
+        <description>
+            <p>You can choose to attack twice, instead of once, whenever you take the Attack action on your turn. When you use the benefits of this boon, attack rolls made against you are made with advantage until the start of your next turn.</p>
+        </description>
+        <sheet>
+            <description>You can choose to attack twice, instead of once, whenever you take the Attack action on your turn. When you use the benefits of this boon, attack rolls made against you are made with advantage until the start of your next turn.</description>
+        </sheet>
+    </element>
+    <element name="Paranoia" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_PARANOIA">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>You can’t be surprised while you are conscious.</p>
+        </description>
+        <sheet>
+            <description>You can’t be surprised while you are conscious.</description>
+        </sheet>
+    </element>
+    <element name="Aquatic Nature" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_AQUATIC_NATURE">
+        <prerequisite>Prerequisite: a swim speed</prerequisite>
+        <supports>elemental-boons</supports>
+        <description>
+            <p>Your swim speed increases by 10 feet, and you can breathe both air and water.</p>
+        </description>
+        <sheet>
+            <description>Your swim speed increases by 10 feet, and you can breathe both air and water.</description>
+        </sheet>
+        <rules>
+            <stat name="speed:swim" value="10" />
+        </rules>
+    </element>
+    <element name="Blessed Healing" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_BLESSED_HEALING">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>When you cast a spell of 1st level or higher that restores hit points to a creature other than you, attack rolls made against you are made with disadvantage until the start of your next turn. If you make an attack in the meantime, you immediately lose this benefit.</p>
+        </description>
+        <sheet>
+            <description>When you cast a spell of 1st level or higher that restores hit points to a creature other than you, attack rolls made against you are made with disadvantage until the start of your next turn. If you make an attack in the meantime, you immediately lose this benefit.</description>
+        </sheet>
+    </element>
+    <element name="Invigorate" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_INVIGORATE">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>As an action, you can target up to six friendly creatures within 30 feet of you. Each creature gains temporary hits points equal to your levels in this class plus your Wisdom modifier.</p>
+        </description>
+        <sheet>
+            <description>As an action, you can target up to six friendly creatures within 30 feet of you. Each creature gains {{invigorate:temp}} temporary hits points.</description>
+        </sheet>
+        <rules>
+            <stat name="invigorate:temp" value="level:elementalist" bonus="base" />
+            <stat name="invigorate:temp" value="wisdom:modifier" />
+        </rules>
+    </element>
+    <element name="Expert Healing" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_EXPERT_HEALING">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>You can spend 1 minute tending to a creature’s wounds. The creature regains hit points equal to 1d6 + your Wisdom modifier. The result is doubled if you also expend a use of a healer’s kit as you tend to the wounds. You can use this feature a number of times equal to your Wisdom modifier (minimum of once) and regain all expended uses after you finish a long rest.</p>
+        </description>
+        <sheet usage="{{wisdom:modifier}}/Long Rest">
+            <description>You can spend 1 minute tending to a creature’s wounds. The creature regains hit points equal to 1d6 + {{wisdom:modifier}}. The result is doubled if you also expend a use of a healer’s kit as you tend to the wounds. </description>
+        </sheet>
+    </element>
+    <element name="Fluidity" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_FLUIDITY">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>When you are prone, standing up uses only 5 feet of your movement.</p>
+        </description>
+        <sheet>
+            <description>When you are prone, standing up uses only 5 feet of your movement.</description>
+        </sheet>
+    </element>
+    <element name="Fire's Foe" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_FIRES_FOE">
+        <prerequisite>Prerequisite: resistance to fire damage and 11th level</prerequisite>
+        <requirements>ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE,[level:11]</requirements>
+        <supports>elemental-boons</supports>
+        <description>
+            <p>You gain immunity to fire damage.</p>
+        </description>
+        <sheet>
+            <description>You gain immunity to fire damage.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_FIRE" />
+        </rules>
+    </element>
+    <element name="Innate Purity" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_INNATE_PURITY">
+        <prerequisite>Prerequisite: 11th level</prerequisite>
+        <requirements>[level:11]</requirements>
+        <supports>elemental-boons</supports>
+        <description>
+            <p>You are immune to disease and poison.</p>
+        </description>
+        <sheet>
+            <description>You are immune to disease and poison.</description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_IMMUNITY_POISON" />
+        </rules>
+    </element>
+    <element name="Pliable Mind" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_PLIABLE_MIND">
+        <prerequisite>Prerequisite: 5th level</prerequisite>
+        <requirements>[level:5]</requirements>
+        <supports>elemental-boons</supports>
+        <description>
+            <p>When you are subjected to an effect that would cause you to become charmed, frightened, paralyzed, stunned, or unconscious and you fail your saving throw, you can choose to succeed instead.</p>
+            <p class="indent">You can use this boon a number of times equal to your proficiency bonus and regain all expended uses when you complete a long rest.</p>
+        </description>
+        <sheet usage="{{proficiency}}/Long Rest">
+            <description>When you are subjected to an effect that would cause you to become charmed, frightened, paralyzed, stunned, or unconscious and you fail your saving throw, you can choose to succeed instead.</description>
+        </sheet>
+    </element>
+    <element name="Water's Resilience" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_WATERS_RESILIENCE">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>You gain proficiency in one saving throw of your choice.</p>
+        </description>
+        <sheet>
+            <description>You gain proficiency in one saving throw of your choice.</description>
+        </sheet>
+        <rules>
+            <select type="Proficiency" supports="ID_PROFICIENCY_SAVINGTHROW_STRENGTH|ID_PROFICIENCY_SAVINGTHROW_DEXTERITY|ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION|ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE|ID_PROFICIENCY_SAVINGTHROW_WISDOM|ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+        </rules>
+    </element>
+    <element name="Water's Touch" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_WATERS_TOUCH">
+        <supports>elemental-boons</supports>
+        <description>
+            <p>When you would normally roll one or more dice to restore hit points with a spell, the creature regains additional hit points equal to your levels in this class.</p>
+        </description>
+        <sheet>
+            <description>When you would normally roll one or more dice to restore hit points with a spell, the creature regains {{level:elementalist}} additional hit points.</description>
+        </sheet>
+    </element>
+</elements>

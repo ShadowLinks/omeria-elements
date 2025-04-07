@@ -1,0 +1,243 @@
+<elements>
+    <info>
+        <name>Elementalist Spell List</name>
+        <description></description>
+        <update version="0.0.1">
+            <file name="elementalist-spelllist.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/elementalist-spelllist.xml"/>
+        </update>
+    </info>
+
+<!-- Cantrips -->
+    <append id="ID_PHB_SPELL_ACID_SPLASH">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BLADE_WARD">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DANCING_LIGHTS">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FIRE_BOLT">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LIGHT">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MENDING">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MINOR_ILLUSION">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_POISON_SPRAY">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PRESTIDIGITATION">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_RAY_OF_FROST">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_RESISTANCE">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SHOCKING_GRASP">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_TRUE_STRIKE">
+        <supports>Elementalist</supports>
+    </append>
+<!-- 1st level spells-->
+    
+    <append id="ID_PHB_SPELL_CHARM_PERSON">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_COMPREHEND_LANGUAGES">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DETECT_EVIL_AND_GOOD">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DETECT_MAGIC">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DISGUISE_SELF">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_EXPEDITIOUS_RETREAT">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FEATHER_FALL">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FOG_CLOUD">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GREASE">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_JUMP">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LONGSTRIDER">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MAGE_ARMOR">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SHIELD">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SLEEP">
+        <supports>Elementalist</supports>
+    </append>
+
+<!-- 2nd Level spells-->
+    
+    <append id="ID_PHB_SPELL_ALTER_SELF">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_AUGURY">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_BLUR">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONTINUAL_FLAME">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DARKVISION">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_ENHANCE_ABILITY">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HEAT_METAL">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_INVISIBILITY">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LEVITATE">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MAGIC_WEAPON">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PROTECTION_FROM_POISON">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SEE_INVISIBILITY">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SPIDER_CLIMB">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WEB">
+        <supports>Elementalist</supports>
+    </append>
+
+<!-- 3rd Level Spells-->
+    
+    <append id="ID_PHB_SPELL_BLINK">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_COUNTERSPELL">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DAYLIGHT">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DISPEL_MAGIC">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FLY">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_GLYPH_OF_WARDING">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_HASTE">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MAGIC_CIRCLE">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_SLOW">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WATER_BREATHING">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WATER_WALK">
+        <supports>Elementalist</supports>
+    </append>
+<!-- 4th level spells-->
+    
+    <append id="ID_PHB_SPELL_BANISHMENT">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONJURE_MINOR_ELEMENTALS">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DIVINATION">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FABRICATE">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MORDENKAINENS_FAITHFUL_HOUND">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_MORDENKAINENS_PRIVATE_SANCTUM">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_OTILUKES_RESILIENT_SPHERE">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_STONE_SHAPE">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_STONESKIN">
+        <supports>Elementalist</supports>
+    </append>
+
+<!-- 5th level Spells-->
+    
+    <append id="ID_PHB_SPELL_COMMUNE">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CONJURE_ELEMENTAL">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_CREATION">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DISPEL_EVIL_AND_GOOD">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_DREAM">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_LEGEND_LORE">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_PLANAR_BINDING">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_TELEPORTATION_CIRCLE">
+        <supports>Elementalist</supports>
+    </append>
+    <append id="ID_PHB_SPELL_WALL_OF_FORCE">
+        <supports>Elementalist</supports>
+    </append>
+</elements>

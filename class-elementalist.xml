@@ -1,0 +1,355 @@
+<elements>
+    <info>
+        <name>Elementalist</name>
+        <description>Elementalist from Pexia's Guide to Omeria</description>
+        <update version="0.0.1">
+            <file name="class-elementalist.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/class-elementalist.xml"/>
+        </update>
+    </info>
+    <element name="Elementalist" type="Class" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_ELEMENTALIST">
+        <description>
+    <p>The Inner Planes surround and enfold the Material Plane and its echoes, providing the raw elemental substance from which all the worlds were made. The four Elemental Planes—Air, Earth, Fire, and Water—form a ring around the Material Plane, suspended within the Ethereal.</p>
+    <p class="indent">At their innermost edges, where they are closest to the Material Plane (in a conceptual if not a literal geographical sense), the four Elemental Planes resemble a world in the Material Plane. The four elements mingle together as they do in the Material Plane, forming land, sea, and sky. Farther from the Material Plane, though, the Elemental Planes are both alien and hostile. Here, the elements exist in their purest form—great expanses of solid earth, blazing fire, crystal-clear water, and unsullied air.</p>
+    <p class="indent">From these planes the elementalist draws power.</p>
+    
+    <h4>CREATING AN ELEMENTALIST</h4>
+    <p>To create your Elementalist, consult this chapter. You will learn your Elementalist’s hit points, proficiencies, and starting equipment. Next, look at the Elementalist table on page 66 to determine which features you get at which level. The description of those features appears below.</p>
+    <h5 class="caption">QUICK BUILD</h5>
+    <p>You can make an Elementalist quickly by following these suggestions. First, put your highest ability score in Wisdom, followed by Constitution or Dexterity. Second, choose the outlander background.</p>
+    <h2>CLASS FEATURES</h2>
+    <p>As an Elementalist, you gain the following class features.</p>
+    <h5 class="caption">HIT POINTS</h5>
+    <ul class="unstyled">
+        <li><strong>Hit Dice:</strong> 1d8 per Elementalist level</li>
+        <li><strong>Hit Points at 1st Level:</strong> 8 + your Constitution modifier</li>
+        <li><strong>Hit Points at Higher Levels:</strong> 1d8 (or 5) + your Constitution modifier per Elementalist level after 1st</li>
+    </ul>
+    <h5 class="caption">PROFICIENCIES</h5>
+    <ul class="unstyled mb">
+        <li><strong>Armor:</strong> Light Armor</li>
+        <li><strong>Weapons:</strong> Simple Weapons</li>
+        <li><strong>Tools:</strong> one type of artisan's tools of your choice</li>
+    </ul>
+    <ul class="unstyled">
+        <li><strong>Saving Throws:</strong> Intelligence, Wisdom</li>
+        <li><strong>Skills:</strong> Choose two from Arcana, Athletics, History, Nature, Perception, Religion, and Survival</li>
+    </ul>
+    <h5 class="caption">EQUIPMENT</h5>
+    <p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+    <ul>
+        <li>any two simple weapons of your choice</li>
+        <li>a shortbow and 20 arrows</li>
+        <li>leather armor</li>
+        <li>artisan’s tools of your choice and an explorer’s pack</li>
+    </ul>
+        <!-- class table here -->
+        <h5 class="caption">THE ELEMENTALIST</h5>
+        <table class="class-features">
+            <thead>
+                <tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td class="col-10">Elemental Boons</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td></tr>
+            </thead>
+            <tr><td> 1st</td><td class="left">Elemental Resistance, Spellcasting</td><td>2</td><td>—</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 2nd</td><td class="left">Elemental Boons</td><td>2</td><td>1</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 3rd</td><td class="left">Elemental Bond</td><td>2</td><td>1</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 4th</td><td class="left">ASI</td><td>2</td><td>2</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 5th</td><td class="left">Elemental Resistance (2)</td><td>2</td><td>3</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 6th</td><td class="left">Elemental Companions (1d8)</td><td>2</td><td>3</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 7th</td><td class="left">Elemental Persuasion</td><td>2</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 8th</td><td class="left">ASI</td><td>2</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+            <tr><td> 9th</td><td class="left">Elemental Bond Feature</td><td>2</td><td>5</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+            <tr><td>10th</td><td class="left">Greater Elemental Companions (2d8)</td><td>3</td><td>5</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+            <tr><td>11th</td><td class="left">Elemental Resistance (3)</td><td>3</td><td>6</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+            <tr><td>12th</td><td class="left">ASI</td><td>3</td><td>6</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+            <tr><td>13th</td><td class="left">—</td><td>3</td><td>7</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+            <tr><td>14th</td><td class="left">Elemental Bond Feature</td><td>4</td><td>7</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+            <tr><td>15th</td><td class="left">Greatest Elemental Companions (3d8), Elemental Recall</td><td>4</td><td>8</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+            <tr><td>16th</td><td class="left">ASI</td><td>4</td><td>8</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
+            <tr><td>17th</td><td class="left">—</td><td>4</td><td>9</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+            <tr><td>18th</td><td class="left">Elemental Resistance (4)</td><td>4</td><td>9</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
+            <tr><td>19th</td><td class="left">ASI</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+            <tr><td>20th</td><td class="left">Elemental Bond Feature</td><td>4</td><td>10</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
+        </table>
+            <div element="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_RESISTANCE" />
+            <div element="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_SPELLCASTING" />
+            <div element="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_BOONS" />
+            <div element="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_BOND" />
+            <div element="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ASI" />
+            <div element="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_COMPANION_1" />
+            <div element="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_PERSUASION" />
+            <div element="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_COMPANION_2" />
+            <div element="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_RECALL" />
+            <div element="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_COMPANIONS_3" />
+        </description>
+        <setters>
+            <set name="hd">d8</set>
+        </setters>
+        <sheet display="false" />
+        <spellcasting name="Elementalist" ability="Wisdom" prepare="true">
+            <list known="true">Elementalist</list>
+        </spellcasting>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_TRPG_MULTICLASS_ELEMENTALIST"  />
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS"  requirements="!ID_TRPG_MULTICLASS_ELEMENTALIST" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE"  requirements="!ID_TRPG_MULTICLASS_ELEMENTALIST"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_WISDOM"  requirements="!ID_TRPG_MULTICLASS_ELEMENTALIST"/>
+            <select type="Proficiency" name="Skill Proficiency (Elementalist)" supports="ID_PROFICIENCY_SKILL_ARCANA|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_NATURE|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_RELIGION|ID_PROFICIENCY_SKILL_SURVIVAL" number="2"  requirements="!ID_TRPG_MULTICLASS_ELEMENTALIST"/>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ARCANA" />
+            <grant type="Class Feature" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_RESISTANCE" level="1" />
+            <grant type="Class Feature" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_SPELLCASTING" level="1" />
+            <grant type="Class Feature" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_BOONS" level="2" />
+            <grant type="Class Feature" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_BOND" level="3" />
+            <grant type="Class Feature" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ASI" level="4" />
+            <grant type="Class Feature" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_COMPANION_1" level="6" />
+            <grant type="Class Feature" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_PERSUASION" level="7" />
+            <grant type="Class Feature" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_COMPANION_2" level="10" />
+            <grant type="Class Feature" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_RECALL" level="15" />
+            <grant type="Class Feature" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_COMPANIONS_3" level="15" />
+        </rules>
+        <multiclass id="ID_DMDAVE_OMERIA_MULTICLASS_ELEMENTALIST">
+            <prerequisite>Wisdom 13</prerequisite>
+            <requirements>[wis:13]</requirements>
+            <setters>
+                <set name="multiclass proficiencies">light armor and one type of artisan's tools of your choice</set>
+            </setters>
+            <rules>
+                <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+                <select type="Proficiency" name="Tool Proficiency (Elementalist)" supports="Artisan tools" />
+                <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+            </rules>
+        </multiclass>
+    </element>
+    <element name="Elemental Resistance" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_RESISTANCE">
+        <description>
+            <p>Your connection to the inner planes grants you protection from dangerous elements. Choose one of the following damage types: acid, cold, fire, lightning, or thunder. You gain resistance to the chosen damage type.</p>
+            <p class="indent">You gain one additional damage resistance when you reach 5th level, and again at 11th level and 18th level. Alternatively, you may exchange a damage resistance that you selected with this feature for immunity to the same damage type.</p>
+            <p class="indent">Whenever you gain a level in this class, you can replace one of your elemental resistances or immunities with another damage type from the list above.</p>
+        </description>
+        <sheet>
+            <description>Whenever you gain a level in this class, you can replace one of your elemental resistances or immunities with another damage type.</description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Elemental Resistance" supports="elementalist-resistance" />
+            <select type="Class Feature" name="Elemental Resistance" supports="elementalist-resistance" level="5" />
+            <select type="Class Feature" name="Elemental Resistance" supports="elementalist-resistance" level="11" />
+            <select type="Class Feature" name="Elemental Resistance" supports="elementalist-resistance" level="18" />
+        </rules>
+    </element>
+    <element name="Acid" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_RESISTANCE_ACID">
+        <supports>elementalist-resistance</supports>
+        <description>
+            <p>You gain resistance to Acid damage.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+        </rules>
+    </element>
+    <element name="Cold" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_RESISTANCE_COLD">
+        <supports>elementalist-resistance</supports>
+        <description>
+            <p>You gain resistance to Cold damage.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+        </rules>
+    </element>
+    <element name="Fire" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_RESISTANCE_FIRE">
+        <supports>elementalist-resistance</supports>
+        <description>
+            <p>You gain resistance to Fire damage.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+        </rules>
+    </element>
+    <element name="Lightning" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_RESISTANCE_LIGHTNING">
+        <supports>elementalist-resistance</supports>
+        <description>
+            <p>You gain resistance to Lightning damage.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+        </rules>
+    </element>
+    <element name="Thunder" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_RESISTANCE_THUNDER">
+        <supports>elementalist-resistance</supports>
+        <description>
+            <p>You gain resistance to Thunder damage.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+        </rules>
+    </element>
+    <element name="Spellcasting" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_SPELLCASTING">
+        <description>
+            <p>Your innate connection to the inner planes grants you the use of magic, which you can convert to spells.</p>
+            <p class="indent"><strong><em></em></strong> Inner Planes Bound. You produce elementalist magic effects through your innate connection to the Ethereal Plane, Inner Planes, and Material Plane. So long as you are on these planes of existence, you do not require material components (spells whose components list are marked “M”) except for components with a listed cost. If you leave these planes of existence, you must have the correct material components or an elementalist focus (see the sidebar) in order to cast spells with material components.</p>
+            <p class="indent"><strong><em></em></strong> Elementalist Focus. If you are ever outside the Ethereal Plane, Inner Planes, or Material Plane, you must carry an elementalist focus in order to cast spells with material components. The following items are common foci for elementalists: copper rod (10 gp, 2 lb.), crystal (10 gp, 1 lb.), powdered sulfur (20 gp, ½ lb.), vial of pure spring water (5 gp, no cost).</p>
+            <p class="indent"><strong><em></em></strong> Cantrips (0-Level Spells). You know two cantrips of your choice from the elementalist spell list. At higher levels, you learn additional elementalist cantrips of your choice, as shown in the Cantrips Known column of the Elementalist table.</p>
+            <p class="indent">When you gain a level in this class that grants you an Ability Score Improvement, you can replace one of the elementalist cantrips you know with another cantrip from the elementalist spell list.</p>
+            <p class="indent"><strong><em></em></strong> Preparing and Casting Spells. The Elementalist table shows how many spell slots you have to cast your elementalist spells. To cast one of your elementalist spells of 1st level or higher, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+            <p class="indent">You prepare the list of elementalist spells that are available for you to cast, choosing from the elementalist spell list. When you do so, choose a number of elementalist spells equal to your Wisdom modifier + half your elementalist level, rounded down (minimum of one spell). The spells must be of a level for which you have slots.</p>
+            <p class="indent">For example, if you are a 7th-level elementalist, you have four 1st-level and three 2nd-level spell slots. With a Wisdom of 15, your list of prepared spells can include five spells of 1st or 2nd level, in any combination. If you prepare the 1st-level spell burning hands, you can cast it using a 1st-level or a 2nd-level slot. Casting the spell doesn’t remove it from your list of prepared spells.</p>
+            <p class="indent">You can change your list of prepared spells when you finish a long rest. Preparing a new list of elementalist spells requires time spent drawing power from the Inner Planes: at least 1 minute per spell level for each spell on your list.</p>
+            <p class="indent"><strong><em></em></strong> Spellcasting Ability. Wisdom is your spellcasting ability for your elementalist spells: your connection to the greater multiverse, particularly the Inner Planes, allows you to wield these spells with expertise. You use your Wisdom whenever an elementalist spell refers to your spellcasting ability. In addition, you use your Wisdom modifier when setting the saving throw DC for an elementalist spell you cast and when making an attack roll with one.</p>
+            <center>
+                <p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Wisdom modifier</p>
+                <p><strong>Spell attack modifier</strong> = your proficiency bonus + your Wisdom modifier</p>
+            </center>
+            <p class="indent"><strong><em></em></strong> Ritual Casting. You can cast an elementalist spell as a ritual if that spell has the ritual tag and you have the spell prepared.</p>
+        </description>
+        <sheet>
+            <description>If you are on the Ethereal, Inner, or Material Plane, you only need material components for with a listed cost. Otherwise you need the componenets or an Elemental Focus.
+            When you gain a level in this class that grants Ability Score Improvement, you can replace a Cantrip you know with another.
+            You can change your list of prepared spells when you finish a long rest and takes 1 minute per spell level for each spell.
+            You can cast spells as rituals that have the ritual tag.</description>
+        </sheet>
+        <rules>
+            <grant type="Grants" id="ID_INTERNAL_RITUAL_CASTING"/>
+            <grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+            <stat name="elementalist:spellcasting:slots:1" value="2" level="1"/>
+            <stat name="elementalist:spellcasting:slots:1" value="1" level="3"/>
+            <stat name="elementalist:spellcasting:slots:1" value="1" level="5"/>
+            <stat name="elementalist:spellcasting:slots:2" value="2" level="5"/>
+            <stat name="elementalist:spellcasting:slots:2" value="1" level="7"/>
+            <stat name="elementalist:spellcasting:slots:3" value="2" level="9"/>
+            <stat name="elementalist:spellcasting:slots:3" value="1" level="11"/>
+            <stat name="elementalist:spellcasting:slots:4" value="1" level="13"/>
+            <stat name="elementalist:spellcasting:slots:4" value="1" level="15"/>
+            <stat name="elementalist:spellcasting:slots:4" value="1" level="17"/>
+            <stat name="elementalist:spellcasting:slots:5" value="1" level="17"/>
+            <stat name="elementalist:spellcasting:slots:5" value="1" level="19"/>
+            <select type="Spell" name="Cantrip (Elementalist)" supports="$(spellcasting:list),0" level="1" number="2" spellcasting="Elementalist"/>
+            <select type="Spell" name="Cantrip (Elementalist)" supports="$(spellcasting:list),0" level="10" spellcasting="Elementalist"/>
+            <select type="Spell" name="Cantrip (Elementalist)" supports="$(spellcasting:list),0" level="14" spellcasting="Elementalist"/>
+            <stat name="elementalist:spellcasting:prepare" value="wisdom:modifier" bonus="base" />
+            <stat name="elementalist:spellcasting:prepare" value="level:elementalist:half" />
+        </rules>
+    </element>
+    <element name="Elemental Boons" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_BOONS">
+        <description>
+            <p>As you continue to develop a relationship with the Inner Planes, you are awarded boons, special benefits drawn from the elements themselves.</p>
+            <p class="indent">At 2nd level, you gain one elemental boon of your choice. Your elemental boon options are detailed at the end of the class description. When you gain certain elementalist levels, you gain additional boons of your choice, as shown in the Elemental Boons column of the Elementalist table.</p>
+            <p class="indent">Additionally, when you gain a level in this class, you can choose one of the boons you know and replace it with another boon that you could learn at that level.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Class Feature" name="Elemental Boon" supports="elemental-boons" level="2" />
+            <select type="Class Feature" name="Elemental Boon" supports="elemental-boons" level="4" />
+            <select type="Class Feature" name="Elemental Boon" supports="elemental-boons" level="5" />
+            <select type="Class Feature" name="Elemental Boon" supports="elemental-boons" level="7" />
+            <select type="Class Feature" name="Elemental Boon" supports="elemental-boons" level="9" />
+            <select type="Class Feature" name="Elemental Boon" supports="elemental-boons" level="11" />
+            <select type="Class Feature" name="Elemental Boon" supports="elemental-boons" level="13" />
+            <select type="Class Feature" name="Elemental Boon" supports="elemental-boons" level="15" />
+            <select type="Class Feature" name="Elemental Boon" supports="elemental-boons" level="17" />
+            <select type="Class Feature" name="Elemental Boon" supports="elemental-boons" level="19" />
+        </rules>
+    </element>
+    <element name="Elemental Bond" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_BOND">
+        <description>
+            <p>Choose the type of element to which you feel closest: Air, Earth, Fire, or Water, each of which is detailed after the class’s description. Your choice grants you features at 3rd level and again at 9th, 14th, and 20th level.</p>
+        </description>
+        <sheet display="false">
+            <description></description>
+        </sheet>
+        <rules>
+            <select type="Archetype" name="Elemental Bond" supports="Elemental-Bond" />
+        </rules>
+    </element>
+    <element name="Ability Score Improvement" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ASI">
+        <description>
+            <p>When you reach 4th level, and again at 8th, 12th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <select type="Class Feature" name="Improvement Option (Elementalist 4)" supports="Improvement Option,Elementalist,4" level="4"/>
+            <select type="Class Feature" name="Improvement Option (Elementalist 8)" supports="Improvement Option,Elementalist,8" level="8"/>
+            <select type="Class Feature" name="Improvement Option (Elementalist 12)" supports="Improvement Option,Elementalist,12" level="12"/>
+            <select type="Class Feature" name="Improvement Option (Elementalist 16)" supports="Improvement Option,Elementalist,16" level="16"/>
+            <select type="Class Feature" name="Improvement Option (Elementalist 19)" supports="Improvement Option,Elementalist,19" level="19"/>
+        </rules>
+    </element>
+    <element name="Elemental Companions" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_COMPANION_1">
+        <description>
+            <p>The elemental planes send you magical elemental companions that serve as your assistants and guardians. These tiny elemental beings continuously float or drift in the same space as you. Your companions have a hit point maximum equal to twice your elementalist level + your Wisdom modifier. Whenever you would take damage, you can choose to have the companions take the damage instead. If this damage reduces the companions to 0 hit points, you take any remaining damage. They cannot be harmed by other effects.</p>
+            <p class="indent">Your guardians don’t take actions of their own, but you can use your bonus action on each of your turns to have your companions make one attack against a creature within 5 feet of you, using your spell attack bonus to hit. On a hit, the companions deal force damage equal to 1d8 plus your Wisdom modifier.</p>
+            <p class="indent">Your companions cannot regain hit points or gain temporary hit points. If your companions are reduced to 0 hit points, they return to their native elemental plane and you lose all associated benefits. At the end of a long rest, your companions regain all of their hit points and return to assist you.</p>
+        </description>
+        <sheet>
+            <description>The elemental planes send you magical elemental companions that serve as your assistants and guardians. These tiny elemental beings continuously float or drift in the same space as you. Your companions have a hit point maximum of {{guardians:hp}}. Whenever you would take damage, you can choose to have the companions take the damage instead. If this damage reduces the companions to 0 hit points, you take any remaining damage. They cannot be harmed by other effects.
+            Your guardians don’t take actions of their own, but you can use your bonus action on each of your turns to have your companions make one attack against a creature within 5 feet of you, using your spell attack bonus to hit. On a hit, the companions deal force damage equal to 1d8 +{{wisdom:modifier}}.
+            Your companions cannot regain hit points or gain temporary hit points. If your companions are reduced to 0 hit points, they return to their native elemental plane and you lose all associated benefits. At the end of a long rest, your companions regain all of their hit points and return to assist you.</description>
+            <description level="10">The elemental planes send you magical elemental companions that serve as your assistants and guardians. These tiny elemental beings continuously float or drift in the same space as you. Your companions have a hit point maximum of {{guardians:hp}}. Whenever you would take damage, you can choose to have the companions take the damage instead. If this damage reduces the companions to 0 hit points, you take any remaining damage. They cannot be harmed by other effects.
+            Your guardians don’t take actions of their own, but you can use your bonus action on each of your turns to have your companions make one attack against a creature within 5 feet of you, using your spell attack bonus to hit. On a hit, the companions deal force damage equal to 2d8 +{{wisdom:modifier}}.
+            Your companions cannot regain hit points or gain temporary hit points. If your companions are reduced to 0 hit points, they return to their native elemental plane and you lose all associated benefits. At the end of a long rest, your companions regain all of their hit points and return to assist you.</description>
+            <description level="15">The elemental planes send you magical elemental companions that serve as your assistants and guardians. These tiny elemental beings continuously float or drift in the same space as you. Your companions have a hit point maximum of {{guardians:hp}}. Whenever you would take damage, you can choose to have the companions take the damage instead. If this damage reduces the companions to 0 hit points, you take any remaining damage. They cannot be harmed by other effects.
+            Your guardians don’t take actions of their own, but you can use your bonus action on each of your turns to have your companions make one attack against a creature within 5 feet of you, using your spell attack bonus to hit. On a hit, the companions deal force damage equal to 3d8 +{{wisdom:modifier}}.
+            Your companions cannot regain hit points or gain temporary hit points. If your companions are reduced to 0 hit points, they return to their native elemental plane and you lose all associated benefits. At the end of a long rest, your companions regain all of their hit points and return to assist you.</description>
+        </sheet>
+        <rules>
+            <stat name="guardians:hp" value="level:elementalist" bonus="base" />
+            <stat name="guardians:hp" value="level:elementalist" />
+            <stat name="guardians:hp" value="wisdom:modifier" />
+        </rules>
+    </element>
+    <element name="Elemental Persuasion" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_PERSUASION">
+        <description>
+            <p>You have advantage on Charisma ability checks made to interact with elementals.</p>
+            <p class="indent">Additionally, you can use your action to fascinate one elemental that can see and hear you within 30 feet of you. The elemental must make a Wisdom saving throw against your spell save DC. On a failed saving throw, the elemental becomes charmed by you for 24 hours. The charmed target regards you as a trusted friend to be heeded and protected. Although the target isn’t under your control, it takes your requests or actions in the most favorable way it can.</p>
+            <p class="indent">Each time you or your companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until you die, or you are on a different plane of existence than the target or you take a bonus action to end the effect.</p>
+            <p class="indent">Once you use this feature, you can’t use it again until you complete a long rest. You can only have one creature charmed this way at a time. If you charm another creature using this effect, the effect ends for the previously charmed creature.</p>
+        </description>
+        <sheet>
+            <description>You have advantage on Charisma ability checks made to interact with elementals.
+            Additionally, you can use your action to fascinate one elemental that can see and hear you within 30 feet of you. The elemental must make a Wisdom saving throw against your spell save DC. On a failed saving throw, the elemental becomes charmed by you for 24 hours. The charmed target regards you as a trusted friend to be heeded and protected. Although the target isn’t under your control, it takes your requests or actions in the most favorable way it can.
+            Each time you or your companions do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until you die, or you are on a different plane of existence than the target or you take a bonus action to end the effect.
+            Once you use this feature, you can’t use it again until you complete a long rest. You can only have one creature charmed this way at a time. If you charm another creature using this effect, the effect ends for the previously charmed creature.</description>
+        </sheet>
+    </element>
+    <element name="Greater Elemental Companions" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_COMPANION_2">
+        <description>
+            <p>The damage your companions deal increases to 2d8 plus your Wisdom modifier.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+    <element name="Elemental Recall" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_ELEMENTAL_RECALL">
+        <description>
+            <p>You learn the plane shift spell, which you can cast once without expending a spell slot or expending material components. You regain the ability to cast the spell using this feature when you finish a long rest. When you cast plane shift using this feature, you may only travel to one of the elemental planes or to your home plane.</p>
+        </description>
+        <sheet>
+            <description>You learn the plane shift spell, which you can cast once without expending a spell slot or expending material components. You regain the ability to cast the spell using this feature when you finish a long rest. When you cast plane shift using this feature, you may only travel to one of the elemental planes or to your home plane.
+            If your campaign does not use elemental planes, you learn the etherealness spell instead.</description>
+        </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_PLANE_SHIFT" />
+            <grant type="Spell" id="ID_PHB_SPELL_ETHEREALNESS" />
+        </rules>
+    </element>
+    <element name="Greatest Elemental Companions" type="Class Feature" source="Omeria" id="ID_DMDAVE_OMERIA_CLASS_FEATURE_ELEMENTALIST_COMPANIONS_3">
+        <description>
+            <p>The damage your companions deal increases to 3d8 plus your Wisdom modifier.</p>
+        </description>
+        <sheet>
+            <description></description>
+        </sheet>
+    </element>
+</elements>
