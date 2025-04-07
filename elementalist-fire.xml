@@ -9,38 +9,44 @@
     <element name="Fire Heart" type="Archetype" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_ELMENTALIST_FIRE">
         <supports>Elemental-Bond</supports>
         <description>
-            <p></p>
+            <p>Natives to the Elemental Plane of Fire call their fiery home The Crematorium. Despite the aggressive reputation that fire natives receive, those who bond with fire are also known for their passion and cunning.</p>
             <p class="indent"></p>
-            <div element="ID__" />
-            <div element="ID___" />
-            <div element="ID____" />
-            <div element="ID_____" />
-            <div element="ID______" />
-            <div element="ID_______" />
-            <div element="ID________" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_PROFICIENCIES" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_SPELLS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_FIRE_WALK_WITH_ME" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_FIRE_CUNNING" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_BURNING_COMPANIONS" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_FLAME_WREATH" />
+            <div element="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_FRIEND_OF_FIRE" />
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
         <rules>
-            <grant type="Archetype Feature" id="ID__" level="3" />
-            <grant type="Archetype Feature" id="ID___" level="3" />
-            <grant type="Archetype Feature" id="ID____" level="3" />
-            <grant type="Archetype Feature" id="ID_____" level="3" />
-            <grant type="Archetype Feature" id="ID______" level="9" />
-            <grant type="Archetype Feature" id="ID_______" level="14" />
-            <grant type="Archetype Feature" id="ID________" level="20" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_PROFICIENCIES" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_SPELLS" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_FIRE_WALK_WITH_ME" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_FIRE_CUNNING" level="3" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_BURNING_COMPANIONS" level="9" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_FLAME_WREATH" level="14" />
+            <grant type="Archetype Feature" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_FRIEND_OF_FIRE" level="20" />
         </rules>
     </element>
-     <element name="featurename" type="Archetype Feature" source="Omeria" id="ID__">
+     <element name="Fire Proficiencies" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_PROFICIENCIES">
         <description>
-            <p></p>
+            <p>You gain proficiency with martial weapons, medium armor, and shields, and you can speak, read, and write Ignan.</p>
         </description>
         <sheet>
-            <description></description>
+            <description>You can speak, read, and write Ignan</description>
         </sheet>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+            <grant type="Language" id="ID_LANGUAGE_IGNAN" />
+        </rules>
     </element>
-    <element name="featurename" type="Archetype Feature" source="Omeria" id="ID___">
+    <element name="Fire Spells" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_SPELLS">
         <description>
             <p></p>
             <h5>Fire Spells</h5>
@@ -48,18 +54,49 @@
                 <thead>
                     <tr><td class="col-10">Elementalist Level</td><td>Spells</td></tr>
                 </thead>
-                <tr><td>3rd</td><td>data1</td></tr>
-                <tr><td>5th</td><td>data2</td></tr>
-                <tr><td>9th</td><td>data3</td></tr>
-                <tr><td>13th</td><td>data4</td></tr>
-                <tr><td>17th</td><td>data5</td></tr>
+                <tr><td>3rd</td><td>burning hands, hellish rebuke</td></tr>
+                <tr><td>5th</td><td>flame blade, scorching ray</td></tr>
+                <tr><td>9th</td><td>blaze*, fireball</td></tr>
+                <tr><td>13th</td><td>fire shield, wall of fire</td></tr>
+                <tr><td>17th</td><td>flame strike, inferno*</td></tr>
             </table>
         </description>
         <sheet display="false">
             <description></description>
         </sheet>
+        <rules>
+            <grant type="Spell" id="ID_PHB_SPELL_BURNING_HANDS" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_HELLISH_REBUKE" level="3" />
+            <grant type="Spell" id="ID_PHB_SPELL_FLAME_BLADE" level="5" />
+            <grant type="Spell" id="ID_PHB_SPELL_SCORCHING_RAY" level="5" />
+            <grant type="Spell" id="ID_DMDAVE_OMERIA_SPELL_BLAZE" level="9" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIREBALL" level="9" />
+            <grant type="Spell" id="ID_PHB_SPELL_FIRE_SHIELD" level="13" />
+            <grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FIRE" level="13" />
+            <grant type="Spell" id="ID_PHB_SPELL_FLAME_STRIKE" level="17" />
+            <grant type="Spell" id="ID_DMDAVE_OMERIA_SPELL_INFERNO" level="17" />
+        </rules>
     </element>
-    <element name="featurename" type="Archetype Feature" source="Omeria" id="ID____">
+    <element name="Fire Walk with Me" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_FIRE_WALK_WITH_ME">
+        <description>
+            <p>When you hit a creature with a weapon attack, the weapon attack deals additional fire damage equal to your proficiency bonus.</p>
+        </description>
+        <sheet>
+            <description>When you hit a creature with a weapon attack, the weapon attack deals additional {{proficiency}} fire damage.</description>
+        </sheet>
+    </element>
+    <element name="Fire Cunning" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_FIRE_CUNNING">
+        <description>
+            <p>When you perform an ability check or saving throw, you can grant a bonus to the result equal to your Wisdom modifier (minimum of 1). If the check or saving throw already uses your Wisdom modifier, you may add it a second time. You can use this feature after you roll the die, but before the outcome is determined.</p>
+            <p class="indent"></p>
+        </description>
+        <sheet>
+            <description>When you perform an ability check or saving throw,
+you can grant a +{{wisdom:modifier}} bonus to the result. If the check or
+saving throw already uses your Wisdom modifier, you may add it a second time. You can use this feature after you roll the die, but before the outcome is determined.</description>
+        </sheet>
+    </element>
+    <element name="Burning Companions" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_BURNING_COMPANIONS">
         <description>
             <p></p>
         </description>
@@ -67,7 +104,7 @@
             <description></description>
         </sheet>
     </element>
-    <element name="featurename" type="Archetype Feature" source="Omeria" id="ID_____">
+    <element name="Flame Wreath" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_FLAME_WREATH">
         <description>
             <p></p>
         </description>
@@ -75,23 +112,7 @@
             <description></description>
         </sheet>
     </element>
-    <element name="featurename" type="Archetype Feature" source="Omeria" id="ID______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="featurename" type="Archetype Feature" source="Omeria" id="ID_______">
-        <description>
-            <p></p>
-        </description>
-        <sheet>
-            <description></description>
-        </sheet>
-    </element>
-    <element name="featurename" type="Archetype Feature" source="Omeria" id="ID________">
+    <element name="Friend of Fire" type="Archetype Feature" source="Omeria" id="ID_DMDAVE_OMERIA_ARCHETYPE_FEATURE_ELMENTALIST_FIRE_FRIEND_OF_FIRE">
         <description>
             <p></p>
         </description>
