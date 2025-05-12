@@ -1,7 +1,9 @@
 # omeria-elements
 Elements from Pexia's Guide to Omeria for Aurora Builder
 
-## Features to be included
+Index link: https://raw.githubusercontent.com/ShadowLinks/omeria-elements/main/omeria.index
+
+## Features
 ### Races COMPLETE
 - Arnitikos
 - Canids
@@ -20,7 +22,7 @@ Elements from Pexia's Guide to Omeria for Aurora Builder
 - Kuyjini
 - Orcs
 
-### Class
+### Class COMPLETE
 - Elementalist
     - Air Warden
     - Earth Guardian
@@ -28,7 +30,7 @@ Elements from Pexia's Guide to Omeria for Aurora Builder
     - Water Soul
 
 
-### Archetypes
+### Archetypes COMPLETE
 Barbarian
 - Path of the Rasgax Howler
 - Path of the Titan Slayer
@@ -81,4 +83,4 @@ Wizard
 
 ### Spells COMPLETE
 
-### Magic Items
+### Magic Items Incomplete
