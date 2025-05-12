@@ -2,7 +2,7 @@
     <info>
         <name>Oath of the Stonearms</name>
         <description>Oath of the Stonearms for Paladins from Pexia's Guide to Omeria</description>
-        <update version="0.0.1">
+        <update version="0.1.1">
             <file name="paladin-stonearms.xml" url="https://raw.githubusercontent.com/ShadowLinks/omeria-elements/refs/heads/main/paladin-stonearms.xml"/>
         </update>
     </info>
@@ -54,7 +54,7 @@
             <p>You gain oath spells at the paladin levels listed in the Oath of the Stonearms Spells table. See the Sacred Oath class feature for how oath spells work.</p>
             <table>
                 <thead>
-                    <tr><td>d4</td><td>column2</td></tr>
+                    <tr><td>Paladin Level</td><td>Spells</td></tr>
                 </thead>
                 <tr><td>3rd</td><td>detect magic, entangle</td></tr>
                 <tr><td>5th</td><td>knock, spike growth</td></tr>
